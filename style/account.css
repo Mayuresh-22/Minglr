@@ -1,0 +1,220 @@
+body{
+    background-color: rgb(250 251 253);
+}
+.account{
+    width: 100%;
+    /* background-color: cornflowerblue; */
+}
+.account-body{
+    width: 80%;
+    /* height: 100%; */
+    /* background-color: cornflowerblue; */
+}
+.account-banner{
+    margin: auto;
+    width: 100%;
+    padding-top: 20%;
+    border: solid white;
+    border-bottom-left-radius: 69px;
+}
+.account-banner-img{
+    object-fit:contain;
+    object-position: 50% 50%;
+    margin: auto;
+    width: 100%;
+}
+.account-profpic{
+    object-fit: contain;
+    align-items: center;
+    border: solid green;
+    border-radius: 360px;
+}
+.account-img li{
+    color: white;
+    display: inline-block;
+    vertical-align:middle;
+}
+
+.message-btn{
+    width: 120px;
+    margin-left: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: #13239a;
+    color: white;
+}
+
+/* Account tabs stylling */
+.account-tabs ul{
+    background-color: white;
+    margin-top: 10px;
+    border: solid rgba(128, 128, 128, 0.248) 1px;
+    border-radius: 5px;
+}
+.account-tabs li{
+    display: inline-block;
+    margin-left: 20px;
+}
+li.acc-tabs-item{
+    padding: 10px;
+}
+.acc-tabs-btn{
+    font-size: 15px;
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+.acc-tabs-link{
+    text-decoration: none;
+}
+.acc-tabs-link:active{
+    border-bottom: solid#1f1efb 2px;
+    padding-bottom: 4px;
+    text-decoration: none;
+}
+/* Account tabs (Feed, Info, etc) styling */
+.acc-tabs-page{
+    margin-top: 20px;
+}
+.acc-info-content{
+    margin-top: 20px;
+    background-color: white;
+    border: solid rgba(128, 128, 128, 0.248) 1px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.acc-info-content-head{
+    border-bottom: solid rgba(128, 128, 128, 0.248) 1px;
+    padding-bottom: 10px;
+}
+.acc-info-content-lst{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.acc-info-content-list{
+    display:inline-block;
+    margin: 5px;
+}
+
+/* Accound feed post box styling */
+.feed-posting-box{
+    margin-top: 20px;
+    background-color: white;
+    border: solid rgba(128, 128, 128, 0.248) 1px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.feed-post-box-textarea{
+    width: 100%;
+    height:15%;
+    padding: 30px;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.post-btn{
+    width: 80px;
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: #13239a;
+    color: white;
+}
+
+.feed-post-display-box{
+    margin-top: 20px;
+    background-color: white;
+    border: solid rgba(128, 128, 128, 0.248) 1px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.feed-post-display-box-head li{
+    display: inline-block;
+    vertical-align: middle;
+}
+.feed-post-display-box-head img{
+    height: 40px;
+    border: solid green 1px;
+    border-radius: 360px;
+}
+
+.feed-post-display-box-message{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 17px;
+    border-left: solid #13239a 3px;
+}
+
+.feed-post-display-box-image{
+    padding-right: 60%;
+}
+
+input.postimage{
+    border: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-top: 7px;
+    margin-bottom: 0px;
+    height: 65px;
+}
+
+::-webkit-file-upload-button{
+    width: 90px;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: #13239ac0;
+    color: white;
+}
+
+/* css adjustments for mobile */
+@media(max-width: 720px){
+    .account-body{
+        width: 90%;
+    }
+
+    .feed-post-box-textarea{
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .account-tabs li{
+        font-size: 15px;
+    }
+
+    .feed-post-display-box-message{
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 15px;
+    }
+
+    .feed-post-display-box-head li{
+        font-size: 14px;
+    }
+
+    .acc-info-content{
+        font-size: 15px;
+    }
+
+    .feed-post-display-box-image{
+        padding-right: 15%;
+    }
+
+    .post-btn{
+        width: 70px;
+    }
+}

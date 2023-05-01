@@ -1,0 +1,223 @@
+/* Animation */
+@keyframes loginloader {
+    0% {margin-top:0px;}
+    100% {margin-top:60px;}
+}
+
+@keyframes mainloader {
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+
+*{
+    font-family:Poppins;
+    margin: auto;
+    padding: 0px;
+    box-sizing: border-box;
+    margin: auto;
+    opacity: 100%;
+
+    animation-name: mainloader;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+body{
+    background-color: rgb(250 251 253);
+}
+
+/*Navbar Style*/
+h1.nav-item-logo{
+    padding-right: 1px;
+    font-size: 26px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.navbar{
+    border-bottom: solid #022b59;
+}
+
+.navbar li{
+    display: inline-block;
+    /* padding-bottom: 15px; */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+li.nav-item{
+    font-size: 18px;
+    padding-left: 3vw;
+}
+
+li.nav-link{
+    text-decoration: none;
+}
+a:link {
+    color:#022b59;
+}
+a:visited{
+    color:#022b59;
+}
+
+/* search bar styling*/
+div.container{
+    width: 50%;
+    padding: 50px;
+}
+input.search-bar{
+    /* width: 100%; */
+    margin-right: 0%;
+}
+.search-btn{
+    padding: 15px;
+    border: solid grey;
+    border: none;
+    border-width: 1px;
+    border-radius: 7px;
+    background-color: #1e1efb;
+    color: white;
+    width: 30%;
+    margin-left: 35%;
+}
+
+/*error page styling*/
+div.error-container{
+    text-align: center;
+    margin: 7%;
+}
+/*Logo*/
+.logo{
+    max-height: 60;
+    max-width: 100%;
+    vertical-align:middle;
+    padding-left: 0%;
+}
+
+/*Login & signup form styling*/
+.login-logo{
+    max-height: 100;
+    max-width: 100%;
+}
+
+.login-signup{
+    background-color: white;
+    padding: 20px;
+    margin-top: 60px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: solid grey;
+    border-width: 1px;
+    border-radius: 15px;
+
+    position: relative;
+    animation-name: loginloader;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+.login-form{
+    padding: 20px;
+    width: 90%;
+}
+
+.regst-form{
+    padding: 20px;
+    width: 90%;
+    text-align: center;
+}
+
+
+input{
+    text-align: left;
+    width: 70%;
+    height:30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10px;
+    padding: 20px;
+    border: solid grey;
+    border-width: 1px;
+    border-radius: 4px;
+}
+.login-btn{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 10px;
+    border: solid grey;
+    border: none;
+    border-radius: 7px;
+    background-color: #13239a;
+    color: white;
+}
+
+.rgst-btn{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 10px;
+    border: solid grey;
+    border: none;
+    border-radius: 7px;
+    background-color: #13239a;
+    color: white;
+}
+
+.btn{
+    margin: 10px;
+    padding: 7px;
+    border: solid grey;
+    border: none;
+    border-width: 1px;
+    border-radius: 7px;
+    background-color: #1e1efb;
+    color: white;
+}
+
+/* Footer styling*/
+.footer{
+    box-sizing: border-box;
+    height:30dvb;
+    width: 100%;
+    padding: 30px;
+    margin-top: 10%;
+    background-color: #0f2186f5;
+    text-align: center;
+}
+.footer li{
+    display: inline-block;
+    padding: 20px;
+}
+a.foot-link:link{
+    color: white;
+}
+a.foot-link:visited{
+    color: white;
+}
+
+/* mobile style adjustments */
+@media(max-width: 720px){
+    .navbar li{
+        font-size: 16px;
+        padding-right: 0px;
+    }
+
+    .login-signup{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    input{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .footer li{
+        padding: 5px;
+        font-size: 13px;
+    }
+    .footer p{
+        font-size: 12px;
+    }
+}
