@@ -1,9 +1,9 @@
 <?php
-// database connection for Minglr
-$host = "sql308.epizy.com";
-$user = "epiz_33982723";
-$pswd = "Dz6YnMwsTsy3";
-$db = "epiz_33982723_minglredu";
+// database connection for Minglr (Get all this details in phpMyAdmin)
+$host = "Your-hostname";
+$user = "Your-username";
+$pswd = "Your-password";
+$db = "Your-databasename";
 
 // create connect to db
 $connection = mysqli_connect($host, $user, $pswd, $db);
