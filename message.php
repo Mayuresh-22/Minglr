@@ -8,9 +8,6 @@ session_start();
 $recp1 = $_SESSION['uid'];
 $recp2 = $_GET['recp2'];
 
-// $recp1 = 7;
-// $recp2 = 1;
-
 //set $username for both the recipients
 // creating associative array to access username with id
 $username = array();
