@@ -18,13 +18,21 @@ Minglr is a secure and feature-rich social networking site that enables users to
 
 ## Demo
 
-Experience Minglr firsthand with a live demo available at [Demo Link](https://example.com).
+Experience Minglr firsthand with a live website available at [Webiste Link](https://minglredu.rf.gd/).
 
 ## Screenshots
 
-| Account Page | Feed Page | Private Messaging |
-| ------------ | --------- | ----------------- |
-| ![Account Page](https://github.com/Mayuresh-22/Minglr-Social-Network-Site/blob/main/img/Minglr-Profile.png) | ![Feed Page](https://github.com/Mayuresh-22/Minglr-Social-Network-Site/blob/main/img/Minglr-Feed.png) | ![Private Messaging](https://github.com/Mayuresh-22/Minglr-Social-Network-Site/blob/main/img/Minglr-Pvt-msg.png) |
+| Account Page |
+| ------------ |
+| ![Account Page](https://github.com/Mayuresh-22/Minglr-Social-Network-Site/blob/main/img/Minglr-Profile.png) |
+
+| Feed Page |
+| ------------ |
+![Feed Page](https://github.com/Mayuresh-22/Minglr-Social-Network-Site/blob/main/img/Minglr-Feed.png) | 
+
+| Private Messaging |
+| ----------------- |
+![Private Messaging](https://github.com/Mayuresh-22/Minglr-Social-Network-Site/blob/main/img/Minglr-Pvt-msg.png) |
 
 Certainly! Here are the modified installation steps to include installing and configuring XAMPP and changing the directory to `htdocs` before cloning the GitHub repository:
 
