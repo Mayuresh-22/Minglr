@@ -83,7 +83,7 @@
                     <div class="account-img">
                         <ul>
                             <li>
-                                <img src="img/user.png" alt="profile" class="account-profpic">
+                                <img src="https://api.dicebear.com/6.x/initials/png?seed=<?php echo $fname ?>&size=128" alt="profile" class="account-profpic">
                             </li>
                             <li style="padding-left: 10px;">
                                 <?php
@@ -164,7 +164,7 @@
                                                         <div class="feed-post-display-box-head">
                                                             <ul>
                                                                 <li>
-                                                                <a href="account.php?username='.$username.'" style="text-decoration: none;"><img src="img/user.png" alt="profile" class="post-account-profpic"></a>
+                                                                <a href="account.php?username='.$username.'" style="text-decoration: none;"><img src="https://api.dicebear.com/6.x/initials/png?seed='.$fname.'&size=128" alt="profile" class="account-profpic"></a>
                                                                 </li>
                                                                 <li style="padding-left: 10px; padding-right: 10px;">
                                                                     <a href="account.php?username='.$username.'" style="text-decoration: none;">'.$fname.'</a>
@@ -184,7 +184,7 @@
                                                         <div class="feed-post-display-box-head">
                                                             <ul>
                                                                 <li>
-                                                                <a href="account.php?username='.$username.'" style="text-decoration: none;"><img src="img/user.png" alt="profile" class="post-account-profpic"></a>
+                                                                <a href="account.php?username='.$username.'" style="text-decoration: none;"><img src="https://api.dicebear.com/6.x/initials/png?seed='.$fname.'&size=128" alt="profile" class="account-profpic"></a>
                                                                 </li>
                                                                 <li style="padding-left: 10px; padding-right: 10px;">
                                                                     <a href="account.php?username='.$username.'" style="text-decoration: none;">'.$fname.'</a>
