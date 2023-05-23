@@ -4,9 +4,21 @@ include("db/connection.php");
 // starting session
 session_start();
 
+// redirecting user if not logged-in
+if(!isset($_SESSION['username']) && !isset($_GET['recp2'])){
+    echo "
+    <script>
+        window.location = '$home_page';
+    </script>
+    ";
+}
+
 // getting GET & SESSION variables
-$recp1 = $_SESSION['uid'];
+$recp1 = $_SESSION['id'];
 $recp2 = $_GET['recp2'];
+
+// $recp1 = 7;
+// $recp2 = 1;
 
 //set $username for both the recipients
 // creating associative array to access username with id
@@ -102,7 +114,7 @@ if(mysqli_num_rows($result) == 1){
             <div class="message-window-head">
                 <ul>
                     <li>
-                        <a href="account.php?username=<?php if($username[$recp1] != $_SESSION['username']){echo $username[$recp1];} else{echo $username[$recp2];} ?>" style="text-decoration: none;"><img src="https://api.dicebear.com/6.x/initials/png?seed='.$fname.'&size=128" alt="profile" class="<?php if($status[$recp2]==1){echo "message-account-profpic-online";} else{echo "message-account-profpic-offline";}?>"></a>
+                        <a href="account.php?username=<?php if($username[$recp1] != $_SESSION['username']){echo $username[$recp1];} else{echo $username[$recp2];} ?>" style="text-decoration: none;"><img src="https://api.dicebear.com/6.x/initials/png?seed=<?php echo $name[$recp2]; ?>&size=128" alt="profile" class="<?php if($status[$recp2]==1){echo "message-account-profpic-online";} else{echo "message-account-profpic-offline";}?>"></a>
                     </li>
                     <li>
                         <?php if($username[$recp1] != $_SESSION['username']){echo "<b>".$name[$recp1]."</b>";} else{echo "<b>".$name[$recp2]."</b>";} ?>
