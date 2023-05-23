@@ -102,7 +102,7 @@ if(mysqli_num_rows($result) == 1){
             <div class="message-window-head">
                 <ul>
                     <li>
-                        <a href="account.php?username=<?php if($username[$recp1] != $_SESSION['username']){echo $username[$recp1];} else{echo $username[$recp2];} ?>" style="text-decoration: none;"><img src="img/user.png" alt="profile" class="<?php if($status[$recp2]==1){echo "message-account-profpic-online";} else{echo "message-account-profpic-offline";}?>"></a>
+                        <a href="account.php?username=<?php if($username[$recp1] != $_SESSION['username']){echo $username[$recp1];} else{echo $username[$recp2];} ?>" style="text-decoration: none;"><img src="https://api.dicebear.com/6.x/initials/png?seed='.$fname.'&size=128" alt="profile" class="<?php if($status[$recp2]==1){echo "message-account-profpic-online";} else{echo "message-account-profpic-offline";}?>"></a>
                     </li>
                     <li>
                         <?php if($username[$recp1] != $_SESSION['username']){echo "<b>".$name[$recp1]."</b>";} else{echo "<b>".$name[$recp2]."</b>";} ?>
