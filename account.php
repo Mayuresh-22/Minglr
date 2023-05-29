@@ -79,11 +79,10 @@
         <div class="account">
             <div class="account-body">
                 <div class="account-banner" style="background-image: url('img/banner.png');">
-                    <!-- <img src="img/banner.png" alt="banner" class="account-banner-img"> -->
                     <div class="account-img">
                         <ul>
                             <li>
-                                <img src="https://api.dicebear.com/6.x/initials/png?seed=<?php echo $fname ?>&size=128" alt="profile" class="account-profpic">
+                            <img src="https://api.dicebear.com/6.x/initials/png?seed=<?php echo $fname ?>&size=128" alt="profile" class="account-profpic">
                             </li>
                             <li style="padding-left: 10px;">
                                 <?php
@@ -92,7 +91,7 @@
                                 ?>
                             </li>
                             <li>
-                                <?php if(isset($_SESSION['username']) and ($user_id != $_SESSION['id'])): ?>
+                                <?php if(isset($_SESSION['username']) and ($username != $_SESSION['username'])): ?>
                                     <form action="message.php" method="GET">
                                         <input type="hidden" name="recp2" value="<?php echo $user_id; ?>">
                                         <button class="message-btn">Send message</button>
