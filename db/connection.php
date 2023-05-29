@@ -1,9 +1,9 @@
 <?php
-// database connection for Minglr (Get all this details in phpMyAdmin)
-$host = "Your-hostname";
-$user = "Your-username";
-$pswd = "Your-password";
-$db = "Your-databasename";
+// database connection for Minglr (Change this credentials)
+$host = "";
+$user = "";
+$pswd = "";
+$db = "";
 
 // create connect to db
 $connection = mysqli_connect($host, $user, $pswd, $db);
