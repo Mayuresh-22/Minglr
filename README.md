@@ -20,7 +20,7 @@ Minglr is a secure and feature-rich social networking site that enables users to
 
 ## Demo
 
-Experience Minglr firsthand with a live website available at [Webiste Link](https://minglredu.rf.gd/).
+Experience Minglr firsthand with a live website available at [Webiste Link](https://minglr.cu.ma/).
 
 ## Screenshots
 
@@ -67,7 +67,7 @@ Follow these steps to set up Minglr locally using XAMPP:
 5. Configure the Database:
    - Create a MySQL database for Minglr.
    - Import the database schema from the provided SQL file (`db/database.sql`).
-   - Update the database configuration in `db/connection.php` with your database credentials.
+   - Update the database configuration in [`db/connection.php`](db/connection.php) with your database credentials (For example: LOCALHOST, USERNAME, PASSWORD, DATABASE).
 
 6. Configure Site Settings:
    - Open `index.php` and modify any relevant settings (e.g., site name, URL, file paths).
@@ -84,6 +84,8 @@ Please note that the steps may vary slightly based on your specific operating sy
 - HTML5
 - CSS
 - JavaScript
+- MySQL
+- [DiceBear](https://www.dicebear.com/) HTTP API
 
 ## Contributing
 
