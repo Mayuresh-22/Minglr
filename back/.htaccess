@@ -1,0 +1,4 @@
+AuthGroupFile /dev/null
+AuthUserFile /home/minglrcu/domains/minglr.cu.ma/.htpasswd/public_html/back/.htpasswd
+AuthName "ADMIN AREA"
+ErrorDocument 401 "Unauthorized Access"

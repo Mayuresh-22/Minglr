@@ -1,10 +1,8 @@
 <?php
-
-    include("db/connection.php");
-    include("db/validate.php");
-
+	include("connection.php");
     session_start();
-    
+    $uid = $_SESSION['id'];
+
     // validation before loggin user out
     if(isset($_SESSION['username'])){
         session_unset();
@@ -28,5 +26,4 @@
         ';
         exit;
     }
-
 ?>

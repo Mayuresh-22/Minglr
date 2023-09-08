@@ -72,9 +72,9 @@ if(isset($_POST['lgn'])&&isset($username)&&isset($password)){
     
     // start session after verification
     session_start();
-    $_SESSION["username"] = $username;
-    $_SESSION["status"] = $login;
-    $_SESSION["id"] = $uid;
+    $_SESSION['username'] = $username;
+    $_SESSION['status'] = $login;
+    $_SESSION['id'] = $uid;
 
     echo '<script language="javascript">';
     echo 'window.location="'.$home_page.'account.php?username='.$username.'";';
@@ -113,10 +113,6 @@ else{
             $_SESSION["username"] = $username;
             $_SESSION["status"] = $login;
             $_SESSION["id"] = $uid;
-
-            // set login status in database
-            $sql = "UPDATE `users` SET `status`= 1 WHERE `id`=".$uid.";";
-            mysqli_query($connection, $sql);
 
             echo '<script language="javascript">';
             echo 'alert("Successfully! registered");';

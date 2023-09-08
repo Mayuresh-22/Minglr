@@ -4,21 +4,9 @@ include("db/connection.php");
 // starting session
 session_start();
 
-// redirecting user if not logged-in
-if(!isset($_SESSION['username']) && !isset($_GET['recp2'])){
-    echo "
-    <script>
-        window.location = '$home_page';
-    </script>
-    ";
-}
-
 // getting GET & SESSION variables
 $recp1 = $_SESSION['id'];
 $recp2 = $_GET['recp2'];
-
-// $recp1 = 7;
-// $recp2 = 1;
 
 //set $username for both the recipients
 // creating associative array to access username with id
@@ -42,7 +30,6 @@ $username[$recp2] = $rows[0][0];
 $name[$recp2] = $rows[0][1];
 $status[$recp2] = $rows[0][2];
 
-
 // checking whether the room with recipient already exits or not
 $sql = "SELECT * FROM `rooms` WHERE (`recp1` = ".$recp1." OR `recp1` = ".$recp2.") AND (`recp2` = ".$recp1." OR `recp2` = ".$recp2.");";
 $result = mysqli_query($connection, $sql);
@@ -53,7 +40,7 @@ if(mysqli_num_rows($result) == 1){
     $room_id = $rows['room_id'];
 } else if(mysqli_num_rows($result) == 0){
     // creating new room for the recipients
-    $sql = "INSERT INTO `rooms` (`room_id`, `recp1`, `recp2`) VALUES (NULL, '".$recp1."', '".$recp2."');";
+    $sql = "INSERT INTO `rooms` (`recp1`, `recp2`) VALUES ('".$recp1."', '".$recp2."');";
     $result = mysqli_query($connection, $sql);
     
     // set $room_id
