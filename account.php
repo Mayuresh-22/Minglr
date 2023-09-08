@@ -79,11 +79,10 @@
         <div class="account">
             <div class="account-body">
                 <div class="account-banner" style="background-image: url('img/banner.png');">
-                    <!-- <img src="img/banner.png" alt="banner" class="account-banner-img"> -->
                     <div class="account-img">
                         <ul>
                             <li>
-                                <img src="img/user.png" alt="profile" class="account-profpic">
+                            <img src="https://api.dicebear.com/6.x/initials/png?seed=<?php echo $fname ?>&size=128" alt="profile" class="account-profpic">
                             </li>
                             <li style="padding-left: 10px;">
                                 <?php
@@ -92,7 +91,7 @@
                                 ?>
                             </li>
                             <li>
-                                <?php if(isset($_SESSION['username']) and $_GET['username'] != $_SESSION['username']): ?>
+                                <?php if(isset($_SESSION['username']) and ($username != $_SESSION['username'])): ?>
                                     <form action="message.php" method="GET">
                                         <input type="hidden" name="recp2" value="<?php echo $user_id; ?>">
                                         <button class="message-btn">Send message</button>
@@ -164,7 +163,7 @@
                                                         <div class="feed-post-display-box-head">
                                                             <ul>
                                                                 <li>
-                                                                <a href="account.php?username='.$username.'" style="text-decoration: none;"><img src="img/user.png" alt="profile" class="post-account-profpic"></a>
+                                                                <a href="account.php?username='.$username.'" style="text-decoration: none;"><img src="https://api.dicebear.com/6.x/initials/png?seed='.$fname.'&size=128" alt="profile" class="account-profpic"></a>
                                                                 </li>
                                                                 <li style="padding-left: 10px; padding-right: 10px;">
                                                                     <a href="account.php?username='.$username.'" style="text-decoration: none;">'.$fname.'</a>
@@ -184,7 +183,7 @@
                                                         <div class="feed-post-display-box-head">
                                                             <ul>
                                                                 <li>
-                                                                <a href="account.php?username='.$username.'" style="text-decoration: none;"><img src="img/user.png" alt="profile" class="post-account-profpic"></a>
+                                                                <a href="account.php?username='.$username.'" style="text-decoration: none;"><img src="https://api.dicebear.com/6.x/initials/png?seed='.$fname.'&size=128" alt="profile" class="account-profpic"></a>
                                                                 </li>
                                                                 <li style="padding-left: 10px; padding-right: 10px;">
                                                                     <a href="account.php?username='.$username.'" style="text-decoration: none;">'.$fname.'</a>
