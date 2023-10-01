@@ -1,7 +1,5 @@
 <?php
-
-    // home page
-    $home_page = "/";
+    include("back/env.php");
 
     // starting session only when $_session is set
     session_start();

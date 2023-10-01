@@ -1,6 +1,7 @@
 <?php
 // including root connection file
 include("connection.php");
+include("../back/env.php");
 
 // Data from Post
 $username = $_POST['username'];

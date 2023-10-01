@@ -7,7 +7,4 @@ $db = "minglr";
 
 // create connect to db
 $connection = mysqli_connect($host, $user, $pswd, $db);
-
-// home page
-$home_page = "/";
 ?>

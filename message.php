@@ -1,5 +1,6 @@
 <?php
 include("db/connection.php");
+include("back/env.php");
 
 // starting session
 session_start();
