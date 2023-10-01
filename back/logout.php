@@ -1,5 +1,7 @@
 <?php
 	include("connection.php");
+    include("env.php");
+
     session_start();
     $uid = $_SESSION['id'];
 
@@ -14,14 +16,14 @@
 
         echo '
         <script>
-            window.location="/";
+            window.location="'.$home_page.'";
         </script>
         ';
         exit;
     }else{
         echo '
         <script>
-            window.location="/";
+            window.location="'.$home_page.'";
         </script>
         ';
         exit;
