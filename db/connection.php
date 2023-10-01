@@ -1,8 +1,8 @@
 <?php
 // database connection for Minglr
 $host = "localhost";
-$user = "username";
-$pswd = "password";
+$user = "root";
+$pswd = "";
 $db = "minglr";
 
 // create connect to db
