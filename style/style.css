@@ -221,3 +221,13 @@ a.foot-link:visited{
         font-size: 12px;
     }
 }
+
+a {
+    text-decoration: none;
+    color: #333; /* Default link color */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+a:hover {
+    color: #ff6600; /* Color when hovering over the link */
+}
