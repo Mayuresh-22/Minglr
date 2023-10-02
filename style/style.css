@@ -35,11 +35,6 @@ h1.nav-item-logo{
 
 .navbar{
     border-bottom: solid #022b59;
-    position: sticky;
-    background-color: #ffffff;
-    width: 100%;
-    top: 0; 
-
 }
 
 .navbar li{
