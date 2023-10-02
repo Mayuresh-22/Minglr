@@ -1,5 +1,6 @@
 <?php
 include("db/connection.php");
+include("back/env.php");
 
 // getting post variables
 $message = $_POST['post'];
