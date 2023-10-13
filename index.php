@@ -1,3 +1,11 @@
+<?php
+session_start();
+    if(isset($_SESSION["username"])){
+        header("Location: feed.php");
+        exit;
+    }
+// testfortest@yopmail.com
+?>
 <html>
     <title>Minglr</title>
     <head>
@@ -20,7 +28,6 @@
             </li>
             <li class="nav-item">
                 <?php
-                session_start();
                 if(isset($_SESSION['username'])){
                     echo '<a href="account.php?username='.$_SESSION['username'].'" style="text-decoration: none">Account</a>';
                 }else{
