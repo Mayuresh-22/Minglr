@@ -14,7 +14,7 @@
         }
         // including root database connection file
         include("db/connection.php");
-        $sql = "SELECT `id`, `fname`, `lname`, `email` FROM `users` WHERE `username` = '$username';";
+        $sql = "SELECT `id`, `fname`, `lname`, `email` FROM `users` WHERE `username` LIKE '%$username%';";
         $result = mysqli_query($connection, $sql);
 
         if(mysqli_num_rows($result)==1){
