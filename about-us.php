@@ -10,11 +10,42 @@
     </head>
 
 <body>
-<div class="navbar">
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        X
+        <!-- <i class="fas fa-bars"></i> -->
+      </label>
+      <label class="logo"><a href="feed.php"><img class="logo" src="logo\logo.png"></a></label>
+      <ul>
+        <li><a class="navv-item" href="feed.php">Feed</a></li>
+        <li>
+            <?php
+                if(isset($_SESSION['username'])){
+                    echo '<a class="navv-item" href="account.php?username='.$_SESSION['username'].'" ">Account</a>';
+                }else{
+                    echo '<a class="navv-item" href="account.php">Account</a>';
+                }
+            ?>
+        </li>
+        <li>
+            <?php
+                    if(!isset($_SESSION['username'])){
+                        echo '<a class="navv-item" href="index.php">Login</a>';
+                    }
+                    else{
+                        echo '<a class="navv-item" href="back/logout.php">Logout</a>';
+                    }
+            ?>
+        </li>
+        <li><a class="navv-item active" href="about-us.php">About Us</a></li>
+      </ul>
+    </nav>
+  
+<!-- <div class="navbar">
     <ul>
         <li>
             <img class="logo" src="logo\logo.png">
-            <!-- <h1 class="nav-item-logo">Minglr</h1> -->
         </li>
         <li class="nav-item">
             <a href="feed.php" style="text-decoration: none">Feed</a>
@@ -26,7 +57,7 @@
             <a href="/" style="text-decoration: none;">Login</a>
         </li>
     </ul>
-</div>
+</div> -->
 
 <div class="about-us">
     <center><img class="about-us-logo" src="logo/cover.png" alt="logo"></center>

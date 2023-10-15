@@ -20,11 +20,42 @@
     </head>
 
 <body>
-    <div class="navbar">
+<nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        X
+        <!-- <i class="fas fa-bars"></i> -->
+      </label>
+      <label class="logo"><a href="feed.php"><img class="logo" src="logo\logo.png"></a></label>
+      <ul>
+        <li><a class="navv-item active" href="feed.php">Feed</a></li>
+        <li>
+            <?php
+                if(isset($_SESSION['username'])){
+                    echo '<a class="navv-item" href="account.php?username='.$_SESSION['username'].'" ">Account</a>';
+                }else{
+                    echo '<a class="navv-item" href="account.php">Account</a>';
+                }
+            ?>
+        </li>
+        <li>
+            <?php
+                    if(!isset($_SESSION['username'])){
+                        echo '<a class="navv-item" href="index.php">Login</a>';
+                    }
+                    else{
+                        echo '<a class="navv-item" href="back/logout.php">Logout</a>';
+                    }
+            ?>
+        </li>
+        <li><a class="navv-item" href="about-us.php">About Us</a></li>
+      </ul>
+    </nav>
+  
+    <!-- <div class="navbar">
         <ul>
             <li>
                 <a href="<?php echo $home_page; ?>"><img class="logo" src="logo\logo.png"></a>
-                <!-- <h1 class="nav-item-logo">Minglr</h1> -->
             </li>
             <li class="nav-item">
                 <a href="feed.php" style="text-decoration: none">Feed</a>
@@ -50,7 +81,7 @@
                 ?>
             </li>
         </ul>
-    </div>
+    </div> -->
 
     <div class="feed-page-body">
         <div class="feed-page-head">
