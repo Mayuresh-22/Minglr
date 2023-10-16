@@ -80,7 +80,7 @@ if(mysqli_num_rows($result) == 1){
 
 <body>
 
-<nav>
+    <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         X
@@ -111,7 +111,7 @@ if(mysqli_num_rows($result) == 1){
         <li><a class="navv-item" href="about-us.php">About Us</a></li>
       </ul>
     </nav>
-
+    <div class="seperate_header"></div>
     <!-- <div class="navbar">
         <ul>
             <li>

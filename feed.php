@@ -20,7 +20,7 @@
     </head>
 
 <body>
-<nav>
+    <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         X
@@ -52,6 +52,7 @@
       </ul>
     </nav>
   
+    <div class="seperate_header"></div>
     <!-- <div class="navbar">
         <ul>
             <li>

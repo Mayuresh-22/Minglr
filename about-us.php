@@ -58,7 +58,7 @@
         </li>
     </ul>
 </div> -->
-
+<div class="seperate_header"></div>
 <div class="about-us">
     <center><img class="about-us-logo" src="logo/cover.png" alt="logo"></center>
     <h2>About Us</h2>

@@ -41,7 +41,7 @@
     </head>
 
 <body>
-<nav>
+    <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         X
@@ -72,6 +72,7 @@
         <li><a class="navv-item" href="about-us.php">About Us</a></li>
       </ul>
     </nav>
+    <div class="seperate_header"></div>
     <!-- <div class="navbar">
         <ul>
             <li>

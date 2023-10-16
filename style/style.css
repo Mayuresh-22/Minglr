@@ -53,9 +53,14 @@ li.nav-link{
 } */
 
 nav{
+    position: fixed;
+    top: 0;
+    left: 0;
     background: #f3f8fc;
     height: 80px;
     width: 100%;
+    z-index: 10;
+    border-bottom: 2px solid #13239a;
   }
   label.logo{
     color: white;
@@ -90,7 +95,7 @@ nav{
   }
   .checkbtn{
     font-size: 30px;
-    color: white;
+    color: black;
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -284,7 +289,10 @@ a.foot-link:link{
 a.foot-link:visited{
     color: white;
 }
-
+.seperate_header{
+  height: 1px;
+  margin-top: 80px;
+}
 /* mobile style adjustments */
 @media(max-width: 720px){
     .navbar li{

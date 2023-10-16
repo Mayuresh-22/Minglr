@@ -4,7 +4,6 @@ session_start();
         header("Location: feed.php");
         exit;
     }
-// testfortest@yopmail.com
 ?>
 <html>
     <title>Minglr</title>
@@ -50,6 +49,7 @@ session_start();
       </ul>
     </nav>
   
+    <div class="seperate_header"></div>
     <!-- <div class="navbar">
         <ul>
             <li>
