@@ -27,37 +27,132 @@ body{
 }
 
 /*Navbar Style*/
-h1.nav-item-logo{
+/* h1.nav-item-logo{
     padding-right: 1px;
     font-size: 26px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
+} */
 
-.navbar{
+/* .navbar{
     border-bottom: solid #022b59;
 }
 
 .navbar li{
     display: inline-block;
-    /* padding-bottom: 15px; */
     padding-left: 15px;
     padding-right: 15px;
 }
-
-li.nav-item{
+/*  */
+/* li.nav-item{
     font-size: 18px;
     padding-left: 3vw;
 }
 
 li.nav-link{
     text-decoration: none;
-}
-a:link {
+} */
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #f3f8fc;
+    height: 80px;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 2px solid #13239a;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li .navv-item{
+    color: #1e47fb;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  .navv-item.active{
+    color: #fff !important; 
+  }
+  .navv-item.active,.navv-item:hover{
+    background: #1e1efb;
+    transition: .5s;
+    color: #fff !important;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li .navv-item{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      z-index: 100;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li .navv-item{
+      font-size: 20px;
+    }
+    .navv-item:hover,.navv-item.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  
+
+/* a:link {
     color:#022b59;
 }
 a:visited{
     color:#022b59;
-}
+} */
 
 /* search bar styling*/
 div.container{
@@ -194,7 +289,10 @@ a.foot-link:link{
 a.foot-link:visited{
     color: white;
 }
-
+.seperate_header{
+  height: 1px;
+  margin-top: 80px;
+}
 /* mobile style adjustments */
 @media(max-width: 720px){
     .navbar li{
@@ -228,6 +326,6 @@ a {
     transition: color 0.3s; /* Smooth color transition on hover */
 }
 
-a:hover {
-    color: #ff6600; /* Color when hovering over the link */
-}
+/* a:hover {
+    color: #ff6600; 
+} */
