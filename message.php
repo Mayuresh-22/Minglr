@@ -1,13 +1,15 @@
 <?php
 include("db/connection.php");
+include("back/env.php");
 
 // starting session
 session_start();
 
 // redirecting user if not logged-in
-if(!isset($_SESSION['username']) && !isset($_GET['recp2'])){
+if(!isset($_SESSION['username']) || !isset($_GET['recp2']) || !isset($_SESSION['id'])){
     echo "
     <script>
+        alert('Error occurred please Login to continue');
         window.location = '$home_page';
     </script>
     ";

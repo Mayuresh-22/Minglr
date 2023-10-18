@@ -14,6 +14,7 @@
     margin: auto;
     padding: 0px;
     box-sizing: border-box;
+    margin: auto;
     opacity: 100%;
 
     animation-name: mainloader;
@@ -61,14 +62,14 @@ a:visited{
 /* search bar styling*/
 div.container{
     width: 50%;
-    padding: 50px;
+    padding-top: 10px;
 }
 input.search-bar{
     /* width: 100%; */
     margin-right: 0%;
 }
 .search-btn{
-    padding: 15px;
+    padding: 10px;
     border: solid grey;
     border: none;
     border-width: 1px;
@@ -219,4 +220,14 @@ a.foot-link:visited{
     .footer p{
         font-size: 12px;
     }
+}
+
+a {
+    text-decoration: none;
+    color: #333; /* Default link color */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+a:hover {
+    color: #ff6600; /* Color when hovering over the link */
 }

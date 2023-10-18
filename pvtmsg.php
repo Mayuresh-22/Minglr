@@ -14,7 +14,7 @@ $sql = "INSERT INTO `messages` (`author`, `message`, `room_id`, `dos`) VALUES ('
 mysqli_query($connection, $sql);
 
 echo "<script>
-    window.location='".$home_page."message.php?recp2=".$recp2."';
+    window.location='message.php?recp2=".$recp2."';
 </script>";
 
 ?>

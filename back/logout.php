@@ -1,10 +1,10 @@
 <?php
-
-    include("db/connection.php");
-    include("db/validate.php");
+	include("connection.php");
+    include("env.php");
 
     session_start();
-    
+    $uid = $_SESSION['id'];
+
     // validation before loggin user out
     if(isset($_SESSION['username'])){
         session_unset();
@@ -16,17 +16,16 @@
 
         echo '
         <script>
-            window.location="/";
+            window.location="'.$home_page.'";
         </script>
         ';
         exit;
     }else{
         echo '
         <script>
-            window.location="/";
+            window.location="'.$home_page.'";
         </script>
         ';
         exit;
     }
-
 ?>

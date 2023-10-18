@@ -26,6 +26,7 @@ body{
 .account-profpic{
     object-fit: contain;
     align-items: center;
+    border: solid green;
     border-radius: 360px;
 }
 .account-img li{
@@ -144,6 +145,7 @@ li.acc-tabs-item{
 }
 .feed-post-display-box-head img{
     height: 40px;
+    border: solid green 1px;
     border-radius: 360px;
 }
 

@@ -1,7 +1,5 @@
 <?php
-
-    // home page
-    $home_page = "/";
+    include("back/env.php");
 
     // starting session only when $_session is set
     session_start();
@@ -61,7 +59,7 @@
 
         <?php if(isset($_SESSION['username']) && isset($_SESSION['id'])): ?>
             <div class="feed-posting-box">
-                <form action="post.php" method="post" enctype="multipart/form-data">
+                <form action="post.php?redirect=feed.php" method="post" enctype="multipart/form-data">
                     <textarea name="post" id="post" wrap="hard" placeholder="Whats in your mind? <?php echo $_SESSION['username']; ?>" class="feed-post-box-textarea"></textarea>
                     <input type="hidden" name="user_id" id="user_id" value="<?php echo $_SESSION['id']; ?>">
                     <input type="hidden" name="username" id="username" value="<?php echo $_SESSION['username']; ?>">
