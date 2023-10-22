@@ -75,6 +75,6 @@ To get started with Minglr, follow these steps:
 
 - If you encounter any issues or have questions, please refer to the project's [GitHub Issues](#) section for assistance.
 
-- Check the [LICENSE](LICENSE.md) file for information on Minglr's licensing.
+- Check the [LICENSE](LICENSE) file for information on Minglr's licensing.
 
 By following this guide, you'll gain a better understanding of Minglr's codebase and be better equipped to contribute to the project or utilize it for your own purposes. Good luck and happy coding!
