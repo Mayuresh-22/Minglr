@@ -13,6 +13,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -20,10 +21,9 @@ session_start();
     <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
-        X
-        <!-- <i class="fas fa-bars"></i> -->
+        <i class="fa-solid fa-bars" style="color: #12209d;"></i>
       </label>
-      <label class="logo"><a href="feed.php"><img class="logo" src="logo\logo.png"></a></label>
+      <label class="logo"><a href="/"><img class="logo" src="logo\logo.png"></a></label>
       <ul>
         <li><a class="navv-item" href="feed.php">Feed</a></li>
         <li>
