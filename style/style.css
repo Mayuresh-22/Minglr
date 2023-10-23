@@ -99,8 +99,10 @@ nav{
     float: right;
     line-height: 80px;
     margin-right: 40px;
+    margin-top: 25px;
     cursor: pointer;
     display: none;
+    vertical-align: middle;
   }
   #check{
     display: none;
