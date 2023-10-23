@@ -107,48 +107,7 @@ nav{
   #check{
     display: none;
   }
-  @media (max-width: 952px){
-    label.logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    nav ul li .navv-item{
-      font-size: 16px;
-    }
-  }
-  @media (max-width: 858px){
-    .checkbtn{
-      display: block;
-    }
-    ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #2c3e50;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-      z-index: 100;
-    }
-    nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav ul li .navv-item{
-      font-size: 20px;
-    }
-    .navv-item:hover,.navv-item.active{
-      background: none;
-      color: #0082e6;
-    }
-    #check:checked ~ ul{
-      left: 0;
-    }
-  }
   
-
 /* a:link {
     color:#022b59;
 }
@@ -222,7 +181,6 @@ div.error-container{
     width: 90%;
     text-align: center;
 }
-
 
 input{
     text-align: left;
@@ -322,12 +280,50 @@ a.foot-link:visited{
     }
 }
 
-a {
-    text-decoration: none;
-    color: #333; /* Default link color */
-    transition: color 0.3s; /* Smooth color transition on hover */
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav .menu-items .menu-items-li .navv-item{
+    font-size: 16px;
+  }
 }
 
-/* a:hover {
-    color: #ff6600; 
-} */
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  .menu-items{
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    background: #212121;
+    top: 31px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 100;
+  }
+  nav .menu-items{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav .menu-items .menu-items-li .navv-item{
+    font-size: 20px;
+  }
+  .navv-item:hover,.navv-item.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ .menu-items{
+    left: 0%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #333; /* Default link color */
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
