@@ -14,17 +14,23 @@
         }
         // including root database connection file
         include("db/connection.php");
-        $sql = "SELECT `id`, `fname`, `lname`, `email` FROM `users` WHERE `username` = '$username';";
+        $sql = "SELECT `id`,`username`, `fname`, `lname`, `email` FROM `users` WHERE `username` LIKE '%$username%'OR `fname` LIKE '%$username%' OR `lname` LIKE '%$username%';";
+        // die($sql);
         $result = mysqli_query($connection, $sql);
-
-        if(mysqli_num_rows($result)==1){
-            // fetching and storing records in variables
-            $row = mysqli_fetch_assoc($result);
-            $user_id = $row['id'];
-            $fname = $row['fname'];
-            $lname = $row['lname'];
-            $email = $row['email'];
-        }
+        // print_r($result);
+        // die();
+        // if(mysqli_num_rows($result)>=1){
+        //     // fetching and storing records in variables
+        //     // while(){
+                
+        //     // }
+        //     $row = mysqli_fetch_assoc($result);
+        //     $username_row=$row['username'];
+        //     $user_id = $row['id'];
+        //     $fname = $row['fname'];
+        //     $lname = $row['lname'];
+        //     $email = $row['email'];
+        // }
     }
 
 ?>
@@ -74,7 +80,14 @@
     </div>
 
     <?php if(isset($_GET['username'])): ?>
-        <?php if(mysqli_num_rows($result)==1): ?>
+        <?php if(mysqli_num_rows($result)>=1): ?>
+        <?php while($row = mysqli_fetch_assoc($result)){
+            $username_row=$row['username'];
+                $user_id = $row['id'];
+                $fname = $row['fname'];
+                $lname = $row['lname'];
+                $email = $row['email'];
+            ?>
         <div class="account">
             <div class="account-body">
                 <div class="account-banner" style="background-image: url('img/banner.png');">
@@ -86,7 +99,7 @@
                             <li style="padding-left: 10px;">
                                 <?php
                                 echo "<b>$fname</b><br>";
-                                echo "<small>@$username</small>";
+                                echo "<small>@$username_row</small>";
                                 ?>
                             </li>
                             <li>
@@ -279,6 +292,7 @@
                 </div>
             </div>
         </div>
+        <?php }?>
         <?php endif; ?>
         <?php if(mysqli_num_rows($result)==0){readfile('error/user_not_found.html');}?>
     <?php endif; ?>
