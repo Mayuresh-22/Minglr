@@ -334,7 +334,7 @@ a {
 }
 
 
-//Image Preview
+/* Image Preview */
 .post-form {
   display: flex;
   flex-direction: column;
