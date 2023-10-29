@@ -91,14 +91,41 @@
 
         <?php if(isset($_SESSION['username']) && isset($_SESSION['id'])): ?>
             <div class="feed-posting-box">
-                <form action="post.php?redirect=feed.php" method="post" enctype="multipart/form-data">
-                    <textarea name="post" id="post" wrap="hard" placeholder="Whats in your mind? <?php echo $_SESSION['username']; ?>" class="feed-post-box-textarea"></textarea>
-                    <input type="hidden" name="user_id" id="user_id" value="<?php echo $_SESSION['id']; ?>">
-                    <input type="hidden" name="username" id="username" value="<?php echo $_SESSION['username']; ?>">
-                    <input type="hidden" name="redirect" id="redirect" value="<?php echo "feed.php"; ?>">
-                    <input type="file" name="postimage" accept=".jpg, .png, .jpeg" class="postimage">
-                    <button type="submit" class="post-btn">Post</button>
-                </form>
+            <form action="post.php?redirect=feed.php" method="post" enctype="multipart/form-data" class="post-form">
+    <div class="form-group">
+        <textarea name="post" id="post" wrap="hard" placeholder="What's on your mind, <?php echo $_SESSION['username']; ?>" class="feed-post-box-textarea"></textarea>
+        <input type="hidden" name="user_id" value="<?php echo $_SESSION['id']; ?>">
+        <input type="hidden" name="username" value="<?php echo $_SESSION['username']; ?>">
+        <input type="hidden" name="redirect" value="feed.php">
+    </div>
+    <div class="form-group file-preview">
+        <input type="file" name="postimage" accept=".jpg, .png, .jpeg, .webp" class="postimage" id="post-image" onchange="previewImage(event)">
+        <div class="preview">
+        <label for="post-image" class="file-label">Choose Image</label>
+        <button type="submit" class="post-btn">Post</button>
+        </div>
+        <img id="preview" src="#" alt="Preview" class="image-preview">
+    </div>
+</form>
+<script>
+    function previewImage(event) {
+        var input = event.target;
+        var preview = document.getElementById('preview');
+        
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function(e) {
+                preview.src = e.target.result;
+                preview.style.display = 'block';
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        } else {
+            preview.style.display = 'none';
+        }
+    }
+</script>
             </div>
         <?php endif; ?>
 
