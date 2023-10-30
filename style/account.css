@@ -3,6 +3,8 @@ body{
 }
 .account{
     width: 100%;
+    /* display: flex; */
+    /* justify-content: left; */
     /* background-color: cornflowerblue; */
 }
 .account-body{
@@ -179,6 +181,31 @@ input.postimage{
     border-radius: 7px;
     background-color: #13239ac0;
     color: white;
+}
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+.user-info {
+    flex-grow: 1;
+}
+.user-username {
+    font-weight: bold;
+    font-size: 18px;
+}
+.user-name {
+    color: #777;
 }
 
 /* css adjustments for mobile */
