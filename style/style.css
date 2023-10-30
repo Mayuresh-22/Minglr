@@ -332,3 +332,70 @@ a {
   color: #333; /* Default link color */
   transition: color 0.3s; /* Smooth color transition on hover */
 }
+
+
+/* Image Preview */
+.post-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group .preview {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+.file-label {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-label:hover {
+  background-color: #2980b9;
+}
+
+.postimage {
+  display: none;
+}
+
+.image-preview {
+  max-width: 100%;
+  height: 350px;
+  object-fit: cover;
+  margin-top: 10px;
+  display: none;
+}
+
+.post-btn {
+  background-color: #27ae60;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.post-btn:hover {
+  background-color: #219a52;
+}

@@ -35,8 +35,8 @@
     <!-- <meta charset="UTF-8"> -->
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/account.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
     </head>
@@ -163,14 +163,40 @@
                                     who is logged in and present on his/her account page only -->
 
                                     <?php if(isset($_SESSION['username'])&&$_SESSION['username']==$username): ?>
-                                    <div class="feed-post-box">
-                                        <form action="/post.php" method="post" enctype="multipart/form-data">
-                                            <textarea name="post" id="post" wrap="hard" placeholder="Whats in your mind? <?php echo $fname; ?>" class="feed-post-box-textarea"></textarea>
-                                            <input type="hidden" name="user_id" value="<?php echo $user_id; ?>">
-                                            <input type="hidden" name="username" value="<?php echo $username; ?>">
-                                            <input type="file" name="postimage" accept=".jpg, .png, .jpeg" class="postimage">
-                                            <button type="submit" class="post-btn">Post</button>
-                                        </form>
+                                        <form action="/post.php" method="post" enctype="multipart/form-data" class="post-form">
+    <div class="form-group">
+        <textarea name="post" id="post" wrap="hard" placeholder="What's in your mind? <?php echo $fname; ?>" class="feed-post-box-textarea"></textarea>
+        <input type="hidden" name="user_id" value="<?php echo $user_id; ?>">
+        <input type="hidden" name="username" value="<?php echo $username; ?>">
+        <input type="file" name="postimage" accept=".jpg, .png, .jpeg, .webp" class="postimage" id="post-image" onchange="previewImage(event)">
+        <div class="preview">
+            <label for="post-image" class="file-label">Choose Image</label>
+            <button type="submit" class="post-btn">Post</button>
+        </div>
+        <img id="preview" src="#" alt="Preview" class="image-preview">
+    </div>
+</form>
+
+<script>
+    function previewImage(event) {
+        var input = event.target;
+        var preview = input.parentElement.querySelector('.image-preview');
+        
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function(e) {
+                preview.src = e.target.result;
+                preview.style.display = 'block';
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        } else {
+            preview.style.display = 'none';
+        }
+    }
+</script>
+
                                     </div>
                                 <?php endif; ?>
                                 <!-- Logic for Displaying users post in the form of Post box -->
