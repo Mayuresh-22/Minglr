@@ -1,5 +1,5 @@
 <?php
-// database connection for Minglr
+// database connection for Minglr (Change this credentials)
 $host = "localhost";
 $user = "root";
 $pswd = "";

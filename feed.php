@@ -17,14 +17,46 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/feed.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
     </head>
 
 <body>
-    <div class="navbar">
+    <nav>
+      <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars" style="color: #12209d;"></i>
+        </label>
+      <label class="logo"><a href="/"><img class="logo" src="logo\logo.png"></a></label>
+      <ul class="menu-items">
+        <li class="menu-items-li"><a class="navv-item active" href="feed.php">Feed</a></li>
+        <li class="menu-items-li">
+            <?php
+                if(isset($_SESSION['username'])){
+                    echo '<a class="navv-item" href="account.php?username='.$_SESSION['username'].'" ">Account</a>';
+                }else{
+                    echo '<a class="navv-item" href="account.php">Account</a>';
+                }
+            ?>
+        </li>
+        <li class="menu-items-li">
+            <?php
+                    if(!isset($_SESSION['username'])){
+                        echo '<a class="navv-item" href="index.php">Login</a>';
+                    }
+                    else{
+                        echo '<a class="navv-item" href="back/logout.php">Logout</a>';
+                    }
+            ?>
+        </li>
+        <li class="menu-items-li"><a class="navv-item" href="about-us.php">About Us</a></li>
+      </ul>
+    </nav>
+  
+    <div class="seperate_header"></div>
+    <!-- <div class="navbar">
         <ul>
             <li>
                 <a href="<?php echo $home_page; ?>"><img class="logo" src="logo\logo.png"></a>
-                <!-- <h1 class="nav-item-logo">Minglr</h1> -->
             </li>
             <li class="nav-item">
                 <a href="feed.php" style="text-decoration: none">Feed</a>
@@ -50,7 +82,7 @@
                 ?>
             </li>
         </ul>
-    </div>
+    </div> -->
 
     <div class="feed-page-body">
         <div class="feed-page-head">

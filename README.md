@@ -1,8 +1,8 @@
 # Minglr - Social Networking Site
 
-[![CodeFactor](https://www.codefactor.io/repository/github/mayuresh-22/minglr-social-network-site/badge/main)](https://www.codefactor.io/repository/github/mayuresh-22/minglr-social-network-site/overview/main)
+[![CodeFactor](https://www.codefactor.io/repository/github/mayuresh-22/minglr/badge)](https://www.codefactor.io/repository/github/mayuresh-22/minglr)
 
-Minglr is a secure and feature-rich social networking site that enables users to connect, interact, and share content with others. Built with PHP for the backend and HTML5, CSS, and JavaScript for the frontend, Minglr provides a seamless and enjoyable user experience.
+Minglr is a secure and feature-rich social networking site that enables users to connect, interact, and share content with others. Built with PHP for the backend and HTML5, CSS, and JavaScript for the front end, Minglr provides a seamless and enjoyable user experience.
 
 ![Minglr Preview](https://github.com/Mayuresh-22/Minglr-Social-Network-Site/blob/main/img/minglr.png)
 
