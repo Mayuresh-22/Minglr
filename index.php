@@ -10,6 +10,11 @@ session_start();
     <head>
     <!-- <meta charset="UTF-8"> -->
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="description" content="Discover a new dimension of social networking with Minglr,
+     where connections come alive! Connect with friends, meet like-minded individuals, and explore a vibrant 
+     online community. Minglr is your go-to social platform, designed for meaningful interactions and genuine 
+     connections. Join us to share, connect, and thrive in a welcoming digital space. Your social journey begins here,
+     at Minglr - where friendships flourish and possibilities abound.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
