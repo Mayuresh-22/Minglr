@@ -18,7 +18,17 @@ session_start();
      fine-tuning profile details and privacy settings. Revisit your memories in the Photos tab, 
      a collection of shared moments. Explore the diverse world of Minglr by visiting other users' 
      account pages. Forge personal connections through private messaging, 
-    making Minglr the ultimate destination for authentic social networking.">
+     making Minglr the ultimate destination for authentic social networking.">
+     <meta name="keywords" content="Personalized Account Page,
+        Dynamic Feed of Shared Posts,
+        Expressive Content Sharing,
+        Photo Enriched Posts,
+        Account Information Management,
+        Photo Collection on Account Page,
+        Explore User Content,
+        Private Messaging for Personal Connections,
+        Social Networking Profile,
+        Community Engagement Features" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
