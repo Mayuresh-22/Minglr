@@ -6,7 +6,7 @@ session_start();
     }
 ?>
 <html>
-    <title>Minglr</title>
+    <title>Minglr - Social Networking Site</title>
     <head>
     <!-- <meta charset="UTF-8"> -->
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
