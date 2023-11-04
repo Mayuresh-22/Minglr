@@ -6,10 +6,29 @@ session_start();
     }
 ?>
 <html>
-    <title>Minglr</title>
+    <title>Minglr - Social Networking Site</title>
     <head>
     <!-- <meta charset="UTF-8"> -->
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="description" content="Experience social networking like never before with Minglr, 
+     where every user enjoys a personalized journey. Dive into your dedicated account page, 
+     showcasing your profile, posts, and photos. Stay in the loop with a dynamic feed, 
+     sharing your thoughts directly or exploring content from others. Enrich your expression by sharing photos with your
+     posts, creating a vibrant community experience. Manage your account seamlessly in the Info tab, 
+     fine-tuning profile details and privacy settings. Revisit your memories in the Photos tab, 
+     a collection of shared moments. Explore the diverse world of Minglr by visiting other users' 
+     account pages. Forge personal connections through private messaging, 
+     making Minglr the ultimate destination for authentic social networking.">
+     <meta name="keywords" content="Personalized Account Page,
+        Dynamic Feed of Shared Posts,
+        Expressive Content Sharing,
+        Photo Enriched Posts,
+        Account Information Management,
+        Photo Collection on Account Page,
+        Explore User Content,
+        Private Messaging for Personal Connections,
+        Social Networking Profile,
+        Community Engagement Features" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
