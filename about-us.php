@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html>
     <title>Minglr - About Us</title>
     <head>
