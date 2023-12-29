@@ -1,3 +1,7 @@
+# Welcome SWOC S4 contributors.
+![scriptwinterofcode_cover](https://github.com/Mayuresh-22/Minglr/assets/111348926/e48a3c3e-ea4e-4bee-8ef8-03804d50bde5)
+<p align="center"><b> LEARN . CONTRIBUTE . ACE </b></p>
+
 # Minglr - Social Networking Site
 
 [![CodeFactor](https://www.codefactor.io/repository/github/mayuresh-22/minglr/badge)](https://www.codefactor.io/repository/github/mayuresh-22/minglr)
