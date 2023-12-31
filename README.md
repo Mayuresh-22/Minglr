@@ -79,6 +79,8 @@ Follow these steps to set up Minglr locally using XAMPP:
    - Open XAMPP and start the Apache and MySQL services (If not already started).
    - Launch a web browser and visit `http://localhost/Minglr` or `http://127.0.0.1/Minglr` to access Minglr.
 
+Congratulations! You have successfully set up Minglr on your machine.
+
 Please note that the steps may vary slightly based on your specific operating system and XAMPP configuration. Make sure to adjust the paths and commands accordingly.
 
 ## Technologies Used
