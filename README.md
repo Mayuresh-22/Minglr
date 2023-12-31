@@ -8,7 +8,7 @@
 
 Minglr is a secure and feature-rich social networking site that enables users to connect, interact, and share content with others. Built with PHP for the backend and HTML5, CSS, and JavaScript for the front end, Minglr provides a seamless and enjoyable user experience.
 
-![Minglr Preview](https://github.com/Mayuresh-22/Minglr-Social-Network-Site/blob/main/img/minglr.png)
+![Minglr Preview](https://github.com/Mayuresh-22/Minglr/blob/main/img/minglr.png)
 
 ## Features
 
@@ -30,15 +30,15 @@ Experience Minglr firsthand with a live website available at [Webiste Link](http
 
 | Account Page |
 | ------------ |
-| ![Account Page](https://github.com/Mayuresh-22/Minglr-Social-Network-Site/blob/main/img/Minglr-Profile.png) |
+| ![Account Page](https://github.com/Mayuresh-22/Minglr/blob/main/img/Minglr-Profile.png) |
 
 | Feed Page |
 | ------------ |
-![Feed Page](https://github.com/Mayuresh-22/Minglr-Social-Network-Site/blob/main/img/Minglr-Feed.png) | 
+![Feed Page](https://github.com/Mayuresh-22/Minglr/blob/main/img/Minglr-Feed.png) | 
 
 | Private Messaging |
 | ----------------- |
-![Private Messaging](https://github.com/Mayuresh-22/Minglr-Social-Network-Site/blob/main/img/Minglr-Pvt-msg.png) |
+![Private Messaging](https://github.com/Mayuresh-22/Minglr/blob/main/img/Minglr-Pvt-msg.png) |
 
 Certainly! Here are the modified installation steps to include installing and configuring XAMPP and changing the directory to `htdocs` before cloning the GitHub repository:
 
@@ -52,33 +52,32 @@ Follow these steps to set up Minglr locally using XAMPP:
 
 2. Configure XAMPP:
    - Open XAMPP and start the Apache and MySQL services.
-   - Click on the "Config" button next to Apache and select "Apache (httpd.conf)".
-   - In the `httpd.conf` file, search for the line `DocumentRoot "C:/xampp/htdocs"` and make sure it points to the correct directory where your web files will be located.
-   - Save the changes and restart the Apache service.
+   - If this services do not start, you may need to change the ports for Apache and MySQL in the XAMPP settings.
 
 3. Clone the GitHub repository:
-   - Open the terminal or command prompt.
-   - Change the directory to the XAMPP `htdocs` folder:
+   - Head over to C:\xampp\htdocs in your Windows Explorer. (If you installed XAMPP in a different location, you will need to navigate to that folder instead.)
+   - Open the terminal or command prompt in the same folder.
+   - Execute the following command to change the directory to `htdocs`:
      ```bash
      cd C:\xampp\htdocs
      ```
 
 4. Clone the repository:
+   - Execute the following command to clone the GitHub repository:   
    ```bash
-   git clone https://github.com/Mayuresh-22/Minglr-Social-Network-Site.git
+   git clone https://github.com/Mayuresh-22/Minglr.git
    ```
 
-5. Configure the Database:
-   - Create a MySQL database for Minglr.
+5. Create and Configure the Database:
+   - Open the XAMPP control panel and start the Apache and MySQL services.
+   - Open `http://localhost/phpmyadmin` in a web browser to access phpMyAdmin.
+   - Create a new MySQL database by clicking "new" option on left sidebar. Name it `minglr`.
    - Import the database schema from the provided SQL file (`db/database.sql`).
-   - Update the database configuration in [`db/connection.php`](db/connection.php) with your database credentials (For example: LOCALHOST, USERNAME, PASSWORD, DATABASE).
+   - Update the database configuration in [`db/connection.php`](db/connection.php) with your database credentials (For example: LOCALHOST, USERNAME, PASSWORD, DATABASE). Follow this step only if you have changed the default database name or credentials.
 
-6. Configure Site Settings:
-   - Open `index.php` and modify any relevant settings (e.g., site name, URL, file paths).
-
-7. Start the Development Server:
-   - Open XAMPP and start the Apache and MySQL services.
-   - Launch a web browser and visit `http://localhost/Minglr-Social-Network-Site` (or the appropriate URL) to access Minglr.
+6. Start the Development Server:
+   - Open XAMPP and start the Apache and MySQL services (If not already started).
+   - Launch a web browser and visit `http://localhost/Minglr` or `http://127.0.0.1/Minglr` to access Minglr.
 
 Please note that the steps may vary slightly based on your specific operating system and XAMPP configuration. Make sure to adjust the paths and commands accordingly.
 
