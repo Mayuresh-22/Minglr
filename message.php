@@ -75,6 +75,8 @@ if(mysqli_num_rows($result) == 1){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/message.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon_minglr.png" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
     </head>
