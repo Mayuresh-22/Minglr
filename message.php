@@ -84,10 +84,11 @@ if(mysqli_num_rows($result) == 1){
 <body>
 
     <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fa-solid fa-bars" style="color: #12209d;"></i>
-      </label>
+      <div class="menu-btn">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
       <label class="logo"><a href="/"><img class="logo" src="logo\logo.png"></a></label>
       <ul>
         <li><a class="navv-item" href="feed.php">Feed</a></li>
@@ -217,5 +218,6 @@ if(mysqli_num_rows($result) == 1){
             </li>
         </ul>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>

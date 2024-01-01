@@ -48,10 +48,11 @@ if (isset($_GET['search'])) {
 
 <body>
     <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fa-solid fa-bars" style="color: #12209d;"></i>
-      </label>
+      <div class="menu-btn">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
       <label class="logo"><a href="/"><img class="logo" src="logo\logo.png"></a></label>
       <ul class="menu-items">
         <li class="menu-items-li"><a class="navv-item" href="feed.php">Feed</a></li>
@@ -378,6 +379,8 @@ if (isset($_GET['search'])) {
             <p>This website is only for educational purpose and does not try to replicate any institution/enity/company - by Mayuresh Choudhary</p>
         </ul>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
