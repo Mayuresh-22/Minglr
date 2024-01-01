@@ -158,16 +158,26 @@ if (isset($_GET['search'])) {
                                 <img src="https://api.dicebear.com/6.x/initials/png?seed=<?php echo $fname ?>&size=128" alt="profile" class="account-profpic">
                             </li>
                             <li style="padding-left: 10px;">
-                                <?php
-                                echo "<b>$fname</b><br>";
-                                echo "<small>@$username_row</small>";
+                                
+        			<div class="message-buttons-name">
+            		   	<?php
+                                echo "<b>$fname</b>";
+                                echo "<small>@$username_row</small><br>";
                                 ?>
+                                <?php if (isset($_SESSION['username']) and ($username != $_SESSION['username'])) : ?>
+           			<form action="message.php" method="GET">
+                		   <input type="hidden" name="recp2" value="<?php echo $user_id; ?>">
+                		   <button class="message-btn mobile-btn">Send message</button>
+            			</form>
+                                <?php endif; ?>
+        			</div>
+
                             </li>
                             <li>
                                 <?php if (isset($_SESSION['username']) and ($username != $_SESSION['username'])) : ?>
                                     <form action="message.php" method="GET">
                                         <input type="hidden" name="recp2" value="<?php echo $user_id; ?>">
-                                        <button class="message-btn">Send message</button>
+                                        <button class="message-btn desktop-btn">Send message</button>
                                     </form>
                                 <?php endif; ?>
                             </li>
