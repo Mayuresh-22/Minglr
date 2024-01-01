@@ -32,16 +32,19 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon_minglr.png" type="image/png">
     <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
 
     <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fa-solid fa-bars" style="color: #12209d;"></i>
-      </label>
+      <div class="menu-btn">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
       <label class="logo"><a href="/"><img class="logo" src="logo\logo.png"></a></label>
       <ul class="menu-items">
         <li class="menu-items-li"><a class="navv-item" href="feed.php">Feed</a></li>
@@ -139,5 +142,7 @@ session_start();
             <p>This website is only for educational purpose and does not try to replicate any institution/enity/company - by Mayuresh Choudhary</p>
         </ul>
     </div>
+    
+    <script src="js/script.js"></script>
     </body>
 </html>

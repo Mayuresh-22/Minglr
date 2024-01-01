@@ -93,21 +93,33 @@ nav{
     transition: .5s;
     color: #fff !important;
   }
-  .checkbtn{
-    font-size: 30px;
-    color: black;
+  .menu-btn {
     float: right;
-    line-height: 80px;
+    cursor: pointer;
     margin-right: 40px;
     margin-top: 25px;
-    cursor: pointer;
-    display: none;
     vertical-align: middle;
-  }
-  #check{
+    color: #12209d;
     display: none;
-  }
-  
+}
+.bar {
+    width: 30px;
+    height: 5px;
+    border-radius: 1px;
+    margin: 5px 0;    
+    background-color: #12209d;
+    transition: all 0.5s;
+}
+.change .bar1 {
+    transform: translate(1px,10px) rotate(-45deg);
+}
+.change .bar2 {
+    opacity: 0;
+}
+.change .bar3 {
+    transform: translate(1px,-10px) rotate(45deg);
+}
+
 /* a:link {
     color:#022b59;
 }
@@ -291,8 +303,11 @@ a.foot-link:visited{
 }
 
 @media (max-width: 858px){
-  .checkbtn{
+  /* .cbtn{
     display: block;
+  } */
+  .menu-btn {
+    display: inline-block;
   }
   .menu-items{
     position:fixed;
@@ -322,7 +337,7 @@ a.foot-link:visited{
     background: none;
     color: #0082e6;
   }
-  #check:checked ~ .menu-items{
+  .active {
     left: 0%;
   }
 }

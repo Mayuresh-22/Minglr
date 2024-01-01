@@ -75,6 +75,8 @@ if(mysqli_num_rows($result) == 1){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/message.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon_minglr.png" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
     </head>
@@ -82,10 +84,11 @@ if(mysqli_num_rows($result) == 1){
 <body>
 
     <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fa-solid fa-bars" style="color: #12209d;"></i>
-      </label>
+      <div class="menu-btn">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
       <label class="logo"><a href="/"><img class="logo" src="logo\logo.png"></a></label>
       <ul>
         <li><a class="navv-item" href="feed.php">Feed</a></li>
@@ -215,5 +218,6 @@ if(mysqli_num_rows($result) == 1){
             </li>
         </ul>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
