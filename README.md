@@ -102,6 +102,10 @@ Contributions to Minglr are welcome! If you'd like to contribute, please follow 
 4. Push your changes to your forked repository.
 5. Submit a pull request, explaining your changes and why they should be merged.
 
+## Project Admin
+[Mayuresh Choudhary](https://github.com/Mayuresh-22)
+Email: [mayureshchoudhary22@gmail.com](mailto:mayureshchoudhary22@gmail.com)
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
