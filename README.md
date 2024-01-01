@@ -40,9 +40,9 @@ Experience Minglr firsthand with a live website available at [Webiste Link](http
 | ----------------- |
 ![Private Messaging](https://github.com/Mayuresh-22/Minglr/blob/main/img/Minglr-Pvt-msg.png) |
 
-Certainly! Here are the modified installation steps to include installing and configuring XAMPP and changing the directory to `htdocs` before cloning the GitHub repository:
+Certainly! Here are the modified installation steps including installing and configuring XAMPP and changing the directory to `htdocs` before cloning the GitHub repository:
 
-## Installation
+## Setting up the project (developer)
 
 Follow these steps to set up Minglr locally using XAMPP:
 
@@ -52,7 +52,7 @@ Follow these steps to set up Minglr locally using XAMPP:
 
 2. Configure XAMPP:
    - Open XAMPP and start the Apache and MySQL services.
-   - If this services do not start, you may need to change the ports for Apache and MySQL in the XAMPP settings.
+   - If these services do not start, you may need to change the ports for Apache and MySQL in the XAMPP settings.
 
 3. Clone the GitHub repository:
    - Head over to C:\xampp\htdocs in your Windows Explorer. (If you installed XAMPP in a different location, you will need to navigate to that folder instead.)
