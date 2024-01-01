@@ -32,6 +32,8 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon_minglr.png" type="image/png">
     <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
     </head>
 
