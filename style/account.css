@@ -244,4 +244,21 @@ input.postimage{
     .post-btn{
         width: 70px;
     }
+
+    .message-btn{
+        width: 120px;
+        margin: auto;
+        padding: 10px;
+        border: none;
+    }
+}
+
+@media(max-width: 350px){
+    .message-btn{
+	font-size: xx-small;
+        width: 90px;
+        margin: auto;
+        padding: 10px;
+        border: none;
+    }
 }
