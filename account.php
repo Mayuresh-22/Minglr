@@ -48,12 +48,13 @@ if (isset($_GET['search'])) {
 
 <body>
     <nav>
+      <label class="logo"><a href="/"><img class="logo" src="logo\logo.png"></a></label>
       <div class="menu-btn">
         <div class="bar bar1"></div>
         <div class="bar bar2"></div>
         <div class="bar bar3"></div>
       </div>
-      <label class="logo"><a href="/"><img class="logo" src="logo\logo.png"></a></label>
+
       <ul class="menu-items">
         <li class="menu-items-li"><a class="navv-item" href="feed.php">Feed</a></li>
         <li class="menu-items-li">

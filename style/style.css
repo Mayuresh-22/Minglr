@@ -347,3 +347,8 @@ a {
   color: #333; /* Default link color */
   transition: color 0.3s; /* Smooth color transition on hover */
 }
+@media (max-width: 350px){
+  .menu-btn {
+    margin-right: 15px;
+  }
+}
