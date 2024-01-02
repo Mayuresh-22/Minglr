@@ -241,6 +241,21 @@ input{
     color: white;
 }
 
+.btn:hover{
+  box-shadow: 4px 4px #4d61f59c;
+  transition: all 0.2s ease-in;
+  transform: translateY(-4px);
+  cursor: pointer;
+}
+
+.rgst-btn:hover , .login-btn:hover , .search-btn:hover{
+  box-shadow: 4px 4px #4d61f59c,
+    -4px -4px #4d61f59c;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(-1px);
+  cursor: pointer;
+}
+
 /* Footer styling*/
 .footer{
     box-sizing: border-box;
