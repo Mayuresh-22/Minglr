@@ -131,6 +131,8 @@ li.acc-tabs-item{
     padding: 30px;
     font-size: 17px;
     border-radius: 5px;
+    max-width: 100%;
+    min-width: 100%;
 }
 
 .post-btn{
