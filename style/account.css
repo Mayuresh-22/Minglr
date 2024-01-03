@@ -110,9 +110,14 @@ li.acc-tabs-item{
     margin-bottom: 20px;
 }
 .acc-info-content-list{
+    
     display:inline-block;
-    margin: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: -4px;
+    margin-bottom: 5px;
 }
+
 
 /* Accound feed post box styling */
 .feed-posting-box{
