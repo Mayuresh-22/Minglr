@@ -303,7 +303,7 @@ if (isset($_GET['search'])) {
                                     <li>
                                         <ul class="acc-info-content-list">
                                             <li class="acc-info-content-list">
-                                                <p>Name: </p>
+                                                <p>Name :</p>
                                             </li>
                                             <li class="acc-info-content-list">
                                                 <?php
@@ -316,7 +316,7 @@ if (isset($_GET['search'])) {
                                     <li>
                                         <ul class="acc-info-content-list">
                                             <li class="acc-info-content-list">
-                                                <p>Last Name: </p>
+                                                <p>Last Name :</p>
                                             </li>
                                             <li class="acc-info-content-list">
                                                 <?php
@@ -329,11 +329,11 @@ if (isset($_GET['search'])) {
                                     <li>
                                         <ul class="acc-info-content-list">
                                             <li class="acc-info-content-list">
-                                                <p>Username: </p>
+                                                <p>Username :</p>
                                             </li>
                                             <li class="acc-info-content-list">
                                                 <?php
-                                                echo "$username";
+                                                echo"$username";
                                                 ?>
                                             </li>
                                         </ul>
@@ -342,7 +342,7 @@ if (isset($_GET['search'])) {
                                     <li>
                                         <ul class="acc-info-content-list">
                                             <li class="acc-info-content-list">
-                                                <p>Email: </p>
+                                                <p>Email :</p>
                                             </li>
                                             <li class="acc-info-content-list">
                                                 <?php
