@@ -223,7 +223,7 @@ if (isset($_GET['search'])) {
                                         <input type="hidden" name="user_id" value="<?php echo $user_id; ?>">
                                         <input type="hidden" name="username" value="<?php echo $username; ?>">
                                         <input type="file" name="postimage" accept=".jpg, .png, .jpeg" class="postimage">
-                                        <button type="submit" class="post-btn">Post</button>
+                                        <button type="submit" class="post-btn" style="cursor: pointer;" >Post</button>
                                     </form>
                                 </div>
                             <?php endif; ?>

@@ -4,11 +4,8 @@ include("connection.php");
 include("../back/env.php");
 
 // Data from Post
-$username = $_POST['username'];
-$username = strtolower($username);
-$username = trim($username);
-$password = $_POST['password'];
-$password = trim($password);
+$username = strtolower(trim($_POST['username']));
+$password = trim($_POST['password']);
 
 // login tracker
 $login = 0;
@@ -25,9 +22,13 @@ function validate($username, $password, $connection){
         As, passwords are not stored in plain text they are stored in hashed form so function first
         converts plain password to hashed form and carries the comparison
     */
+    // Convert plain password to hashed form
     $hashed_pswd = crypt($password, '$1$');
+
+    // SQL query to check if username exists and password matches
     $sql = "SELECT `id`, `username`,`password` FROM `users` WHERE `username` = '$username'";
     $result = mysqli_query($connection, $sql);
+    
     if(mysqli_num_rows($result)==1){
         $row = mysqli_fetch_assoc($result);
         if(($row['username'] == $username)&&($row['password'] == $hashed_pswd)){
