@@ -251,6 +251,9 @@ input{
     background-color: #0f2186f5;
     text-align: center;
 }
+.footer ul p{
+  color:white;
+}
 .footer li{
     display: inline-block;
     padding: 20px;
