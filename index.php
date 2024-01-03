@@ -124,23 +124,53 @@ session_start();
             </form>
         </div>
     </div>
-
+        
+<!--      FOOTER -->
     <div class="footer">
-    <ul>
-            <li class="foot-item">
-                <a href="" class="foot-link" style="text-decoration: none">Home</a>
-            </li>
-            <li class="foot-item">
-                <a href="feed.php" class="foot-link" style="text-decoration: none">Feed</a>
-            </li>
-            <li class="foot-item">
-                <a href="account.php" class="foot-link" style="text-decoration: none">Account</a>
-            </li>
-            <li class="foot-item">
-                <a href="about-us.php" class="foot-link" style="text-decoration: none">About us</a>
-            </li>
-            <p>This website is only for educational purpose and does not try to replicate any institution/enity/company - by Mayuresh Choudhary</p>
-        </ul>
+        
+        <!-- footer top section -->
+        <div class="footerTop">
+            <!-- top arrow -->
+            <div class="footerTopArrow">
+                <img src="img/upload.png" alt="error">
+            </div>
+            <!-- social media links -->
+            <div class="footerSocialMedia">
+                 
+                <a href="" class="SociaLinks"><img src="img/facebook.png" alt="error"></a>
+
+               <a href="" class="SociaLinks"><img src="img/instagram.png" alt="error"></a> 
+
+                <a href="" class="SociaLinks"><img src="img/linkedin.png" alt="error"></a>
+
+                <a href="" class="SociaLinks"><img src="img/twitter.png" alt="error"></a>
+            </div>
+        </div>
+
+        <!-- footer mid section -->
+        <div class="footerMid">
+            <div class="footerBar">
+              <a class="foot-link footer-Link-Active" href="https://www.google.com/">Home</a>
+              <a class="foot-link" href="https://www.google.com/">Feed</a>
+              <a class="foot-link" href="https://www.google.com/" >Account</a>
+              <a class="foot-link" href="https://www.google.com/">About</a>
+            </div>
+        </div>
+
+        <!-- footer bottom section -->
+        <div class="footerBottom">
+          
+            <div class="footerText1">
+                <img src="img/logo.png" alt="error">
+                <span>Made by Mayuresh Choudhary</span>
+            </div>
+
+            <div class="footerText2">
+                This website is only for educational purpose and does not try to replicate any institution/enity/company 
+            </div>
+            </p>
+
+        </div>
     </div>
     
     <script src="js/script.js"></script>
