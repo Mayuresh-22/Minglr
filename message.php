@@ -90,9 +90,9 @@ if(mysqli_num_rows($result) == 1){
         <div class="bar bar3"></div>
       </div>
       <label class="logo"><a href="/"><img class="logo" src="logo\logo.png"></a></label>
-      <ul>
-        <li><a class="navv-item" href="feed.php">Feed</a></li>
-        <li>
+      <ul class="menu-items">
+        <li class="menu-items-li"><a class="navv-item" href="feed.php">Feed</a></li>
+        <li class="menu-items-li">
             <?php
                 if(isset($_SESSION['username'])){
                     echo '<a class="navv-item" href="account.php?username='.$_SESSION['username'].'" ">Account</a>';
@@ -101,7 +101,7 @@ if(mysqli_num_rows($result) == 1){
                 }
             ?>
         </li>
-        <li>
+        <li class="menu-items-li">
             <?php
                     if(!isset($_SESSION['username'])){
                         echo '<a class="navv-item" href="index.php">Login</a>';
@@ -111,7 +111,7 @@ if(mysqli_num_rows($result) == 1){
                     }
             ?>
         </li>
-        <li><a class="navv-item" href="about-us.php">About Us</a></li>
+        <li class="menu-items-li"><a class="navv-item" href="about-us.php">About Us</a></li>
       </ul>
     </nav>
     <div class="seperate_header"></div>
