@@ -79,6 +79,11 @@ body{
 .feed-post-display-box-image{
     padding-right: 60%;
 }
+#feed-img{
+    width: fit-content !important;
+    max-height: 450px !important;
+    border-radius: 5px !important;
+}
 
 input.postimage{
     border: none;

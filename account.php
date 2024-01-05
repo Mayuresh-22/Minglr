@@ -282,7 +282,9 @@ if (isset($_GET['search'])) {
                                                 ' . str_replace("\n", "<br>", $postrow[0]) . '
                                             </div>
                                             <div class="feed-post-display-box-image">
-                                                <img src="uploads/' . $postrow[1] . '" alt="' . $postrow[1] . '" style="width: 100%; object-fit:contain; margin-bottom: 20px; border-radius: 5px">
+                                                <img src="uploads/' . $postrow[1] . '" alt="' . $postrow[1] . '" style="width: 100%; object-fit:contain; margin-bottom: 20px; border-radius: 5px;width: fit-content !important;
+                                                max-height: 450px !important;
+                                                border-radius: 5px !important;">
                                             </div>
                                         </div>';
                                     }
