@@ -8,3 +8,28 @@ function toggleBtn() {
 }
 
 menuBTN.addEventListener('click', toggleBtn);
+
+//Js for footer
+
+//footer nav window animation
+let FootLinkClicked=Array.from(document.querySelectorAll('.foot-link'));
+
+FootLinkClicked.forEach(element => {
+    element.addEventListener("click",()=>
+{
+    FootLinkClicked.forEach(e=>{
+        e.classList.remove('footer-Link-Active');
+    })
+
+   element.classList.toggle("footer-Link-Active");
+   
+})
+});
+
+
+//top button function
+document.querySelector(".footerTopArrow").addEventListener("click",()=>{
+    window.scrollTo({top: 0, behavior: 'smooth'});
+})
+
+
