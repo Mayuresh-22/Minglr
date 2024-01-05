@@ -103,26 +103,28 @@ session_start();
     </div> -->
 
     <div class="login-signup">
+      <img  src="https://i.pinimg.com/564x/15/01/63/150163a30cc6868ee952771741e82aaa.jpg">
+      <div class="login-content">
         <center><img class="login-logo" src="logo\cover.png" alt="logo"></center>
         <center><small><button class="btn" onclick="getElementById('login-form').style.display='block'; getElementById('regst-form').style.display='none';">Login</button>OR<button class="btn" onclick="getElementById('login-form').style.display='none'; getElementById('regst-form').style.display='block';">Register</button></small></center>
-        <div class="login">
             <form action="db/validate.php" method="post" class="login-form" id="login-form">
                 <input type="text" for="usrname" id="username" name="username" placeholder="Username" required>
                 <input type="password" for="password" id="password" name="password" placeholder="Password" required>
                 <button class="login-btn" name="lgn" id="lgn">Login Now</button>
             </form>
-        </div>
-        <div class="register">
-            <form action="db/validate.php" method="post" class="regst-form" id="regst-form" style="display: none;">
-                <input type="text" for="usrname" id="usrname" name="username" placeholder="Username" required>
-                <input type="text" for="fname" id="fname" name="fname" placeholder="First name" required>
-                <input type="text" for="lname" id="lname" name="lname" placeholder="Last name" required>
-                <input type="email" for="email" id="email" name="email" placeholder="Email" required>
-                <input type="password" for="password" id="password" name="password" placeholder="Password" required>
-                <small>Your data will be used to provide you with the seamless experience. We respect your privacy</small>
-                <button class="rgst-btn" name="regst" id="regst">Register</button>
-            </form>
-        </div>
+      </div>
+      <div class="register-content">
+        <form action="db/validate.php" method="post" class="regst-form" id="regst-form" style="display: none;">
+            <input type="text" for="usrname" id="usrname" name="username" placeholder="Username" required>
+            <input type="text" for="fname" id="fname" name="fname" placeholder="First name" required>
+            <input type="text" for="lname" id="lname" name="lname" placeholder="Last name" required>
+            <input type="email" for="email" id="email" name="email" placeholder="Email" required>
+            <input  type="password" for="password" id="password" name="password" placeholder="Password" required>
+            <small class="rgst-txt">Your data will be used to provide you with the seamless experience. We respect your privacy</small>
+            <button class="rgst-btn" name="regst" id="regst">Register</button>
+        </form>
+    </div>
+</div>
     </div>
 
     <div class="footer">
@@ -143,6 +145,16 @@ session_start();
         </ul>
     </div>
     
-    <script src="js/script.js"></script>
+    <script>
+    document.addEventListener("scroll", function() {
+  var scrollY = window.scrollY || window.pageYOffset;
+  var registerContent = document.querySelector('.register-content');
+
+  // Adjust top value based on scroll position
+  registerContent.style.top = (630 - scrollY) + 'px';
+});
+
+    
+  </script>
     </body>
 </html>
