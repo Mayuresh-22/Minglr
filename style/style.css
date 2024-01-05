@@ -355,9 +355,7 @@ input{
     transform:scale(1.2);
 }
 
-/* .check{
-    height:200vh;
-} */
+
 
 /* ////////////footer bottom/////////////// */
 .footerBottom
@@ -433,7 +431,6 @@ input{
     }
   }
 
-  /* mobile style adjustmnets */
   @media(max-width: 720px){
     
     .footerBar
