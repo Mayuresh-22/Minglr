@@ -323,7 +323,6 @@ input{
     display: flex;
     list-style: none;
     justify-content: space-evenly;
-    padding: 0;
     background-color: white;
     width:30%;
     margin:auto;
