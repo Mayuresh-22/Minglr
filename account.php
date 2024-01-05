@@ -359,14 +359,52 @@ if (isset($_GET['search'])) {
                     <?php endif; ?>
 
                     <?php if ($tab == "photo") : ?>
-                        <div class="acc-photo">
-                            <p>See photo's from <?php echo $fname ?>...</p>
+    <div class="acc-photo">
+        <p>See photos from <?php echo $fname; ?>...</p>
+        <?php
+        $postsqlimg = "SELECT `image`, `msg`, `dop`, `uid` FROM `posts` WHERE `uid` = " . $user_id . " AND `image` IS NOT NULL ORDER BY `dop` DESC;";
+        $postresultimgs = mysqli_query($connection, $postsqlimg);
+
+        if (mysqli_num_rows($postresultimgs) > 0) {
+            while ($postrow = mysqli_fetch_assoc($postresultimgs)) {
+                echo '<div class="feed-post-display-box">
+                        <div class="feed-post-display-box-head">
+                            <ul>
+                                <li>
+                                    <a href="account.php?username=' . $postrow['uid'] . '" style="text-decoration: none;"><img src="https://api.dicebear.com/6.x/initials/png?seed=' . $fname . '&size=128" alt="profile" class="account-profpic"></a>
+                                </li>
+                                <li style="padding-left: 10px; padding-right: 10px;">
+                                    <a href="account.php?username=' . $postrow['uid'] . '" style="text-decoration: none;">' . $fname . '</a>
+                                </li>
+                                <li style="vertical-align: baseline;">
+                                    <small>shared a post in the feed on </small>
+                                    <small>' . $postrow['dop'] . '</small>
+                                </li>
+                            </ul>
                         </div>
-                    <?php endif; ?>
-                </div>
-            </div>
-        </div>
-    <?php } ?>
+                        <div class="feed-post-display-box-message">
+                            ' . nl2br($postrow['msg']) . '
+                        </div>';
+
+                echo '<div class="feed-post-display-box-image">
+                        <img src="uploads/' . $postrow['image'] . '" alt="' . $postrow['image'] . '" style="width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 5px; width: fit-content !important;
+                        max-height: 450px !important;
+                        border-radius: 5px !important;">
+                    </div>';
+
+                echo '</div>';
+            }
+        } else {
+            echo '<p>Posts Not found</p>';
+        }
+        ?>
+    </div>
+<?php endif; ?>
+</div>
+</div>
+</div>
+<?php } ?>
+
 
 
     <?php
