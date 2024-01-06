@@ -35,6 +35,18 @@ session_start();
     <!-- favicon -->
     <link rel="shortcut icon" href="img/favicon_minglr.png" type="image/png">
     <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
+        <style>
+        body {
+            background-image: url('https://img.freepik.com/free-vector/beautiful-decorative-soft-colorful-watercolor-texture-background_1055-14290.jpg');
+            
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #000; /* Adjust text color as needed */
+        }
+    </style>
     </head>
 
     <body>
