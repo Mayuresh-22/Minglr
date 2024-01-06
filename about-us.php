@@ -65,7 +65,7 @@ session_start();
     </ul>
 </div> -->
 <div class="seperate_header"></div>
-    <center><img class="about-us-logo" src="logo/cover.png" alt="logo"></center>
+    <!-- <center><img class="about-us-logo" src="logo/cover.png" alt="logo"></center> -->
     <h2>About Us</h2>
 <div class="about-us" style="display:flex;flex-direction:row">
 <div>
