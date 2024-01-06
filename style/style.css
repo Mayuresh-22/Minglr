@@ -308,6 +308,17 @@ cursor: pointer;
     width:50%;
 }
 
+.SociaLinks
+{
+  transition:all .5s linear;
+
+}
+
+.SociaLinks:hover
+{
+  transform:scale(1.2);
+}
+
 /* /////////////////footer mid design////////////////////// */
 .footerMid
 {
