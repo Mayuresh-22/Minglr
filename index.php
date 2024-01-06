@@ -151,10 +151,10 @@ session_start();
         <!-- footer mid section -->
         <div class="footerMid">
             <div class="footerBar">
-              <a class="foot-link footer-Link-Active" href="https://www.google.com/">Home</a>
-              <a class="foot-link" href="https://www.google.com/">Feed</a>
-              <a class="foot-link" href="https://www.google.com/" >Account</a>
-              <a class="foot-link" href="https://www.google.com/">About</a>
+              <a class="foot-link footer-Link-Active" href="">Home</a>
+              <a class="foot-link" href="feed.php">Feed</a>
+              <a class="foot-link" href="account.php" >Account</a>
+              <a class="foot-link" href="about-us.php">About</a>
             </div>
         </div>
 
