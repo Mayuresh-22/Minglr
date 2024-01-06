@@ -206,6 +206,26 @@ input{
   border-width: 1px;
   border-radius: 4px;
 }
+.valid-password {
+  outline: 3px solid green !important;
+}
+.invalid-password {
+  outline: 3px solid red !important;
+}
+.div-toggle-password{
+  display: flex;
+  margin: 1px 0 3px 0;
+}
+#togglePassword {
+  align-self: start;
+  padding: 10px;
+  margin: 0 0 9px 14.5%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+}
 .login-btn{
   width: 40%;
   margin-left: 30%;
