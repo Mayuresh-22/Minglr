@@ -68,6 +68,15 @@ session_start();
     <!-- <center><img class="about-us-logo" src="logo/cover.png" alt="logo"></center> -->
     <h2>About Us</h2>
 <div class="about-us" style="display:flex;flex-direction:row">
+
+     <div>
+    <p style="color: rgb(0,7,45);">Minglr is a social networking site where users can share their posts, images, and chat with each other. It was created to provide a seamless experience to people who want to connect with others and share their experiences.</p>
+    <p style="color: rgb(0,7,45);">We believe that social media can be used to bring people together and create positive changes in the world. Minglr is a platform that empowers people to express themselves and share their ideas with a wider audience.</p>
+    <p style="color: rgb(0,7,45);">Our team is committed to creating a safe and inclusive environment for all users. We take privacy and security seriously and have implemented measures to protect user data. Minglr is a place where everyone is welcome and encouraged to be themselves.</p>
+    <p>Thank you for being a part of our community. We look forward to seeing what you create and share on Minglr.</p>
+    </div>
+
+    
 <div>
 <dotlottie-player src="https://lottie.host/42940e87-5aae-45a7-a4f2-68d69b686432/IqkUFQ4wNR.json"
                                 background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay>
@@ -75,12 +84,7 @@ session_start();
                 </div>
 
 
-    <div>
-    <p>Minglr is a social networking site where users can share their posts, images, and chat with each other. It was created to provide a seamless experience to people who want to connect with others and share their experiences.</p>
-    <p>We believe that social media can be used to bring people together and create positive changes in the world. Minglr is a platform that empowers people to express themselves and share their ideas with a wider audience.</p>
-    <p>Our team is committed to creating a safe and inclusive environment for all users. We take privacy and security seriously and have implemented measures to protect user data. Minglr is a place where everyone is welcome and encouraged to be themselves.</p>
-    <p>Thank you for being a part of our community. We look forward to seeing what you create and share on Minglr.</p>
-    </div>
+   
     
 </div>
 <div class="footer">
