@@ -203,37 +203,53 @@ if(mysqli_num_rows($result) == 1){
         </div>
     </div>
 
-    <div class="footer">
-    <ul class="footer-icons">
-        <li class="foot-item">
-            <a href="#" class="foot-link"><i class="fab fa-facebook"></i></a>
-        </li>
-        <li class="foot-item">
-            <a href="#" class="foot-link"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li class="foot-item">
-            <a href="#" class="foot-link"><i class="fab fa-instagram"></i></a>
-        </li>
-        <li class="foot-item">
-            <a href="#" class="foot-link"><i class="fab fa-youtube"></i></a>
-        </li>
-    </ul>
-    <ul class="footer-links">
-        <li class="foot-item">
-            <a href="" class="foot-link">Home</a>
-        </li>
-        <li class="foot-item">
-            <a href="feed.php" class="foot-link">Feed</a>
-        </li>
-        <li class="foot-item">
-            <a href="account.php" class="foot-link">Account</a>
-        </li>
-        <li class="foot-item">
-            <a href="about-us.php" class="foot-link">About us</a>
-        </li>
-    </ul>
-    <p>This website is only for educational purposes and does not try to replicate any institution/entity/company - by Mayuresh Choudhary</p>
-</div>
+  <div class="footer">
+        <!-- footer top section -->
+        <div class="footerTop">
+          
+            <!-- top arrow -->
+            <div class="footerTopArrow">
+                <img src="img/upload.png" alt="error">
+            </div>
+
+            <!-- social media links -->
+            <div class="footerSocialMedia">
+                 
+                <a href="" class="SociaLinks"><img src="img/facebook.png" alt="error"></a>
+
+               <a href="" class="SociaLinks"><img src="img/instagram.png" alt="error"></a> 
+
+                <a href="" class="SociaLinks"><img src="img/linkedin.png" alt="error"></a>
+
+                <a href="" class="SociaLinks"><img src="img/twitter.png" alt="error"></a>
+            </div>
+        </div>
+
+        <!-- footer mid section -->
+        <div class="footerMid">
+            <div class="footerBar">
+              <a class="foot-link footer-Link-Active" href="">Home</a>
+              <a class="foot-link" href="feed.php">Feed</a>
+              <a class="foot-link" href="account.php" >Account</a>
+              <a class="foot-link" href="about-us.php">About</a>
+            </div>
+        </div>
+
+        <!-- footer bottom section -->
+        <div class="footerBottom">
+          
+            <div class="footerText1">
+                <img src="img/logo.png" alt="error">
+                <span>Made by Mayuresh Choudhary</span>
+            </div>
+
+            <div class="footerText2">
+                This website is only for educational purpose and does not try to replicate any institution/enity/company 
+            </div>
+            </p>
+
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
