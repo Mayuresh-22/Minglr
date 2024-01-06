@@ -132,19 +132,19 @@ session_start();
           
             <!-- top arrow -->
             <div class="footerTopArrow">
-                <img src="images/upload.png" alt="error">
+                <img src="img/upload.png" alt="error">
             </div>
 
             <!-- social media links -->
             <div class="footerSocialMedia">
                  
-                <a href="" class="SociaLinks"><img src="images/facebook.png" alt="error"></a>
+                <a href="" class="SociaLinks"><img src="img/facebook.png" alt="error"></a>
 
-               <a href="" class="SociaLinks"><img src="images/instagram.png" alt="error"></a> 
+               <a href="" class="SociaLinks"><img src="img/instagram.png" alt="error"></a> 
 
-                <a href="" class="SociaLinks"><img src="images/linkedin.png" alt="error"></a>
+                <a href="" class="SociaLinks"><img src="img/linkedin.png" alt="error"></a>
 
-                <a href="" class="SociaLinks"><img src="images/twitter.png" alt="error"></a>
+                <a href="" class="SociaLinks"><img src="img/twitter.png" alt="error"></a>
             </div>
         </div>
 
@@ -162,7 +162,7 @@ session_start();
         <div class="footerBottom">
           
             <div class="footerText1">
-                <img src="images/logo.png" alt="error">
+                <img src="img/logo.png" alt="error">
                 <span>Made by Mayuresh Choudhary</span>
             </div>
 
