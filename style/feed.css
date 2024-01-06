@@ -29,6 +29,8 @@ body{
     padding: 30px;
     font-size: 17px;
     border-radius: 5px;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 .post-btn{
@@ -76,6 +78,11 @@ body{
 
 .feed-post-display-box-image{
     padding-right: 60%;
+}
+#feed-img{
+    width: fit-content !important;
+    max-height: 450px !important;
+    border-radius: 5px !important;
 }
 
 input.postimage{
