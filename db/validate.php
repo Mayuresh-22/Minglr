@@ -88,7 +88,7 @@ if (isset($_POST['lgn']) && isset($username) && isset($password)) {
         }
 
         // Validating password using RegEx
-        $password_pattern = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/';
+        $password_pattern = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/';
         if (!preg_match($password_pattern, $password)) {
             alert_message("Invalid password format", $home_page);
             exit();
