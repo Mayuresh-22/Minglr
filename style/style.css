@@ -11,7 +11,6 @@
 
 *{
   font-family:Poppins;
-  margin: auto;
   padding: 0px;
   box-sizing: border-box;
   margin: auto;
@@ -214,7 +213,7 @@ input{
 }
 .div-toggle-password{
   display: flex;
-  margin: 1px 0 3px 0;
+  margin: 1px 0 3px;
 }
 #togglePassword {
   align-self: start;
