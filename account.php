@@ -223,9 +223,32 @@ if (isset($_GET['search'])) {
                                         <textarea name="post" id="post" wrap="hard" placeholder="Whats in your mind? <?php echo $fname; ?>" class="feed-post-box-textarea"></textarea>
                                         <input type="hidden" name="user_id" value="<?php echo $user_id; ?>">
                                         <input type="hidden" name="username" value="<?php echo $username; ?>">
-                                        <input type="file" name="postimage" accept=".jpg, .png, .jpeg" class="postimage">
+                                            <div>
+                                                <img id="preview" src="#" alt="Preview" style="max-width: 100%; height: 150px; display: none; border-radius: 10px; margin-top: 10px;">
+                                            </div>
+                                        <input type="file" name="postimage" accept=".jpg, .png, .jpeg, .webp" class="postimage" id="post-image" onchange="previewImage(event)">
                                         <button type="submit" class="post-btn" style="cursor: pointer;" >Post</button>
                                     </form>
+                                    
+                                    <script>
+                                        function previewImage(event) {
+                                            var input = event.target;
+                                            var preview = document.getElementById('preview');
+
+                                            if (input.files && input.files[0]) {
+                                                var reader = new FileReader();
+
+                                                reader.onload = function(e) {
+                                                    preview.src = e.target.result;
+                                                    preview.style.display = 'block';
+                                                }
+
+                                                reader.readAsDataURL(input.files[0]);
+                                            } else {
+                                                preview.style.display = 'none';
+                                            }
+                                        }
+                                    </script>
                                 </div>
                             <?php endif; ?>
                             <!-- Logic for Displaying users post in the form of Post box -->
