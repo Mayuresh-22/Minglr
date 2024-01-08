@@ -377,15 +377,15 @@ foreach ($postrows as $postrow) {
                                 </li>
                                 <li style="vertical-align:baseline;">
                                 <small>shared a post in the feed on </small>
-                                    <small>' . $postrow[3] . '</small>
+                                    <small>' . $postrow['dop'] . '</small>
                                 </li>
                             </ul>
                         </div>
                         <div class="feed-post-display-box-message">
-                            ' . str_replace("\n", "<br>", $postrow[0]) . '
+                            ' . str_replace("\n", "<br>", $postrow['msg']) . '
                         </div>
                         <div class="feed-post-display-box-image">
-                            <img src="uploads/' . $postrow[1] . '" alt="' . $postrow[1] . '" style="width: 100%; object-fit:contain; margin-bottom: 20px; border-radius: 5px">
+                            <img src="uploads/' . $postrow['image'] . '" alt="' . $postrow['image'] . '" style="width: 100%; object-fit:contain; margin-bottom: 20px; border-radius: 5px">
                         </div>
                     </div>';
             }
