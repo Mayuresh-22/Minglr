@@ -242,7 +242,7 @@ if (isset($_GET['search'])) {
                                 // fetching rows returned by query
                                 $postrows = mysqli_fetch_all($postresult);
 
-                                foreach ($postrows as $postrow) {
+foreach ($postrows as $postrow) {
                                     if ($postrow[1] == NULL) {
                                         echo '<div class="feed-post-display-box">
                                             <div class="feed-post-display-box-head">
@@ -283,9 +283,7 @@ if (isset($_GET['search'])) {
                                                 ' . str_replace("\n", "<br>", $postrow[0]) . '
                                             </div>
                                             <div class="feed-post-display-box-image">
-                                                <img src="uploads/' . $postrow[1] . '" alt="' . $postrow[1] . '" style="width: 100%; object-fit:contain; margin-bottom: 20px; border-radius: 5px;width: fit-content !important;
-                                                max-height: 450px !important;
-                                                border-radius: 5px !important;">
+                                                <img src="uploads/' . $postrow[1] . '" alt="' . $postrow[1] . '" style="width: 100%; object-fit:contain; margin-bottom: 20px; border-radius: 5px">
                                             </div>
                                         </div>';
                                     }
@@ -372,28 +370,24 @@ if (isset($_GET['search'])) {
                         <div class="feed-post-display-box-head">
                             <ul>
                                 <li>
-                                    <a href="account.php?username=' . $postrow['uid'] . '" style="text-decoration: none;"><img src="https://api.dicebear.com/6.x/initials/png?seed=' . $fname . '&size=128" alt="profile" class="account-profpic"></a>
+                                <a href="account.php?username=' . $username . '" style="text-decoration: none;"><img src="https://api.dicebear.com/6.x/initials/png?seed=' . $fname . '&size=128" alt="profile" class="account-profpic"></a>
                                 </li>
                                 <li style="padding-left: 10px; padding-right: 10px;">
-                                    <a href="account.php?username=' . $postrow['uid'] . '" style="text-decoration: none;">' . $fname . '</a>
+                                    <a href="account.php?username=' . $username . '" style="text-decoration: none;">' . $fname . '</a>
                                 </li>
-                                <li style="vertical-align: baseline;">
-                                    <small>shared a post in the feed on </small>
-                                    <small>' . $postrow['dop'] . '</small>
+                                <li style="vertical-align:baseline;">
+                                <small>shared a post in the feed on </small>
+                                    <small>' . $postrow[3] . '</small>
                                 </li>
                             </ul>
                         </div>
                         <div class="feed-post-display-box-message">
-                            ' . nl2br($postrow['msg']) . '
-                        </div>';
-
-                echo '<div class="feed-post-display-box-image">
-                        <img src="uploads/' . $postrow['image'] . '" alt="' . $postrow['image'] . '" style="width: 100%; object-fit: contain; margin-bottom: 20px; border-radius: 5px; width: fit-content !important;
-                        max-height: 450px !important;
-                        border-radius: 5px !important;">
+                            ' . str_replace("\n", "<br>", $postrow[0]) . '
+                        </div>
+                        <div class="feed-post-display-box-image">
+                            <img src="uploads/' . $postrow[1] . '" alt="' . $postrow[1] . '" style="width: 100%; object-fit:contain; margin-bottom: 20px; border-radius: 5px">
+                        </div>
                     </div>';
-
-                echo '</div>';
             }
         } else {
             echo '<p>Posts Not found</p>';
