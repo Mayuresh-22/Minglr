@@ -39,6 +39,20 @@ session_start();
     </head>
 
     <body>
+        <div class="page-container">
+
+
+            
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars" style="color: #12209d;"></i>
+                </label>
+                <label class="logo"><a href="/"><img class="logo" src="logo\logo.png"></a></label>
+                <ul class="menu-items">
+                    <li class="menu-items-li"><a class="navv-item" href="feed.php">Feed</a></li>
+                    <li class="menu-items-li">
+                        <?php
 
     <nav>
       <div class="menu-btn">
@@ -51,12 +65,13 @@ session_start();
         <li class="menu-items-li"><a class="navv-item" href="feed.php">Feed</a></li>
         <li class="menu-items-li">
             <?php
+
                 if(isset($_SESSION['username'])){
                     echo '<a class="navv-item" href="account.php?username='.$_SESSION['username'].'" ">Account</a>';
                 }else{
                     echo '<a class="navv-item" href="account.php">Account</a>';
                 }
-            ?>
+                ?>
         </li>
         <li class="menu-items-li">
             <?php
@@ -66,23 +81,23 @@ session_start();
                     else{
                         echo '<a class="navv-item" href="back/logout.php">Logout</a>';
                     }
-            ?>
+                    ?>
         </li>
         <li class="menu-items-li"><a class="navv-item" href="about-us.php">About Us</a></li>
-      </ul>
-    </nav>
-  
-    <div class="seperate_header"></div>
-    <!-- <div class="navbar">
-        <ul>
-            <li>
-                <img class="logo" src="logo\logo.png">
-            </li>
-            <li class="nav-item">
-                <a href="feed.php" style="text-decoration: none">Feed</a>
-            </li>
-            <li class="nav-item">
-                <?php
+    </ul>
+</nav>
+
+<div class="seperate_header"></div>
+<!-- <div class="navbar">
+    <ul>
+        <li>
+            <img class="logo" src="logo\logo.png">
+        </li>
+        <li class="nav-item">
+            <a href="feed.php" style="text-decoration: none">Feed</a>
+        </li>
+        <li class="nav-item">
+            <?php
                 if(isset($_SESSION['username'])){
                     echo '<a href="account.php?username='.$_SESSION['username'].'" style="text-decoration: none">Account</a>';
                 }else{
@@ -98,11 +113,11 @@ session_start();
                     else{
                         echo '<a href="back/logout.php"  style="text-decoration: none;">Logout</a>';
                     }
-                ?>
+                    ?>
             </li>
         </ul>
     </div> -->
-
+    
     <div class="login-signup">
         <center><img class="login-logo" src="logo\cover.png" alt="logo"></center>
         <center><small><button class="btn" onclick="getElementById('login-form').style.display='block'; getElementById('regst-form').style.display='none';">Login</button>OR<button class="btn" onclick="getElementById('login-form').style.display='none'; getElementById('regst-form').style.display='block';">Register</button></small></center>
@@ -179,8 +194,29 @@ session_start();
             </form>
         </div>
     </div>
-
+</div>
+    
     <div class="footer">
+
+    <ul>
+            <li class="foot-item">
+                <a href="" class="foot-link" style="text-decoration: none">Home</a>
+            </li>
+            <li class="foot-item">
+                <a href="feed.php" class="foot-link" style="text-decoration: none">Feed</a>
+            </li>
+            <li class="foot-item">
+                <a href="account.php" class="foot-link" style="text-decoration: none">Account</a>
+            </li>
+            <li class="foot-item">
+                <a href="about-us.php" class="foot-link" style="text-decoration: none">About us</a>
+            </li>
+            <p>This website is only for educational purpose and does not try to replicate any institution/enity/company - by Mayuresh Choudhary</p>
+        </ul>
+    </div>
+</body>
+</html>
+
     <ul class="footer-icons">
         <li class="foot-item">
             <a href="#" class="foot-link"><i class="fab fa-facebook"></i></a>
@@ -215,3 +251,4 @@ session_start();
     <script src="js/script.js"></script>
     </body>
 </html>
+

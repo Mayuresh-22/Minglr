@@ -48,6 +48,8 @@ if (isset($_GET['search'])) {
     <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
 
 <body>
+    <div class="page-container">
+
     <nav>
       <label class="logo"><a href="/"><img class="logo" src="logo\logo.png"></a></label>
       <div class="menu-btn">
@@ -407,6 +409,26 @@ foreach ($postrows as $postrow) {
         readfile("back/search.php");
     }
     ?>
+</div>
+
+
+    <div class="footer">
+        <ul>
+            <li class="foot-item">
+                <a href="" class="foot-link" style="text-decoration: none">Home</a>
+            </li>
+            <li class="foot-item">
+                <a href="feed.php" class="foot-link" style="text-decoration: none">Feed</a>
+            </li>
+            <li class="foot-item">
+                <a href="account.php" class="foot-link" style="text-decoration: none">Account</a>
+            </li>
+            <li class="foot-item">
+                <a href="about-us.php" class="foot-link" style="text-decoration: none">About us</a>
+            </li>
+            <p>This website is only for educational purpose and does not try to replicate any institution/enity/company - by Mayuresh Choudhary</p>
+        </ul>
+    </div>
 
 <div class="footer">
     <ul class="footer-icons">

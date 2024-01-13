@@ -24,6 +24,10 @@
 body{
   background-color: rgb(250 251 253);
 }
+.page-container {
+  min-height: 65vh;
+}
+
 
 /*Navbar Style*/
 /* h1.nav-item-logo{
@@ -167,14 +171,16 @@ div.error-container{
 }
 
 .login-signup{
-  background-color: white;
-  padding: 20px;
-  margin-top: 60px;
-  margin-left: 10%;
-  margin-right: 10%;
-  border: solid grey;
-  border-width: 1px;
-  border-radius: 15px;
+
+    background-color: white;
+    padding: 20px;
+    margin-top: 60px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20px;
+    border: solid grey;
+    border-width: 1px;
+    border-radius: 15px;
 
   position: relative;
   animation-name: loginloader;
@@ -281,7 +287,6 @@ cursor: pointer;
   height:30dvb;
   width: 100%;
   padding: 30px;
-  margin-top: 10%;
   background-color: #0f2186f5;
   text-align: center;
 }

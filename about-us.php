@@ -17,6 +17,8 @@ session_start();
     </head>
 
 <body>
+    <div class="page-container">
+
     <nav>
       <div class="menu-btn">
         <div class="bar bar1"></div>
@@ -74,6 +76,7 @@ session_start();
     <p>Our team is committed to creating a safe and inclusive environment for all users. We take privacy and security seriously and have implemented measures to protect user data. Minglr is a place where everyone is welcome and encouraged to be themselves.</p>
     <p>Thank you for being a part of our community. We look forward to seeing what you create and share on Minglr.</p>
 </div>
+</div>
 
 <div class="footer">
     <ul class="footer-icons">
@@ -106,7 +109,7 @@ session_start();
     </ul>
     <p>This website is only for educational purposes and does not try to replicate any institution/entity/company - by Mayuresh Choudhary</p>
 </div>
-    
+
 <script src="js/script.js"></script>
 </body>
 </html>

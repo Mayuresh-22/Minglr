@@ -23,6 +23,8 @@
     </head>
 
 <body>
+    <div class="page-container">
+
     <nav>
       <div class="menu-btn">
             <div class="bar bar1"></div>
@@ -176,6 +178,7 @@
             ?>
         </div>
     </div>
+</div>
 
     <div class="footer">
     <ul>

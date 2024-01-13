@@ -83,6 +83,7 @@ if(mysqli_num_rows($result) == 1){
     </head>
 
 <body>
+    <div class="page-container">
 
     <nav>
       <div class="menu-btn">
@@ -202,8 +203,27 @@ if(mysqli_num_rows($result) == 1){
             </div>
         </div>
     </div>
+</div>
 
     <div class="footer">
+
+    <ul>
+            <li class="foot-item">
+                <a href="" class="foot-link" style="text-decoration: none">Home</a>
+            </li>
+            <li class="foot-item">
+                <a href="feed.php" class="foot-link" style="text-decoration: none">Feed</a>
+            </li>
+            <li class="foot-item">
+                <a href="account.php" class="foot-link" style="text-decoration: none">Account</a>
+            </li>
+            <li class="foot-item">
+                <a href="about-us.php" class="foot-link" style="text-decoration: none">About us</a>
+            </li>
+        </ul>
+    </div>
+
+
     <ul class="footer-icons">
         <li class="foot-item">
             <a href="#" class="foot-link"><i class="fab fa-facebook"></i></a>
@@ -236,5 +256,6 @@ if(mysqli_num_rows($result) == 1){
 </div>
 
     <script src="js/script.js"></script>
+
 </body>
 </html>
