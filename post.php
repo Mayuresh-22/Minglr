@@ -20,8 +20,12 @@ if($_FILES['postimage']['error'] != 4){
     move_uploaded_file($imagetmpname, $folder);
 }
 
-if(isset($_POST['redirect'])){$redirect = $_POST['redirect'];}
+// Set redirect if provided
+if(isset($_POST['redirect'])){
+    $redirect = $_POST['redirect'];
+}
 
+// Check if message is empty and no image provided
 if($message=="" and $_FILES['postimage']['error'] == 4){
     echo "<script>
         alert('Message Empty');
@@ -29,12 +33,14 @@ if($message=="" and $_FILES['postimage']['error'] == 4){
     </script>";
     exit();
 }
+
 // storing post in database
 if(isset($imagename)){
     $sql = "INSERT INTO `posts` (`uid`, `msg`, `image`, `type`, `dop`) VALUES (?, ?, '$imagename', 'p', current_timestamp());";
 }else{
     $sql = "INSERT INTO `posts` (`uid`, `msg`, `type`, `dop`) VALUES (?, ?, 'p', current_timestamp());";
 }
+
 // prepare statements
 $sql = mysqli_prepare($connection, $sql);
 mysqli_stmt_bind_param($sql, "is", $user_id, $message);

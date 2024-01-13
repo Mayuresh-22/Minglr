@@ -41,10 +41,23 @@ body{
     width: 120px;
     margin-left: 50px;
     padding: 10px;
-    border: none;
+    border: 50px;
     border-radius: 7px;
     background-color: #13239a;
     color: white;
+}
+
+.message-buttons-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* To hide desktop button on mobile devices */
+.desktop-btn {
+    display: block; 
+}
+.mobile-btn {
+    display: none; 
 }
 
 /* Account tabs stylling */
@@ -97,9 +110,14 @@ li.acc-tabs-item{
     margin-bottom: 20px;
 }
 .acc-info-content-list{
+    
     display:inline-block;
-    margin: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: -4px;
+    margin-bottom: 5px;
 }
+
 
 /* Accound feed post box styling */
 .feed-posting-box{
@@ -118,6 +136,8 @@ li.acc-tabs-item{
     padding: 30px;
     font-size: 17px;
     border-radius: 5px;
+    max-width: 100%;
+    min-width: 100%;
 }
 
 .post-btn{
@@ -244,4 +264,34 @@ input.postimage{
     .post-btn{
         width: 70px;
     }
+
+    .message-btn{
+        width: 120px;
+        margin: auto;
+        padding: 10px;
+        border: none;
+    }
+
+    /* Show mobile button on smaller screens */
+    .desktop-btn {
+        display: none;
+    }
+    .mobile-btn {
+        display: block;
+	font-size: small;
+        width: 120px;
+        margin: auto;
+        padding: 10px;
+        border: none;
+    }
 }
+
+/*@media(max-width: 400px){
+    .message-btn{
+	font-size: xx-small;
+        width: 90px;
+        margin: auto;
+        padding: 10px;
+        border: none;
+    }
+}*/

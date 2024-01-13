@@ -75,7 +75,10 @@ if(mysqli_num_rows($result) == 1){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/message.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon_minglr.png" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-ZvHjXoebDRUrTnKh9WKpWV/A0Amd+fjub5TkBXrPxe5F7WfDZL0slJ6a0mvg7VSN3qdpgqq2y1blz06Q8W2Y8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
     </head>
 
@@ -83,14 +86,15 @@ if(mysqli_num_rows($result) == 1){
     <div class="page-container">
 
     <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fa-solid fa-bars" style="color: #12209d;"></i>
-      </label>
+      <div class="menu-btn">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
       <label class="logo"><a href="/"><img class="logo" src="logo\logo.png"></a></label>
-      <ul>
-        <li><a class="navv-item" href="feed.php">Feed</a></li>
-        <li>
+      <ul class="menu-items">
+        <li class="menu-items-li"><a class="navv-item" href="feed.php">Feed</a></li>
+        <li class="menu-items-li">
             <?php
                 if(isset($_SESSION['username'])){
                     echo '<a class="navv-item" href="account.php?username='.$_SESSION['username'].'" ">Account</a>';
@@ -99,7 +103,7 @@ if(mysqli_num_rows($result) == 1){
                 }
             ?>
         </li>
-        <li>
+        <li class="menu-items-li">
             <?php
                     if(!isset($_SESSION['username'])){
                         echo '<a class="navv-item" href="index.php">Login</a>';
@@ -109,7 +113,7 @@ if(mysqli_num_rows($result) == 1){
                     }
             ?>
         </li>
-        <li><a class="navv-item" href="about-us.php">About Us</a></li>
+        <li class="menu-items-li"><a class="navv-item" href="about-us.php">About Us</a></li>
       </ul>
     </nav>
     <div class="seperate_header"></div>
@@ -202,6 +206,7 @@ if(mysqli_num_rows($result) == 1){
 </div>
 
     <div class="footer">
+
     <ul>
             <li class="foot-item">
                 <a href="" class="foot-link" style="text-decoration: none">Home</a>
@@ -217,6 +222,40 @@ if(mysqli_num_rows($result) == 1){
             </li>
         </ul>
     </div>
+
+
+    <ul class="footer-icons">
+        <li class="foot-item">
+            <a href="#" class="foot-link"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li class="foot-item">
+            <a href="#" class="foot-link"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="foot-item">
+            <a href="#" class="foot-link"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li class="foot-item">
+            <a href="#" class="foot-link"><i class="fab fa-youtube"></i></a>
+        </li>
+    </ul>
+    <ul class="footer-links">
+        <li class="foot-item">
+            <a href="" class="foot-link">Home</a>
+        </li>
+        <li class="foot-item">
+            <a href="feed.php" class="foot-link">Feed</a>
+        </li>
+        <li class="foot-item">
+            <a href="account.php" class="foot-link">Account</a>
+        </li>
+        <li class="foot-item">
+            <a href="about-us.php" class="foot-link">About us</a>
+        </li>
+    </ul>
+    <p>This website is only for educational purposes and does not try to replicate any institution/entity/company - by Mayuresh Choudhary</p>
+</div>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
