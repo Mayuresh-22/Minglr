@@ -14,6 +14,8 @@ session_start();
     </head>
 
 <body>
+    <div class="page-container">
+
     <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
@@ -70,6 +72,7 @@ session_start();
     <p>Our team is committed to creating a safe and inclusive environment for all users. We take privacy and security seriously and have implemented measures to protect user data. Minglr is a place where everyone is welcome and encouraged to be themselves.</p>
     <p>Thank you for being a part of our community. We look forward to seeing what you create and share on Minglr.</p>
 </div>
+</div>
 
 <div class="footer">
     <ul>
@@ -88,5 +91,6 @@ session_start();
         <p>This website is only for educational purpose and does not try to replicate any institution/enity/company - by Mayuresh Choudhary</p>
     </ul>
 </div>
+
 </body>
 </html>

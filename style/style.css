@@ -25,6 +25,11 @@
 body{
     background-color: rgb(250 251 253);
 }
+.page-container {
+  min-height: 75vh;
+  border: 1px solid red;
+}
+
 
 /*Navbar Style*/
 /* h1.nav-item-logo{
@@ -161,6 +166,7 @@ div.error-container{
     margin-top: 60px;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 20px;
     border: solid grey;
     border-width: 1px;
     border-radius: 15px;
@@ -230,14 +236,24 @@ input{
 }
 
 /* Footer styling*/
-.footer{
+/* .footer{
     box-sizing: border-box;
     height:30dvb;
     width: 100%;
     padding: 30px;
-    margin-top: 10%;
+    margin-top: auto;
     background-color: #0f2186f5;
     text-align: center;
+} */
+.footer {
+  /* box-sizing: border-box; */
+  height: auto; /* Set height to auto to adjust based on content */
+  width: 100%;
+  padding: 30px;
+  background-color: #0f2186f5;
+  text-align: center;
+  /* position: absolute; Change position to fixed */
+  /* bottom: 0; */
 }
 .footer li{
     display: inline-block;

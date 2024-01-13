@@ -45,6 +45,8 @@ if (isset($_GET['search'])) {
     <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
 
 <body>
+    <div class="page-container">
+
     <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
@@ -358,6 +360,7 @@ if (isset($_GET['search'])) {
         readfile("back/search.php");
     }
     ?>
+</div>
 
     <div class="footer">
         <ul>
@@ -376,6 +379,7 @@ if (isset($_GET['search'])) {
             <p>This website is only for educational purpose and does not try to replicate any institution/enity/company - by Mayuresh Choudhary</p>
         </ul>
     </div>
+
 </body>
 
 </html>

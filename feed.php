@@ -21,6 +21,8 @@
     </head>
 
 <body>
+    <div class="page-container">
+
     <nav>
       <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -173,6 +175,7 @@
             ?>
         </div>
     </div>
+</div>
 
     <div class="footer">
     <ul>
@@ -191,5 +194,6 @@
             <p>This website is only for educational purpose and does not try to replicate any institution/enity/company - by Mayuresh Choudhary</p>
         </ul>
     </div>
+
 </body>
 </html>

@@ -80,6 +80,7 @@ if(mysqli_num_rows($result) == 1){
     </head>
 
 <body>
+    <div class="page-container">
 
     <nav>
       <input type="checkbox" id="check">
@@ -198,6 +199,7 @@ if(mysqli_num_rows($result) == 1){
             </div>
         </div>
     </div>
+</div>
 
     <div class="footer">
     <ul>
@@ -215,5 +217,6 @@ if(mysqli_num_rows($result) == 1){
             </li>
         </ul>
     </div>
+
 </body>
 </html>
