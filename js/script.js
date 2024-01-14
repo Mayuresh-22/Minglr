@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Perform logout action when confirm button is clicked
-    confirmLogoutBtn.addEventListener('click',function() {
-        window.location.replace("back/logout.php");
-;
+    confirmLogoutBtn.addEventListener("click",function() {
+        window.location.href="back/logout.php";
+
     });
 });
 

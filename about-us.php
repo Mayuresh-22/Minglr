@@ -41,7 +41,7 @@ session_start();
                         echo '<a class="navv-item" href="index.php">Login</a>';
                     }
                     else{
-                        echo '<a class="navv-item" href="back/logout.php">Logout</a>';
+                        echo '<a class="navv-item" id="logout-anchor" href="#">Logout</a>';
                     }
             ?>
         </li>
@@ -75,7 +75,6 @@ session_start();
     <p>Thank you for being a part of our community. We look forward to seeing what you create and share on Minglr.</p>
 </div>
 <div class="Logout-Confirmation-Container" id="Confirm-logout-box">
-                            <form class="Logout-Confirm-box">
                             <h1>Logout Account</h1>
                             <p>Are you sure you want to Logout ?Once You logout you need to login again , Are you Sure ? </p>
                             
@@ -86,7 +85,6 @@ session_start();
                             </div>
 
 
-                            </form>
                         </div>
 <div class="footer">
     <ul class="footer-icons">
