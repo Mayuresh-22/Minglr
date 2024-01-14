@@ -407,7 +407,20 @@ foreach ($postrows as $postrow) {
         readfile("back/search.php");
     }
     ?>
+<div class="Logout-Confirmation-Container" id="Confirm-logout-box">
+                            <form class="Logout-Confirm-box">
+                            <h1>Logout Account</h1>
+                            <p>Are you sure you want to Logout ?Once You logout you need to login again , Are you Sure ? </p>
+                            
+                            <div class="Cancel-btn-Container">
+                            <button class="cancelbtn" id="Cancel-btn">Cancel</button>
+                            <button class="logoutbtn"id="Confrim-btn">Yes,Confirm</button>
 
+                            </div>
+
+
+                            </form>
+                        </div>
 <div class="footer">
     <ul class="footer-icons">
         <li class="foot-item">
