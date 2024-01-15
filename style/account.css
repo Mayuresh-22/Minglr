@@ -47,19 +47,41 @@ body{
     color: white;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* Account tabs stylling */
 .account-tabs ul{
-    background-color: white;
+    background-color: rgb(169 127 195);
     margin-top: 10px;
-    border: solid rgba(128, 128, 128, 0.248) 1px;
-    border-radius: 5px;
+    border: solid black 3px;
+    border-radius: 50px;
 }
 .account-tabs li{
     display: inline-block;
     margin-left: 20px;
+    font-family: 'Courier New', Courier, monospace;
 }
 li.acc-tabs-item{
     padding: 10px;
+    margin-left: 20px;
+    margin-top: 5;
+    margin-bottom: 5px;
+    border-radius: 25px;
+
+}
+li.acc-tabs-item:hover{
+    border: 1px solid black;
+   
+    background-color: rgb(201 204 214);
+
 }
 .acc-tabs-btn{
     font-size: 15px;
