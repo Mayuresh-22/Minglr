@@ -29,6 +29,8 @@ body{
     padding: 30px;
     font-size: 17px;
     border-radius: 5px;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 .post-btn{
