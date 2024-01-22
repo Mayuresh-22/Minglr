@@ -298,6 +298,12 @@ a.foot-link:link{
 a.foot-link:visited{
   color: white;
 }
+
+.footer p{
+  color:white;
+  margin-top:2rem;
+}
+
 .seperate_header{
 height: 1px;
 margin-top: 80px;
