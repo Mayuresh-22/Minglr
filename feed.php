@@ -47,8 +47,11 @@
                         echo '<a class="navv-item" href="index.php">Login</a>';
                     }
                     else{
+                   
                         echo '<a class="navv-item" id="logout-anchor" href="#">Logout</a>';
+                        
                     }
+
             ?>
         </li>
         <li class="menu-items-li"><a class="navv-item" href="about-us.php">About Us</a></li>
@@ -103,6 +106,7 @@
                     <button type="submit" class="post-btn">Post</button>
                 </form>
             </div>
+            
         <?php endif; ?>
 
         <div class="feeds">
@@ -177,17 +181,17 @@
         </div>
     </div>
     <div class="Logout-Confirmation-Container" id="Confirm-logout-box">
+                            <form class="Logout-Confirm-box">
                             <h1>Logout Account</h1>
                             <p>Are you sure you want to Logout ?Once You logout you need to login again , Are you Sure ? </p>
                             
                             <div class="Cancel-btn-Container">
                             <button class="cancelbtn" id="Cancel-btn">Cancel</button>
                             <button class="logoutbtn"id="Confrim-btn">Yes,Confirm</button>
-
                             </div>
-
-
+                            </form>
                         </div>
+                        
     <div class="footer">
     <ul>
             <li class="foot-item">

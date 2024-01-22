@@ -42,7 +42,6 @@ if (isset($_GET['search'])) {
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/account.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-ZvHjXoebDRUrTnKh9WKpWV/A0Amd+fjub5TkBXrPxe5F7WfDZL0slJ6a0mvg7VSN3qdpgqq2y1blz06Q8W2Y8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- favicon -->
     <link rel="shortcut icon" href="img/favicon_minglr.png" type="image/png">
     <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
@@ -64,6 +63,7 @@ if (isset($_GET['search'])) {
                     echo '<a class="navv-item active" href="account.php?username='.$_SESSION['username'].'" ">Account</a>';
                 }else{
                     echo '<a class="navv-item active" href="account.php">Account</a>';
+                    
                 }
             ?>
         </li>
@@ -73,7 +73,9 @@ if (isset($_GET['search'])) {
                         echo '<a class="navv-item" href="index.php">Login</a>';
                     }
                     else{
-                        echo '<a class="navv-item"  id="logout-anchor" href="#">Logout</a>';
+                        //back/logout.php
+                        echo '<a class="navv-item" id="logout-anchor" href="#">Logout</a>';
+                        
                     }
             ?>
         </li>
@@ -242,7 +244,7 @@ if (isset($_GET['search'])) {
                                 // fetching rows returned by query
                                 $postrows = mysqli_fetch_all($postresult);
 
-foreach ($postrows as $postrow) {
+                                foreach ($postrows as $postrow) {
                                     if ($postrow[1] == NULL) {
                                         echo '<div class="feed-post-display-box">
                                             <div class="feed-post-display-box-head">
@@ -358,48 +360,14 @@ foreach ($postrows as $postrow) {
                     <?php endif; ?>
 
                     <?php if ($tab == "photo") : ?>
-    <div class="acc-photo">
-        <p>See photos from <?php echo $fname; ?>...</p>
-        <?php
-        $postsqlimg = "SELECT `image`, `msg`, `dop`, `uid` FROM `posts` WHERE `uid` = " . $user_id . " AND `image` IS NOT NULL ORDER BY `dop` DESC;";
-        $postresultimgs = mysqli_query($connection, $postsqlimg);
-
-        if (mysqli_num_rows($postresultimgs) > 0) {
-            while ($postrow = mysqli_fetch_assoc($postresultimgs)) {
-                echo '<div class="feed-post-display-box">
-                        <div class="feed-post-display-box-head">
-                            <ul>
-                                <li>
-                                <a href="account.php?username=' . $username . '" style="text-decoration: none;"><img src="https://api.dicebear.com/6.x/initials/png?seed=' . $fname . '&size=128" alt="profile" class="account-profpic"></a>
-                                </li>
-                                <li style="padding-left: 10px; padding-right: 10px;">
-                                    <a href="account.php?username=' . $username . '" style="text-decoration: none;">' . $fname . '</a>
-                                </li>
-                                <li style="vertical-align:baseline;">
-                                <small>shared a post in the feed on </small>
-                                    <small>' . $postrow['dop'] . '</small>
-                                </li>
-                            </ul>
+                        <div class="acc-photo">
+                            <p>See photo's from <?php echo $fname ?>...</p>
                         </div>
-                        <div class="feed-post-display-box-message">
-                            ' . str_replace("\n", "<br>", $postrow['msg']) . '
-                        </div>
-                        <div class="feed-post-display-box-image">
-                            <img src="uploads/' . $postrow['image'] . '" alt="' . $postrow['image'] . '" style="width: 100%; object-fit:contain; margin-bottom: 20px; border-radius: 5px">
-                        </div>
-                    </div>';
-            }
-        } else {
-            echo '<p>Posts Not found</p>';
-        }
-        ?>
-    </div>
-<?php endif; ?>
-</div>
-</div>
-</div>
-<?php } ?>
-
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+    <?php } ?>
 
 
     <?php
@@ -407,49 +375,38 @@ foreach ($postrows as $postrow) {
         readfile("back/search.php");
     }
     ?>
-<div class="Logout-Confirmation-Container" id="Confirm-logout-box">
+    <div class="Logout-Confirmation-Container" id="Confirm-logout-box">
                             <h1>Logout Account</h1>
                             <p>Are you sure you want to Logout ?Once You logout you need to login again , Are you Sure ? </p>
                             
                             <div class="Cancel-btn-Container">
-                            <button class="cancelbtn" id="Cancel-btn">Cancel</button>
-                            <button class="logoutbtn"id="Confrim-btn">Yes,Confirm</button>
 
+                            <button class="cancelbtn" id="Cancel-btn">Cancel</button>
+
+                            <button class="logoutbtn" id="Confrim-btn">Yes,Confirm</button>
                             </div>
 
 
+
                         </div>
-<div class="footer">
-    <ul class="footer-icons">
-        <li class="foot-item">
-            <a href="#" class="foot-link"><i class="fab fa-facebook"></i></a>
-        </li>
-        <li class="foot-item">
-            <a href="#" class="foot-link"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li class="foot-item">
-            <a href="#" class="foot-link"><i class="fab fa-instagram"></i></a>
-        </li>
-        <li class="foot-item">
-            <a href="#" class="foot-link"><i class="fab fa-youtube"></i></a>
-        </li>
-    </ul>
-    <ul class="footer-links">
-        <li class="foot-item">
-            <a href="" class="foot-link">Home</a>
-        </li>
-        <li class="foot-item">
-            <a href="feed.php" class="foot-link">Feed</a>
-        </li>
-        <li class="foot-item">
-            <a href="account.php" class="foot-link">Account</a>
-        </li>
-        <li class="foot-item">
-            <a href="about-us.php" class="foot-link">About us</a>
-        </li>
-    </ul>
-    <p>This website is only for educational purposes and does not try to replicate any institution/entity/company - by Mayuresh Choudhary</p>
-</div>
+
+    <div class="footer">
+        <ul>
+            <li class="foot-item">
+                <a href="" class="foot-link" style="text-decoration: none">Home</a>
+            </li>
+            <li class="foot-item">
+                <a href="feed.php" class="foot-link" style="text-decoration: none">Feed</a>
+            </li>
+            <li class="foot-item">
+                <a href="account.php" class="foot-link" style="text-decoration: none">Account</a>
+            </li>
+            <li class="foot-item">
+                <a href="about-us.php" class="foot-link" style="text-decoration: none">About us</a>
+            </li>
+            <p>This website is only for educational purpose and does not try to replicate any institution/enity/company - by Mayuresh Choudhary</p>
+        </ul>
+    </div>
 
     <script src="js/script.js"></script>
 </body>

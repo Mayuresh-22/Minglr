@@ -32,7 +32,6 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-ZvHjXoebDRUrTnKh9WKpWV/A0Amd+fjub5TkBXrPxe5F7WfDZL0slJ6a0mvg7VSN3qdpgqq2y1blz06Q8W2Y8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- favicon -->
     <link rel="shortcut icon" href="img/favicon_minglr.png" type="image/png">
     <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
@@ -119,98 +118,30 @@ session_start();
                 <input type="text" for="fname" id="fname" name="fname" placeholder="First name" required>
                 <input type="text" for="lname" id="lname" name="lname" placeholder="Last name" required>
                 <input type="email" for="email" id="email" name="email" placeholder="Email" required>
-                <input type="password" id="pass" name="password" placeholder="Password" required>
-                <!--only show for password input -->
-                <div class="div-toggle-password">
-                    <button id="togglePassword" hidden>Show</button>
-                    <small id="kindOfPassword" hidden>
-                        <span>🔒 size > 8 </span>
-                        <span>🔠 Uppercase </span>
-                        <span>🔡 Lowercase </span>
-                        <span>🔢 Number </span>
-                        <span>@!$# Special Character</span>
-                    </small>
-                </div>
+                <input type="password" for="password" id="password" name="password" placeholder="Password" required>
                 <small>Your data will be used to provide you with the seamless experience. We respect your privacy</small>
-                <button class="rgst-btn" name="regst" id="regst" style="cursor: not-allowed;" disabled>Register</button>
-                <!-- Handle password input -->
-                <script>
-                    const passwordInput = document.getElementById('pass');
-                    const registerButton = document.getElementById('regst');
-                    //only for password
-                    const toggleButton = document.getElementById('togglePassword');
-                    const kindOfPassword = document.getElementById('kindOfPassword');
-
-                    passwordInput.addEventListener("input", () => {
-                        //empty password field
-                        if (passwordInput.value === "") {
-                            passwordInput.classList.remove('valid-password', 'invalid-password');
-                            registerButton.disabled = true;
-                            registerButton.style.cursor = "not-allowed";    //change cursor to not-allowed
-                            toggleButton.hidden = true;
-                            kindOfPassword.hidden = true;
-                        } else {    //non-empty password field
-                            const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/; //means a-z, A-Z, 0-9, @$!%*?& and min 8 characters
-                            if (passwordPattern.test(passwordInput.value)) {    //check if password is valid
-                                passwordInput.classList.remove('invalid-password');
-                                passwordInput.classList.add('valid-password');
-                                registerButton.disabled = false;     
-                                registerButton.style.cursor = "pointer";   //enable register button    
-                                toggleButton.hidden = false;            //hide password toggle button
-                                kindOfPassword.hidden = false;
-                            } else {    //invalid password
-                                passwordInput.classList.remove('valid-password');
-                                passwordInput.classList.add('invalid-password');
-                                registerButton.disabled = true;                 //disable register button
-                                registerButton.style.cursor = "not-allowed";    //change cursor to not-allowed
-                                toggleButton.hidden = false;
-                                kindOfPassword.hidden = false;
-                            }
-                        }
-                    });
-                    //toggle password visibility
-                    toggleButton.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
-                        passwordInput.setAttribute('type', type);
-                        toggleButton.textContent = type === 'password' ? 'Show' : 'Hide';
-                    });
-                </script>
+                <button class="rgst-btn" name="regst" id="regst">Register</button>
             </form>
         </div>
     </div>
 
     <div class="footer">
-    <ul class="footer-icons">
-        <li class="foot-item">
-            <a href="#" class="foot-link"><i class="fab fa-facebook"></i></a>
-        </li>
-        <li class="foot-item">
-            <a href="#" class="foot-link"><i class="fab fa-twitter"></i></a>
-        </li>
-        <li class="foot-item">
-            <a href="#" class="foot-link"><i class="fab fa-instagram"></i></a>
-        </li>
-        <li class="foot-item">
-            <a href="#" class="foot-link"><i class="fab fa-youtube"></i></a>
-        </li>
-    </ul>
-    <ul class="footer-links">
-        <li class="foot-item">
-            <a href="" class="foot-link">Home</a>
-        </li>
-        <li class="foot-item">
-            <a href="feed.php" class="foot-link">Feed</a>
-        </li>
-        <li class="foot-item">
-            <a href="account.php" class="foot-link">Account</a>
-        </li>
-        <li class="foot-item">
-            <a href="about-us.php" class="foot-link">About us</a>
-        </li>
-    </ul>
-    <p>This website is only for educational purposes and does not try to replicate any institution/entity/company - by Mayuresh Choudhary</p>
-</div>
+    <ul>
+            <li class="foot-item">
+                <a href="" class="foot-link" style="text-decoration: none">Home</a>
+            </li>
+            <li class="foot-item">
+                <a href="feed.php" class="foot-link" style="text-decoration: none">Feed</a>
+            </li>
+            <li class="foot-item">
+                <a href="account.php" class="foot-link" style="text-decoration: none">Account</a>
+            </li>
+            <li class="foot-item">
+                <a href="about-us.php" class="foot-link" style="text-decoration: none">About us</a>
+            </li>
+            <p>This website is only for educational purpose and does not try to replicate any institution/enity/company - by Mayuresh Choudhary</p>
+        </ul>
+    </div>
     
     <script src="js/script.js"></script>
     </body>
