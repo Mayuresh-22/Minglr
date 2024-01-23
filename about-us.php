@@ -41,7 +41,7 @@ session_start();
                         echo '<a class="navv-item" href="index.php">Login</a>';
                     }
                     else{
-                        echo '<a class="navv-item" href="back/logout.php">Logout</a>';
+                        echo '<a class="navv-item" id="logout-anchor" href="#">Logout</a>';
                     }
             ?>
         </li>
@@ -73,6 +73,15 @@ session_start();
     <p>We believe that social media can be used to bring people together and create positive changes in the world. Minglr is a platform that empowers people to express themselves and share their ideas with a wider audience.</p>
     <p>Our team is committed to creating a safe and inclusive environment for all users. We take privacy and security seriously and have implemented measures to protect user data. Minglr is a place where everyone is welcome and encouraged to be themselves.</p>
     <p>Thank you for being a part of our community. We look forward to seeing what you create and share on Minglr.</p>
+</div>
+
+<div class="Logout-Confirmation-Container" id="Confirm-logout-box">
+    <h1>Logout Account</h1>
+    <p>Are you sure you want to Logout ?Once You logout you need to login again , Are you Sure ? </p>
+    <div class="Cancel-btn-Container">
+        <button class="cancelbtn" id="Cancel-btn">Cancel</button>
+        <button class="logoutbtn"id="Confrim-btn">Yes,Confirm</button>
+    </div>
 </div>
 
 <div class="footer">

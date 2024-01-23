@@ -47,7 +47,7 @@
                         echo '<a class="navv-item" href="index.php">Login</a>';
                     }
                     else{
-                        echo '<a class="navv-item" href="back/logout.php">Logout</a>';
+                        echo '<a class="navv-item" id="logout-anchor" href="#">Logout</a>';
                     }
             ?>
         </li>
@@ -177,6 +177,17 @@
         </div>
     </div>
 
+
+    <div class="Logout-Confirmation-Container" id="Confirm-logout-box">
+        <h1>Logout Account</h1>
+        <p>Are you sure you want to Logout ?Once You logout you need to login again , Are you Sure ? </p>
+                            
+        <div class="Cancel-btn-Container">
+            <button class="cancelbtn" id="Cancel-btn">Cancel</button>
+            <button class="logoutbtn"id="Confrim-btn">Yes,Confirm</button>
+        </div>
+    </div>
+    
     <div class="footer">
     <ul>
             <li class="foot-item">
