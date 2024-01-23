@@ -12,6 +12,7 @@ session_start();
     <!-- favicon -->
     <link rel="shortcut icon" href="img/favicon_minglr.png" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-ZvHjXoebDRUrTnKh9WKpWV/A0Amd+fjub5TkBXrPxe5F7WfDZL0slJ6a0mvg7VSN3qdpgqq2y1blz06Q8W2Y8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
     </head>
 
@@ -40,8 +41,7 @@ session_start();
                         echo '<a class="navv-item" href="index.php">Login</a>';
                     }
                     else{
-                        echo '<a class="navv-item" id="logout-anchor" href="#">Logout</a>';
-                         
+                        echo '<a class="navv-item" href="back/logout.php">Logout</a>';
                     }
             ?>
         </li>
@@ -74,33 +74,37 @@ session_start();
     <p>Our team is committed to creating a safe and inclusive environment for all users. We take privacy and security seriously and have implemented measures to protect user data. Minglr is a place where everyone is welcome and encouraged to be themselves.</p>
     <p>Thank you for being a part of our community. We look forward to seeing what you create and share on Minglr.</p>
 </div>
-<div class="Logout-Confirmation-Container" id="Confirm-logout-box">
-                            <h1>Logout Account</h1>
-                            <p>Are you sure you want to Logout ?Once You logout you need to login again , Are you Sure ? </p>
-                            <div class="Cancel-btn-Container">
-                            <button class="cancelbtn" id="Cancel-btn">Cancel</button>
-                            <button class="logoutbtn"id="Confrim-btn">Yes,Confirm</button>
-                            </div>
 
-
-                        </div>
-                        
 <div class="footer">
-    <ul>
+    <ul class="footer-icons">
         <li class="foot-item">
-            <a href="" class="foot-link" style="text-decoration: none">Home</a>
+            <a href="#" class="foot-link"><i class="fab fa-facebook"></i></a>
         </li>
         <li class="foot-item">
-            <a href="feed.php" class="foot-link" style="text-decoration: none">Feed</a>
+            <a href="#" class="foot-link"><i class="fab fa-twitter"></i></a>
         </li>
         <li class="foot-item">
-            <a href="account.php" class="foot-link" style="text-decoration: none">Account</a>
+            <a href="#" class="foot-link"><i class="fab fa-instagram"></i></a>
         </li>
         <li class="foot-item">
-            <a href="about-us.php" class="foot-link" style="text-decoration: none">About us</a>
+            <a href="#" class="foot-link"><i class="fab fa-youtube"></i></a>
         </li>
-        <p>This website is only for educational purpose and does not try to replicate any institution/enity/company - by Mayuresh Choudhary</p>
     </ul>
+    <ul class="footer-links">
+        <li class="foot-item">
+            <a href="" class="foot-link">Home</a>
+        </li>
+        <li class="foot-item">
+            <a href="feed.php" class="foot-link">Feed</a>
+        </li>
+        <li class="foot-item">
+            <a href="account.php" class="foot-link">Account</a>
+        </li>
+        <li class="foot-item">
+            <a href="about-us.php" class="foot-link">About us</a>
+        </li>
+    </ul>
+    <p>This website is only for educational purposes and does not try to replicate any institution/entity/company - by Mayuresh Choudhary</p>
 </div>
     
 <script src="js/script.js"></script>
