@@ -119,6 +119,17 @@ session_start();
                 <input type="text" for="lname" id="lname" name="lname" placeholder="Last name" required>
                 <input type="email" for="email" id="email" name="email" placeholder="Email" required>
                 <input type="password" for="password" id="password" name="password" placeholder="Password" required>
+                <!--only show for password input -->
+                <div class="div-toggle-password">
+                    <button id="togglePassword" hidden>Show</button>
+                    <small id="kindOfPassword" hidden>
+                        <span>🔒 size > 8 </span>
+                        <span>🔠 Uppercase </span>
+                        <span>🔡 Lowercase </span>
+                        <span>🔢 Number </span>
+                        <span>@!$# Special Character</span>
+                    </small>
+                </div>
                 <small>Your data will be used to provide you with the seamless experience. We respect your privacy</small>
                 <button class="rgst-btn" name="regst" id="regst">Register</button>
 
