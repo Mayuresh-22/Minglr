@@ -84,7 +84,9 @@ session_start();
     </div>
 </div>
 
-<div class="footer">
+<div class="footer" style="height:16rem">
+        <p style="  font-size: x-large;margin-top:0;">Minglr</p>
+  
     <ul class="footer-icons">
         <li class="foot-item">
             <a href="#" class="foot-link"><i class="fab fa-facebook"></i></a>
@@ -100,20 +102,20 @@ session_start();
         </li>
     </ul>
     <ul class="footer-links">
-        <li class="foot-item">
+        <li class="foot-item" style="margin-right:3rem;">
             <a href="" class="foot-link">Home</a>
         </li>
-        <li class="foot-item">
+        <li class="foot-item" style="margin-right:3rem;">
             <a href="feed.php" class="foot-link">Feed</a>
         </li>
-        <li class="foot-item">
+        <li class="foot-item" style="margin-right:3rem;">
             <a href="account.php" class="foot-link">Account</a>
         </li>
-        <li class="foot-item">
+        <li class="foot-item" style="margin-right:3rem;">
             <a href="about-us.php" class="foot-link">About us</a>
         </li>
     </ul>
-    <p>This website is only for educational purposes and does not try to replicate any institution/entity/company - by Mayuresh Choudhary</p>
+    <p style="font-size:0.9rem;">This website is only for educational purposes and does not try to replicate any institution/entity/company - by Mayuresh Choudhary</p>
 </div>
     
 <script src="js/script.js"></script>

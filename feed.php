@@ -178,6 +178,7 @@
     </div>
 
 
+
     <div class="Logout-Confirmation-Container" id="Confirm-logout-box">
         <h1>Logout Account</h1>
         <p>Are you sure you want to Logout ?Once You logout you need to login again , Are you Sure ? </p>
@@ -188,23 +189,39 @@
         </div>
     </div>
     
-    <div class="footer">
-    <ul>
-            <li class="foot-item">
-                <a href="" class="foot-link" style="text-decoration: none">Home</a>
-            </li>
-            <li class="foot-item">
-                <a href="feed.php" class="foot-link" style="text-decoration: none">Feed</a>
-            </li>
-            <li class="foot-item">
-                <a href="account.php" class="foot-link" style="text-decoration: none">Account</a>
-            </li>
-            <li class="foot-item">
-                <a href="about-us.php" class="foot-link" style="text-decoration: none">About us</a>
-            </li>
-            <p>This website is only for educational purpose and does not try to replicate any institution/enity/company - by Mayuresh Choudhary</p>
-        </ul>
-    </div>
+    <div class="footer" style="height:16rem">
+        <p style="  font-size: x-large;margin-top:0;">Minglr</p>
+    <ul class="footer-icons">
+        <li class="foot-item">
+            <a href="#" class="foot-link"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li class="foot-item">
+            <a href="#" class="foot-link"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="foot-item">
+            <a href="#" class="foot-link"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li class="foot-item">
+            <a href="#" class="foot-link"><i class="fab fa-youtube"></i></a>
+        </li>
+    </ul>
+    <ul class="footer-links">
+        <li class="foot-item" style="margin-right:3rem;">
+            <a href="" class="foot-link">Home</a>
+        </li>
+        <li class="foot-item" style="margin-right:3rem;">
+            <a href="feed.php" class="foot-link">Feed</a>
+        </li>
+        <li class="foot-item" style="margin-right:3rem;">
+            <a href="account.php" class="foot-link">Account</a>
+        </li>
+        <li class="foot-item" style="margin-right:3rem;">
+            <a href="about-us.php" class="foot-link">About us</a>
+        </li>
+    </ul>
+    <p style="font-size:0.9rem;">This website is only for educational purposes and does not try to replicate any institution/entity/company - by Mayuresh Choudhary</p>
+</div>
+
 
     <script src="js/script.js"></script>
 </body>
