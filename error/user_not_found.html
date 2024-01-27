@@ -1,8 +1,42 @@
-<html>
-    <head><link rel="stylesheet" href="style/style.css"></head>
-    <body>
-        <div class="error-container">
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+</head>
+
+<body>
+
+     <div class="error-container">
             <h4>User not found, try searching something different</h4>
         </div>
-    </body>
+    
+    <?php
+    // Check if the form is submitted
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Get the entered email address
+        $email = $_POST["email"];
+
+        // Check if the email contains yopmail.com
+        if (strpos($email, 'yopmail.com') !== false) {
+            echo '<p style="color: red;">Error: Yopmail.com email addresses are not allowed.</p>';
+        } else {
+            // If not yopmail.com, display a success message
+            echo '<p style="color: green;">Email validation successful! Entered email: ' . $email . '</p>';
+        }
+    }
+    ?>
+
+    <!-- Simple form for testing -->
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        <label for="email">Enter Email:</label>
+        <input type="text" id="email" name="email" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
 </html>
