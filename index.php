@@ -108,14 +108,14 @@ session_start();
         <center><small><button class="btn" onclick="getElementById('login-form').style.display='block'; getElementById('regst-form').style.display='none';">Login</button>OR<button class="btn" onclick="getElementById('login-form').style.display='none'; getElementById('regst-form').style.display='block';">Register</button></small></center>
         <div class="login">
             <form action="db/validate.php" method="post" class="login-form" id="login-form">
-                <input type="text" for="usrname" id="username" name="username" placeholder="Username" required>
-                <input type="password" for="password" id="password" name="password" placeholder="Password" required>
+                <input type="text" for="usrname" id="username" autocomplete="off" name="username" placeholder="Username" required>
+                <input type="password" for="password" id="password" name="password" placeholder="Password" autocomplete="off" required>
                 <button class="login-btn" name="lgn" id="lgn">Login Now</button>
             </form>
         </div>
         <div class="register">
             <form action="db/validate.php" method="post" class="regst-form" id="regst-form" style="display: none;">
-                <input type="text" for="usrname" id="usrname" name="username" placeholder="Username" required>
+                <input type="text" for="usrname" id="usrname" name="username" placeholder="Username" autocomplete="off" required>
                 <input type="text" for="fname" id="fname" name="fname" placeholder="First name" required>
                 <input type="text" for="lname" id="lname" name="lname" placeholder="Last name" required>
                 <input type="email" for="email" id="email" name="email" placeholder="Email" required>
