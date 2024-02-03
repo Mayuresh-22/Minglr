@@ -107,7 +107,7 @@ Contributions to Minglr are welcome! If you'd like to contribute, please follow 
 Email: [mayureshchoudhary22@gmail.com](mailto:mayureshchoudhary22@gmail.com)
 
 ## 💖 Thanks to Our Contributors
-<a href="https://github.com/YashkShrivas4491/Machine_Coding_Projects-/contributors">
+<a>
   <img src="https://contributors-img.web.app/image?repo=Mayuresh-22/Minglr" />
 </a>
 
