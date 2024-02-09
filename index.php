@@ -115,8 +115,10 @@ session_start();
         <div class="register">
             <form action="db/validate.php" method="post" class="regst-form" id="regst-form" style="display: none;">
                 <input type="text" for="usrname" id="usrname" name="username" placeholder="Username" autocomplete="off" required>
-                <input type="text" for="fname" id="fname" name="fname" placeholder="First name" required>
-                <input type="text" for="lname" id="lname" name="lname" placeholder="Last name" required>
+                <section class="name">
+                <input type="text" for="fname" id="fname" name="fname" placeholder="First name" required pattern="[a-zA-Z]{2,}$"title="please enter alphabets only">
+                <input type="text" for="lname" id="lname" name="lname" placeholder="Last name" required pattern="[a-zA-Z]{2,}$"title="please enter alphabets only">
+                </section>
                 <input type="email" for="email" id="email" name="email" placeholder="Email" required>
                 <input type="password" for="password" id="password" name="password" placeholder="Password" required>
                 <!--only show for password input -->
@@ -140,7 +142,8 @@ session_start();
                     //only for password
                     const toggleButton = document.getElementById('togglePassword');
                     const kindOfPassword = document.getElementById('kindOfPassword');
-
+                    const fnameInput=document.getElementById('fname');
+                    const lnameInput=document.getElementById('lname');
                     passwordInput.addEventListener("input", () => {
                         //empty password field
                         if (passwordInput.value === "") {
@@ -169,13 +172,16 @@ session_start();
                         }
                     });
                     //toggle password visibility
+
                     toggleButton.addEventListener('click', (e) => {
                         e.preventDefault();
                         const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
                         passwordInput.setAttribute('type', type);
                         toggleButton.textContent = type === 'password' ? 'Show' : 'Hide';
                     });
+                    
                 </script>
+                
             </form>
         </div>
     </div>
@@ -213,7 +219,8 @@ session_start();
     </ul>
     <p style="font-size:0.9rem;">This website is only for educational purposes and does not try to replicate any institution/entity/company - by Mayuresh Choudhary</p>
 </div>
-   
+
+      
     <script src="js/script.js"></script>
     </body>
 </html>
