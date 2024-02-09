@@ -441,6 +441,10 @@ foreach ($postrows as $postrow) {
     <p style="font-size:0.9rem;">This website is only for educational purposes and does not try to replicate any institution/entity/company - by Mayuresh Choudhary</p>
 </div>
 
+<div id="lightbox-overlay" class="lightbox-overlay" onclick="closeLightbox()">
+        <img id="lightbox-image" class="enlarged-photo" src="" alt="Enlarged Photo">
+    </div>
+    
     <script src="js/script.js"></script>
 </body>
 

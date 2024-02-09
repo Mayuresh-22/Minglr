@@ -17,7 +17,7 @@
   opacity: 100%;
 
   animation-name: mainloader;
-  animation-duration: 2s;
+  animation-duration: 0.5s;
   animation-iteration-count: 1;
 }
 
@@ -394,4 +394,25 @@ transition: color 0.3s; /* Smooth color transition on hover */
 .menu-btn {
   margin-right: 15px;
 }
+}
+
+/* Add the CSS styles for the lightbox here */
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  text-align: center;
+}
+
+.lightbox-overlay img {
+  max-width: 95%;
+  max-height: 95%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+
 }
