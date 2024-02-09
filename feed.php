@@ -47,7 +47,7 @@
                         echo '<a class="navv-item" href="index.php">Login</a>';
                     }
                     else{
-                        echo '<a class="navv-item" href="back/logout.php">Logout</a>';
+                        echo '<a class="navv-item" id="logout-anchor" href="#">Logout</a>';
                     }
             ?>
         </li>
@@ -177,6 +177,18 @@
         </div>
     </div>
 
+
+
+    <div class="Logout-Confirmation-Container" id="Confirm-logout-box">
+        <h1>Logout Account</h1>
+        <p>Are you sure you want to Logout ?Once You logout you need to login again , Are you Sure ? </p>
+                            
+        <div class="Cancel-btn-Container">
+            <button class="cancelbtn" id="Cancel-btn">Cancel</button>
+            <button class="logoutbtn"id="Confrim-btn">Yes,Confirm</button>
+        </div>
+    </div>
+    
     <div class="footer" style="height:16rem">
         <p style="  font-size: x-large;margin-top:0;">Minglr</p>
     <ul class="footer-icons">
@@ -209,6 +221,7 @@
     </ul>
     <p style="font-size:0.9rem;">This website is only for educational purposes and does not try to replicate any institution/entity/company - by Mayuresh Choudhary</p>
 </div>
+
 
     <script src="js/script.js"></script>
 </body>

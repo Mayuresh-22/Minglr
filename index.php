@@ -32,7 +32,6 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-ZvHjXoebDRUrTnKh9WKpWV/A0Amd+fjub5TkBXrPxe5F7WfDZL0slJ6a0mvg7VSN3qdpgqq2y1blz06Q8W2Y8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- favicon -->
     <link rel="shortcut icon" href="img/favicon_minglr.png" type="image/png">
     <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
@@ -121,7 +120,7 @@ session_start();
                 <input type="text" for="lname" id="lname" name="lname" placeholder="Last name" required pattern="[a-zA-Z]{2,}$"title="please enter alphabets only">
                 </section>
                 <input type="email" for="email" id="email" name="email" placeholder="Email" required>
-                <input type="password" id="pass" name="password" placeholder="Password" required>
+                <input type="password" for="password" id="password" name="password" placeholder="Password" required>
                 <!--only show for password input -->
                 <div class="div-toggle-password">
                     <button id="togglePassword" hidden>Show</button>
@@ -134,7 +133,8 @@ session_start();
                     </small>
                 </div>
                 <small>Your data will be used to provide you with the seamless experience. We respect your privacy</small>
-                <button class="rgst-btn" name="regst" id="regst" style="cursor: not-allowed;" disabled>Register</button>
+                <button class="rgst-btn" name="regst" id="regst">Register</button>
+
                 <!-- Handle password input -->
                 <script>
                     const passwordInput = document.getElementById('pass');
@@ -186,6 +186,7 @@ session_start();
         </div>
     </div>
 
+
     <div class="footer" style="height:16rem">
         <p style="  font-size: x-large;margin-top:0;">Minglr</p>
     <ul class="footer-icons">
@@ -218,6 +219,8 @@ session_start();
     </ul>
     <p style="font-size:0.9rem;">This website is only for educational purposes and does not try to replicate any institution/entity/company - by Mayuresh Choudhary</p>
 </div>
+
+      
     <script src="js/script.js"></script>
     </body>
 </html>
