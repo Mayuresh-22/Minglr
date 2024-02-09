@@ -17,14 +17,49 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/feed.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon_minglr.png" type="image/png">
+    <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
     </head>
 
 <body>
-    <div class="navbar">
+    <nav>
+      <div class="menu-btn">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+      </div>
+      <label class="logo"><a href="/"><img class="logo" src="logo\logo.png"></a></label>
+      <ul class="menu-items">
+        <li class="menu-items-li"><a class="navv-item active" href="feed.php">Feed</a></li>
+        <li class="menu-items-li">
+            <?php
+                if(isset($_SESSION['username'])){
+                    echo '<a class="navv-item" href="account.php?username='.$_SESSION['username'].'" ">Account</a>';
+                }else{
+                    echo '<a class="navv-item" href="account.php">Account</a>';
+                }
+            ?>
+        </li>
+        <li class="menu-items-li">
+            <?php
+                    if(!isset($_SESSION['username'])){
+                        echo '<a class="navv-item" href="index.php">Login</a>';
+                    }
+                    else{
+                        echo '<a class="navv-item" href="back/logout.php">Logout</a>';
+                    }
+            ?>
+        </li>
+        <li class="menu-items-li"><a class="navv-item" href="about-us.php">About Us</a></li>
+      </ul>
+    </nav>
+  
+    <div class="seperate_header"></div>
+    <!-- <div class="navbar">
         <ul>
             <li>
                 <a href="<?php echo $home_page; ?>"><img class="logo" src="logo\logo.png"></a>
-                <!-- <h1 class="nav-item-logo">Minglr</h1> -->
             </li>
             <li class="nav-item">
                 <a href="feed.php" style="text-decoration: none">Feed</a>
@@ -50,7 +85,7 @@
                 ?>
             </li>
         </ul>
-    </div>
+    </div> -->
 
     <div class="feed-page-body">
         <div class="feed-page-head">
@@ -142,22 +177,39 @@
         </div>
     </div>
 
-    <div class="footer">
-    <ul>
-            <li class="foot-item">
-                <a href="" class="foot-link" style="text-decoration: none">Home</a>
-            </li>
-            <li class="foot-item">
-                <a href="feed.php" class="foot-link" style="text-decoration: none">Feed</a>
-            </li>
-            <li class="foot-item">
-                <a href="account.php" class="foot-link" style="text-decoration: none">Account</a>
-            </li>
-            <li class="foot-item">
-                <a href="about-us.php" class="foot-link" style="text-decoration: none">About us</a>
-            </li>
-            <p>This website is only for educational purpose and does not try to replicate any institution/enity/company - by Mayuresh Choudhary</p>
-        </ul>
-    </div>
+    <div class="footer" style="height:16rem">
+        <p style="  font-size: x-large;margin-top:0;">Minglr</p>
+    <ul class="footer-icons">
+        <li class="foot-item">
+            <a href="#" class="foot-link"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li class="foot-item">
+            <a href="#" class="foot-link"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="foot-item">
+            <a href="#" class="foot-link"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li class="foot-item">
+            <a href="#" class="foot-link"><i class="fab fa-youtube"></i></a>
+        </li>
+    </ul>
+    <ul class="footer-links">
+        <li class="foot-item" style="margin-right:3rem;">
+            <a href="" class="foot-link">Home</a>
+        </li>
+        <li class="foot-item" style="margin-right:3rem;">
+            <a href="feed.php" class="foot-link">Feed</a>
+        </li>
+        <li class="foot-item" style="margin-right:3rem;">
+            <a href="account.php" class="foot-link">Account</a>
+        </li>
+        <li class="foot-item" style="margin-right:3rem;">
+            <a href="about-us.php" class="foot-link">About us</a>
+        </li>
+    </ul>
+    <p style="font-size:0.9rem;">This website is only for educational purposes and does not try to replicate any institution/entity/company - by Mayuresh Choudhary</p>
+</div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
