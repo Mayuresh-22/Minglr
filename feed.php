@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <!-- favicon -->
     <link rel="shortcut icon" href="img/favicon_minglr.png" type="image/png">
-    <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>  
     </head>
 
 <body>
@@ -165,8 +165,8 @@
                                         '.str_replace("\n", "<br>", $postrow[0]).'
                                     </div>
                                     <div class="feed-post-display-box-image">
-                                        <img src="uploads/'.$postrow[1].'" alt="'.$postrow[1].'" style="width: 100%; object-fit:contain; margin-bottom: 20px; border-radius: 5px">
-                                    </div>
+                                    <a href="#">   <img src="uploads/'.$postrow[1].'" alt="'.$postrow[1].'" style="width: 100%; object-fit:contain; margin-bottom: 20px; border-radius: 5px">
+                                    </a></div>
                                 </div>';
                         }
                     }
@@ -209,6 +209,9 @@
     </ul>
     <p style="font-size:0.9rem;">This website is only for educational purposes and does not try to replicate any institution/entity/company - by Mayuresh Choudhary</p>
 </div>
+<div id="lightbox-overlay" class="lightbox-overlay" onclick="closeLightbox()">
+        <img id="lightbox-image" class="enlarged-photo" src="" alt="Enlarged Photo">
+    </div>
 
     <script src="js/script.js"></script>
 </body>

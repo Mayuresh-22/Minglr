@@ -385,8 +385,8 @@ foreach ($postrows as $postrow) {
                             ' . str_replace("\n", "<br>", $postrow['msg']) . '
                         </div>
                         <div class="feed-post-display-box-image">
-                            <img src="uploads/' . $postrow['image'] . '" alt="' . $postrow['image'] . '" style="width: 100%; object-fit:contain; margin-bottom: 20px; border-radius: 5px">
-                        </div>
+                        <a href="#">  <img src="uploads/' . $postrow['image'] . '" alt="' . $postrow['image'] . '" style="width: 100%; object-fit:contain; margin-bottom: 20px; border-radius: 5px">
+                        </a></div>
                     </div>';
             }
         } else {
@@ -441,6 +441,10 @@ foreach ($postrows as $postrow) {
     <p style="font-size:0.9rem;">This website is only for educational purposes and does not try to replicate any institution/entity/company - by Mayuresh Choudhary</p>
 </div>
 
+<div id="lightbox-overlay" class="lightbox-overlay" onclick="closeLightbox()">
+        <img id="lightbox-image" class="enlarged-photo" src="" alt="Enlarged Photo">
+    </div>
+    
     <script src="js/script.js"></script>
 </body>
 
