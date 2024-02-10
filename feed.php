@@ -165,8 +165,8 @@
                                         '.str_replace("\n", "<br>", $postrow[0]).'
                                     </div>
                                     <div class="feed-post-display-box-image">
-                                        <img src="uploads/'.$postrow[1].'" alt="'.$postrow[1].'" style="width: 100%; object-fit:contain; margin-bottom: 20px; border-radius: 5px">
-                                    </div>
+                                    <a href="#">   <img src="uploads/'.$postrow[1].'" alt="'.$postrow[1].'" style="width: 100%; object-fit:contain; margin-bottom: 20px; border-radius: 5px">
+                                    </a></div>
                                 </div>';
                         }
                     }

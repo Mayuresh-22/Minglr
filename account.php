@@ -385,8 +385,8 @@ foreach ($postrows as $postrow) {
                             ' . str_replace("\n", "<br>", $postrow['msg']) . '
                         </div>
                         <div class="feed-post-display-box-image">
-                            <img src="uploads/' . $postrow['image'] . '" alt="' . $postrow['image'] . '" style="width: 100%; object-fit:contain; margin-bottom: 20px; border-radius: 5px">
-                        </div>
+                        <a href="#">  <img src="uploads/' . $postrow['image'] . '" alt="' . $postrow['image'] . '" style="width: 100%; object-fit:contain; margin-bottom: 20px; border-radius: 5px">
+                        </a></div>
                     </div>';
             }
         } else {
