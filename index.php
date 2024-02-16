@@ -9,7 +9,7 @@ session_start();
     <title>Minglr - Social Networking Site</title>
     <head>
     <!-- <meta charset="UTF-8"> -->
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Experience social networking like never before with Minglr, 
      where every user enjoys a personalized journey. Dive into your dedicated account page, 
      showcasing your profile, posts, and photos. Stay in the loop with a dynamic feed, 
@@ -30,11 +30,14 @@ session_start();
         Social Networking Profile,
         Community Engagement Features" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <!-- Dark theme css -->
+    <link rel="stylesheet" href="style/lighttheme_css/light_style.css?t=<?php echo time();?>" id="theme">  
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-ZvHjXoebDRUrTnKh9WKpWV/A0Amd+fjub5TkBXrPxe5F7WfDZL0slJ6a0mvg7VSN3qdpgqq2y1blz06Q8W2Y8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="img/favicon_minglr.png" type="image/png">
+    <link rel="shortcut icon" href="logo/minglr logo4.png" type="image/png">
     <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
     </head>
 
@@ -46,8 +49,12 @@ session_start();
         <div class="bar bar2"></div>
         <div class="bar bar3"></div>
       </div>
-      <label class="logo"><a href="/"><img class="logo" src="logo\logo.png"></a></label>
+      <label class="logo"><a href="/"><img class="logo" src="logo/minglr logo1.png"></a></label>
+      <ul>
+      <img src="img/dark_img/MoonIcon.svg" alt="Theme Icon" height="19" width="19" id="theme-icon" id="theme-toggle" class="theme-button" onclick="changeIndexTheme()">
+      </ul>
       <ul class="menu-items">
+
         <li class="menu-items-li"><a class="navv-item" href="feed.php">Feed</a></li>
         <li class="menu-items-li">
             <?php
@@ -69,6 +76,9 @@ session_start();
             ?>
         </li>
         <li class="menu-items-li"><a class="navv-item" href="about-us.php">About Us</a></li>
+        
+       
+
       </ul>
     </nav>
   
@@ -104,7 +114,7 @@ session_start();
     </div> -->
 
     <div class="login-signup">
-        <center><img class="login-logo" src="logo\cover.png" alt="logo"></center>
+        <center><img class="login-logo" src="logo/Minglr logo3.png" alt="logo"></center>
         <center><small><button class="btn" onclick="getElementById('login-form').style.display='block'; getElementById('regst-form').style.display='none';">Login</button>OR<button class="btn" onclick="getElementById('login-form').style.display='none'; getElementById('regst-form').style.display='block';">Register</button></small></center>
         <div class="login">
             <form action="db/validate.php" method="post" class="login-form" id="login-form">

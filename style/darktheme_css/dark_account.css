@@ -1,5 +1,10 @@
 body{
-    background-color: rgb(250 251 253);
+    color: white;
+    background-color: rgb(8, 17, 34);
+}
+
+a{
+    color: white;
 }
 .account{
     width: 100%;
@@ -15,8 +20,9 @@ body{
 .account-banner{
     margin: auto;
     width: 100%;
-    padding-top: 20%;
-    border: solid white;
+    padding-top: 10%;
+    /* border: solid white; */
+    border: 3px solid white;
     border-bottom-left-radius: 69px;
 }
 .account-banner-img{
@@ -26,9 +32,10 @@ body{
     width: 100%;
 }
 .account-profpic{
+    margin: -2px;
     object-fit: contain;
     align-items: center;
-    border: solid green;
+    border: solid rgb(255, 255, 255);
     border-radius: 360px;
 }
 .account-img li{
@@ -62,7 +69,7 @@ body{
 
 /* Account tabs stylling */
 .account-tabs ul{
-    background-color: white;
+    background-color: #163353d1;
     margin-top: 10px;
     border: solid rgba(128, 128, 128, 0.248) 1px;
     border-radius: 5px;
@@ -81,6 +88,7 @@ li.acc-tabs-item{
     border: none;
 }
 .acc-tabs-link{
+    color: white;
     text-decoration: none;
 }
 .acc-tabs-link:active{
@@ -94,7 +102,7 @@ li.acc-tabs-item{
 }
 .acc-info-content{
     margin-top: 20px;
-    background-color: white;
+    background-color: #163353d1;
     border: solid rgba(128, 128, 128, 0.248) 1px;
     border-radius: 5px;
     padding-top: 20px;
@@ -142,18 +150,19 @@ li.acc-tabs-item{
 
 .post-btn{
     width: 80px;
-    /* margin-top: 10px; */
-    margin-bottom: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
     padding: 10px;
     border: none;
     border-radius: 7px;
-    background-color: #13239a;
-    color: white;
+    border: solid rgba(243, 243, 243, 0.76) 1px;
+    background:#163353;
+    color: #fff !important;
 }
 
 .feed-post-display-box{
     margin-top: 20px;
-    background-color: white;
+    background-color: #163353d1;
     border: solid rgba(128, 128, 128, 0.248) 1px;
     border-radius: 5px;
     padding-top: 20px;
@@ -195,13 +204,14 @@ input.postimage{
 }
 
 ::-webkit-file-upload-button{
-    width: 90px;
+    width: 100px;
     padding: 10px;
     border: none;
     border-radius: 7px;
-    background-color: #13239ac0;
+    background-color: #163353;
     color: white;
 }
+
 .user-profile {
     display: flex;
     align-items: center;
@@ -278,11 +288,20 @@ input.postimage{
     }
     .mobile-btn {
         display: block;
-	font-size: small;
+	    font-size: small;
         width: 120px;
         margin: auto;
         padding: 10px;
         border: none;
+    }
+
+    .account-profpic {
+        width: 60%;
+        margin: 13px;
+        object-fit: contain;
+        align-items: center;
+        border: solid rgb(255, 255, 255);
+        border-radius: 360px;
     }
 }
 
