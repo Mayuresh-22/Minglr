@@ -1,10 +1,13 @@
+
 // Check button in mobile view
+
 const menuBTN = document.querySelector('.menu-btn');
 const menuItems = document.querySelector('.menu-items');
 
 function toggleBtn() {
     menuBTN.classList.toggle("change");
     menuItems.classList.toggle("active");
+    
 }
 
 menuBTN.addEventListener('click', toggleBtn);
@@ -30,5 +33,13 @@ menuBTN.addEventListener('click', toggleBtn);
                 image.addEventListener('click', function() {
                     openLightbox(this.src);
                 });
+            });
+        });
+
+        var deleteButtons = document.querySelectorAll('.delete-btn');
+        deleteButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                var post = this.closest('.feed-post-display-box');
+                post.remove();
             });
         });

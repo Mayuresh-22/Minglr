@@ -295,3 +295,21 @@ input.postimage{
         border: none;
     }
 }*/
+/* -------------------- */
+.delete-btn{
+    width: 80px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: solid grey;
+    border: none;
+    border-radius: 7px;
+    background-color:rgb(176, 61, 53);
+    color: white;
+    margin-left: 935px;
+}
+
+.delete-btn:hover{
+    background-color: rgb(222, 118, 111);
+    color: black;
+} 
