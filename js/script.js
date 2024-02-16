@@ -1,12 +1,13 @@
 
-console.log("Number of delete buttons:");// Check button in mobile view
+// Check button in mobile view
+
 const menuBTN = document.querySelector('.menu-btn');
 const menuItems = document.querySelector('.menu-items');
 
 function toggleBtn() {
     menuBTN.classList.toggle("change");
     menuItems.classList.toggle("active");
-    console.log("Number of delete buttons:");
+    
 }
 
 menuBTN.addEventListener('click', toggleBtn);
@@ -35,23 +36,6 @@ menuBTN.addEventListener('click', toggleBtn);
             });
         });
 
-        // document.addEventListener("DOMContentLoaded", function() {
-        //    // Get all delete buttons
-        //      var deleteButtons = document.querySelectorAll('.delete-btn');
-        
-        //     // Loop through each delete button
-        //     deleteButtons.forEach(function(button) {
-        //         // Add click event listener to each delete button
-        //         button.addEventListener('click', function() {
-        //             // Find the closest ancestor element with class ".feed-post-display-box"
-        //             var post = this.closest('.feed-post-display-box');
-        //             // If found, remove the post
-        //             if (post) {
-        //                 post.remove();
-        //             }
-        //         });
-        //     });
-        // });
         var deleteButtons = document.querySelectorAll('.delete-btn');
         deleteButtons.forEach(function(button) {
             button.addEventListener('click', function() {
