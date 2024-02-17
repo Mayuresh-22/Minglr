@@ -414,7 +414,7 @@ nav .menu-items .menu-items-li .navv-item{
 }
 }
 
-a {
+a{
 text-decoration: none;
 color: #333; /* Default link color */
 transition: color 0.3s; /* Smooth color transition on hover */
