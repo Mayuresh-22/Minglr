@@ -48,3 +48,12 @@
     margin-bottom: 30px;
   }
   
+  .theme-button{
+    height: 35px;
+    width: 35px;
+    border: dashed #ffffff3d 0.5px;
+    background-color: #2058d100;
+    border-radius: 360px;
+    padding: 5px;
+    margin-top: 22px;
+  }

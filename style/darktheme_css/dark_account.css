@@ -1,0 +1,315 @@
+body{
+    color: white;
+    background-color: rgb(8, 17, 34);
+}
+
+a{
+    color: white;
+}
+.account{
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: left; */
+    /* background-color: cornflowerblue; */
+}
+.account-body{
+    width: 80%;
+    /* height: 100%; */
+    /* background-color: cornflowerblue; */
+}
+.account-banner{
+    margin: auto;
+    width: 100%;
+    padding-top: 10%;
+    /* border: solid white; */
+    border: 3px solid white;
+    border-bottom-left-radius: 69px;
+}
+.account-banner-img{
+    object-fit:contain;
+    object-position: 50% 50%;
+    margin: auto;
+    width: 100%;
+}
+.account-profpic{
+    margin: -2px;
+    object-fit: contain;
+    align-items: center;
+    border: solid rgb(255, 255, 255);
+    border-radius: 360px;
+}
+.account-img li{
+    color: white;
+    display: inline-block;
+    vertical-align:middle;
+}
+
+.message-btn{
+    width: 120px;
+    margin-left: 50px;
+    padding: 10px;
+    border: 50px;
+    border-radius: 7px;
+    background-color: #13239a;
+    color: white;
+}
+
+.message-buttons-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+/* To hide desktop button on mobile devices */
+.desktop-btn {
+    display: block; 
+}
+.mobile-btn {
+    display: none; 
+}
+
+/* Account tabs stylling */
+.account-tabs ul{
+    background-color: #163353d1;
+    margin-top: 10px;
+    border: solid rgba(128, 128, 128, 0.248) 1px;
+    border-radius: 5px;
+}
+.account-tabs li{
+    display: inline-block;
+    margin-left: 20px;
+}
+li.acc-tabs-item{
+    padding: 10px;
+}
+.acc-tabs-btn{
+    font-size: 15px;
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+.acc-tabs-link{
+    color: white;
+    text-decoration: none;
+}
+.acc-tabs-link:active{
+    border-bottom: solid#1f1efb 2px;
+    padding-bottom: 4px;
+    text-decoration: none;
+}
+/* Account tabs (Feed, Info, etc) styling */
+.acc-tabs-page{
+    margin-top: 20px;
+}
+.acc-info-content{
+    margin-top: 20px;
+    background-color: #163353d1;
+    border: solid rgba(128, 128, 128, 0.248) 1px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.acc-info-content-head{
+    border-bottom: solid rgba(128, 128, 128, 0.248) 1px;
+    padding-bottom: 10px;
+}
+.acc-info-content-lst{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.acc-info-content-list{
+    
+    display:inline-block;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: -4px;
+    margin-bottom: 5px;
+}
+
+
+/* Accound feed post box styling */
+.feed-posting-box{
+    margin-top: 20px;
+    background-color: white;
+    border: solid rgba(128, 128, 128, 0.248) 1px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.feed-post-box-textarea{
+    width: 100%;
+    height:15%;
+    padding: 30px;
+    font-size: 17px;
+    border-radius: 5px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.post-btn{
+    width: 80px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    padding: 10px;
+    border-radius: 7px;
+    border: solid rgba(243, 243, 243, 0.76) 1px;
+    background:#163353;
+    color: #fff !important;
+}
+
+.feed-post-display-box{
+    margin-top: 20px;
+    background-color: #163353d1;
+    border: solid rgba(128, 128, 128, 0.248) 1px;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.feed-post-display-box-head li{
+    display: inline-block;
+    vertical-align: middle;
+}
+.feed-post-display-box-head img{
+    height: 40px;
+    border: solid green 1px;
+    border-radius: 360px;
+}
+
+.feed-post-display-box-message{
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 17px;
+    border-left: solid #13239a 3px;
+}
+
+.feed-post-display-box-image{
+    padding-right: 60%;
+}
+
+input.postimage{
+    border: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-top: 7px;
+    margin-bottom: 0px;
+    height: 65px;
+}
+
+::-webkit-file-upload-button{
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: #163353;
+    color: white;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+.user-info {
+    flex-grow: 1;
+}
+.user-username {
+    font-weight: bold;
+    font-size: 18px;
+}
+.user-name {
+    color: #777;
+}
+
+/* css adjustments for mobile */
+@media(max-width: 720px){
+    .account-body{
+        width: 90%;
+    }
+
+    .feed-post-box-textarea{
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .account-tabs li{
+        font-size: 15px;
+    }
+
+    .feed-post-display-box-message{
+        padding-right: 15px;
+        padding-left: 15px;
+        font-size: 15px;
+    }
+
+    .feed-post-display-box-head li{
+        font-size: 14px;
+    }
+
+    .acc-info-content{
+        font-size: 15px;
+    }
+
+    .feed-post-display-box-image{
+        padding-right: 0%;
+    }
+
+    .post-btn{
+        width: 70px;
+    }
+
+    .message-btn{
+        width: 120px;
+        margin: auto;
+        padding: 10px;
+        border: none;
+    }
+
+    /* Show mobile button on smaller screens */
+    .desktop-btn {
+        display: none;
+    }
+    .mobile-btn {
+        display: block;
+	    font-size: small;
+        width: 120px;
+        margin: auto;
+        padding: 10px;
+        border: none;
+    }
+
+    .account-profpic {
+        width: 60%;
+        margin: 13px;
+        object-fit: contain;
+        align-items: center;
+        border: solid rgb(255, 255, 255);
+        border-radius: 360px;
+    }
+}
+
+/*@media(max-width: 400px){
+    .message-btn{
+	font-size: xx-small;
+        width: 90px;
+        margin: auto;
+        padding: 10px;
+        border: none;
+    }
+}*/
