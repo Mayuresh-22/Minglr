@@ -39,22 +39,32 @@ if (isset($_GET['search'])) {
     <!-- <meta charset="UTF-8"> -->
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/account.css">
+    
+    <!-- <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/account.css"> -->
+    
+    <!-- Dark theme css -->
+    <link rel="stylesheet" href="style/lighttheme_css/light_style.css?v=<?php echo time();?>">  
+    <!-- <link rel="stylesheet" href="style/darktheme_css/dark_account.css?v=<?php echo time();?>" id="theme">   -->
+    <link rel="stylesheet" href="style/lighttheme_css/light_account.css?t=<?php echo time();?>" id="theme">  
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-ZvHjXoebDRUrTnKh9WKpWV/A0Amd+fjub5TkBXrPxe5F7WfDZL0slJ6a0mvg7VSN3qdpgqq2y1blz06Q8W2Y8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="img/favicon_minglr.png" type="image/png">
+    <link rel="shortcut icon" href="logo/minglr logo4.png" type="image/png">
     <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
 
 <body>
     <nav>
-      <label class="logo"><a href="/"><img class="logo" src="logo\logo.png"></a></label>
+      <label class="logo"><a href="/"><img class="logo" src="logo/minglr logo1.png"></a></label>
       <div class="menu-btn">
         <div class="bar bar1"></div>
         <div class="bar bar2"></div>
         <div class="bar bar3"></div>
       </div>
+        <ul>
+            <img src="img/dark_img/MoonIcon.svg" alt="Theme Icon" height="19" width="19" id="theme-icon" id="theme-toggle" class="theme-button" onclick="changeAccountTheme()">
+        </ul>
 
       <ul class="menu-items">
         <li class="menu-items-li"><a class="navv-item" href="feed.php">Feed</a></li>
@@ -78,7 +88,9 @@ if (isset($_GET['search'])) {
             ?>
         </li>
         <li class="menu-items-li"><a class="navv-item" href="about-us.php">About Us</a></li>
+        
       </ul>
+      
     </nav>
     <div class="seperate_header"></div>
     <!-- <div class="navbar">
@@ -153,9 +165,10 @@ if (isset($_GET['search'])) {
         ?>
         <div class="account">
             <div class="account-body">
-                <div class="account-banner" style="background-image: url('img/banner.png');">
+                <div class="account-banner" style="background-image: url('logo/banner2.jpg');">
                     <div class="account-img">
                         <ul>
+                            
                             <li>
                                 <img src="https://api.dicebear.com/6.x/initials/png?seed=<?php echo $fname ?>&size=128" alt="profile" class="account-profpic">
                             </li>

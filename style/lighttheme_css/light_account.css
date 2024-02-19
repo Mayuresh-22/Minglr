@@ -15,7 +15,7 @@ body{
 .account-banner{
     margin: auto;
     width: 100%;
-    padding-top: 20%;
+    padding-top: 10%;
     border: solid white;
     border-bottom-left-radius: 69px;
 }
@@ -26,9 +26,10 @@ body{
     width: 100%;
 }
 .account-profpic{
+    margin: -2px;
     object-fit: contain;
     align-items: center;
-    border: solid green;
+    border: solid rgb(255, 255, 255);
     border-radius: 360px;
 }
 .account-img li{
@@ -142,13 +143,13 @@ li.acc-tabs-item{
 
 .post-btn{
     width: 80px;
-    /* margin-top: 10px; */
-    margin-bottom: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
     padding: 10px;
-    border: none;
     border-radius: 7px;
-    background-color: #13239a;
-    color: white;
+    border: solid rgba(243, 243, 243, 0.76) 1px;
+    background:#163353;
+    color: #fff !important;
 }
 
 .feed-post-display-box{
@@ -195,11 +196,11 @@ input.postimage{
 }
 
 ::-webkit-file-upload-button{
-    width: 90px;
+    width: 100px;
     padding: 10px;
     border: none;
     border-radius: 7px;
-    background-color: #13239ac0;
+    background-color: #163353;
     color: white;
 }
 .user-profile {
@@ -278,11 +279,21 @@ input.postimage{
     }
     .mobile-btn {
         display: block;
-	font-size: small;
+	    font-size: small;
         width: 120px;
         margin: auto;
         padding: 10px;
         border: none;
+    }
+
+
+    .account-profpic {
+    width: 60%;
+    margin: 13px;
+    object-fit: contain;
+    align-items: center;
+    border: solid rgb(255, 255, 255);
+    border-radius: 360px;
     }
 }
 

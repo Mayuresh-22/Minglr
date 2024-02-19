@@ -15,14 +15,14 @@
   box-sizing: border-box;
   margin: auto;
   opacity: 100%;
-
   animation-name: mainloader;
-  animation-duration: 0.5s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
 }
 
 body{
-  background-color: rgb(250 251 253);
+  color: white;
+  background-color: rgb(8, 17, 34);
 }
 
 /*Navbar Style*/
@@ -55,12 +55,13 @@ nav{
   position: fixed;
   top: 0;
   left: 0;
-  background: #f3f8fc;
+  background: #132d4a;
   height: 80px;
   width: 100%;
   z-index: 10;
-  border-bottom: 2px solid #13239a;
+  border-bottom: 3px solid #1225b4;
 }
+
 label.logo{
   color: white;
   font-size: 35px;
@@ -78,7 +79,7 @@ nav ul li{
   margin: 0 5px;
 }
 nav ul li .navv-item{
-  color: #1e47fb;
+  color: #ffffff;
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
@@ -88,7 +89,8 @@ nav ul li .navv-item{
   color: #fff !important; 
 }
 .navv-item.active,.navv-item:hover{
-  background: #1e1efb;
+  border: solid rgba(243, 243, 243, 0.76) 1px;
+  background:#1e1efb82;
   transition: .5s;
   color: #fff !important;
 }
@@ -106,7 +108,7 @@ nav ul li .navv-item{
   height: 5px;
   border-radius: 1px;
   margin: 5px 0;    
-  background-color: #12209d;
+  background-color: #ffffff;
   transition: all 0.5s;
 }
 .change .bar1 {
@@ -153,10 +155,11 @@ div.error-container{
   margin: 7%;
 }
 /*Logo*/
-.logo{
+.logo {
+  width: 8rem;
   max-height: 60;
   max-width: 100%;
-  vertical-align:middle;
+  vertical-align: middle;
   padding-left: 0%;
 }
 
@@ -167,15 +170,14 @@ div.error-container{
 }
 
 .login-signup{
-  background-color: white;
+  background-color: #163353d1;
+  border: solid rgba(128, 128, 128, 0.356) 1px;
   padding: 20px;
   margin-top: 60px;
   margin-left: 10%;
   margin-right: 10%;
-  border: solid grey;
   border-width: 1px;
   border-radius: 15px;
-
   position: relative;
   animation-name: loginloader;
   animation-duration: 3s;
@@ -277,12 +279,14 @@ cursor: pointer;
 
 /* Footer styling*/
 .footer{
+  color: white;
+  border-top: 3px solid #1225b4;
   box-sizing: border-box;
   height:30dvb;
   width: 100%;
   padding: 30px;
   margin-top: 10%;
-  background-color: #0f2186f5;
+  background-color:#132d4a;
   text-align: center;
 }
 .footer ul p{
@@ -298,16 +302,26 @@ a.foot-link:link{
 a.foot-link:visited{
   color: white;
 }
-
-.footer p{
-  color:white;
-  margin-top:2rem;
-}
-
 .seperate_header{
 height: 1px;
 margin-top: 80px;
 }
+
+
+.theme-button{
+  height: 35px;
+  width: 35px;
+  border: dashed #ffffff3d 0.5px;
+  background-color: #2058d100;
+  border-radius: 360px;
+  padding: 5px;
+  margin-top: 22px;
+}
+
+
+
+
+
 /* mobile style adjustments */
 @media(max-width: 720px){
   .navbar li{
@@ -333,6 +347,17 @@ margin-top: 80px;
   .footer p{
       font-size: 12px;
   }
+
+  .theme-button{
+    height: 35px;
+    width: 35px;
+    border: solid #ffffff3d 0.5px;
+    background-color: #2058d100;
+    border-radius: 360px;
+    padding: 5px;
+    margin-top: 25px;
+}
+
 }
 
 @media (max-width: 952px){
@@ -365,6 +390,7 @@ nav .menu-items .menu-items-li .navv-item{
   z-index: 100;
 }
 nav .menu-items{
+  background-color: #132d4aeb;
   display: grid;
   margin: 50px 0;
   line-height: 30px;
@@ -385,34 +411,13 @@ nav .menu-items .menu-items-li .navv-item{
 }
 }
 
-a {
+a{
+color: #fff;
 text-decoration: none;
-color: #333; /* Default link color */
 transition: color 0.3s; /* Smooth color transition on hover */
 }
 @media (max-width: 350px){
 .menu-btn {
   margin-right: 15px;
 }
-}
-
-/* Add the CSS styles for the lightbox here */
-.lightbox-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 9999;
-  text-align: center;
-}
-
-.lightbox-overlay img {
-  max-width: 95%;
-  max-height: 95%;
-  margin-top: 3%;
-  margin-bottom: 3%;
-
 }

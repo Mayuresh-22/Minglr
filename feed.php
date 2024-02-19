@@ -14,32 +14,40 @@
     <!-- <meta charset="UTF-8"> -->
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/feed.css">
+    <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <!-- Dark theme css -->
+    <link rel="stylesheet" href="style/lighttheme_css/light_style.css?t=<?php echo time();?>" >  
+    <!-- <link rel="stylesheet" href="style/darktheme_css/dark_style.css?t=<?php echo time();?>" >   -->
+    <link rel="stylesheet" href="style/lighttheme_css/light_feed.css" id="theme">  
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <!-- favicon -->
-    <link rel="shortcut icon" href="img/favicon_minglr.png" type="image/png">
-    <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>  
-    </head>
+    <link rel="shortcut icon" href="logo/minglr logo4.png" type="image/png">
+    <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
+</head>
 
 <body>
-    <nav>
-      <div class="menu-btn">
-            <div class="bar bar1"></div>
-            <div class="bar bar2"></div>
-            <div class="bar bar3"></div>
-      </div>
-      <label class="logo"><a href="/"><img class="logo" src="logo\logo.png"></a></label>
-      <ul class="menu-items">
-        <li class="menu-items-li"><a class="navv-item active" href="feed.php">Feed</a></li>
-        <li class="menu-items-li">
-            <?php
+        <nav>
+            <div class="menu-btn">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+            <label class="logo"><a href="/"><img class="logo" src="logo/minglr logo1.png"></a></label>
+            <ul>
+            <img src="img/dark_img/MoonIcon.svg" alt="Theme Icon" height="19" width="19" id="theme-icon" id="theme-toggle" class="theme-button" onclick="changeTheme()">
+            </ul>
+            
+            <ul class="menu-items">
+                <li class="menu-items-li"><a class="navv-item active" href="feed.php">Feed</a></li>
+                <li class="menu-items-li">
+                    <?php
                 if(isset($_SESSION['username'])){
                     echo '<a class="navv-item" href="account.php?username='.$_SESSION['username'].'" ">Account</a>';
                 }else{
                     echo '<a class="navv-item" href="account.php">Account</a>';
                 }
-            ?>
+                ?>
         </li>
         <li class="menu-items-li">
             <?php
@@ -49,23 +57,27 @@
                     else{
                         echo '<a class="navv-item" href="back/logout.php">Logout</a>';
                     }
-            ?>
+                    ?>
         </li>
         <li class="menu-items-li"><a class="navv-item" href="about-us.php">About Us</a></li>
-      </ul>
-    </nav>
-  
-    <div class="seperate_header"></div>
-    <!-- <div class="navbar">
-        <ul>
-            <li>
-                <a href="<?php echo $home_page; ?>"><img class="logo" src="logo\logo.png"></a>
-            </li>
-            <li class="nav-item">
-                <a href="feed.php" style="text-decoration: none">Feed</a>
-            </li>
-            <li class="nav-item">
-                <?php
+      
+    </ul>
+        
+</nav>
+    
+
+
+<div class="seperate_header"></div>
+<!-- <div class="navbar">
+    <ul>
+        <li>
+            <a href="<?php echo $home_page; ?>"><img class="logo" src="logo\logo.png"></a>
+        </li>
+        <li class="nav-item">
+            <a href="feed.php" style="text-decoration: none">Feed</a>
+        </li>
+        <li class="nav-item">
+            <?php
                     if(!isset($_SESSION['username'])){
                         echo '<a href="account.php" style="text-decoration: none;">Account</a>';
                     }
@@ -115,6 +127,7 @@
                 // if number posts are greater than zero
 
                 if(mysqli_num_rows($postresult)>0){
+                    
 
                     // fetching rows returned by query
                     $postrows = mysqli_fetch_all($postresult);
