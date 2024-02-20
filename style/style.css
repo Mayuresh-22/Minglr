@@ -170,8 +170,8 @@ div.error-container{
   background-color: white;
   padding: 20px;
   margin-top: 60px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 30%;
+  margin-right: 20%;
   border: solid grey;
   border-width: 1px;
   border-radius: 15px;
@@ -195,7 +195,7 @@ div.error-container{
 
 input{
   text-align: left;
-  width: 70%;
+  width: 50%;
   height:30px;
   margin-left: 15%;
   margin-right: 15%;
@@ -233,7 +233,7 @@ input{
   border: solid grey;
   border: none;
   border-radius: 7px;
-  background-color: #13239a;
+  background-color: #4d61f59c;
   color: white;
 }
 
@@ -267,7 +267,7 @@ transform: translateY(-4px);
 cursor: pointer;
 }
 
-.rgst-btn:hover , .login-btn:hover , .search-btn:hover{
+.rgst-btn:hover  , .search-btn:hover{
 box-shadow: 4px 4px #4d61f59c,
   -4px -4px #4d61f59c;
 transition: all 0.5s ease-in-out;
@@ -275,6 +275,10 @@ transform: translateY(-1px);
 cursor: pointer;
 }
 
+.login-btn:hover {
+  background-color: #13239a;
+  cursor: pointer;
+}
 /* Footer styling*/
 .footer{
   box-sizing: border-box;
@@ -321,9 +325,10 @@ margin-top: 80px;
   }
 
   input{
-      width: 80%;
+      width: 35%;
       margin-left: 10%;
       margin-right: 10%;
+      margin-top: 2%;
   }
 
   .footer li{

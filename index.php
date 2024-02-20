@@ -112,8 +112,9 @@ session_start();
                 <input type="password" for="password" id="password" name="password" placeholder="Password" autocomplete="off" required>
                 <button class="login-btn" name="lgn" id="lgn">Login Now</button>
             </form>
-        </div>
-        <div class="register">
+        </div> 
+        <div class="register"> 
+            <img src="logo/bg-image.jpg" alt="">
             <form action="db/validate.php" method="post" class="regst-form" id="regst-form" style="display: none;">
                 <input type="text" for="usrname" id="usrname" name="username" placeholder="Username" autocomplete="off" required>
                 <input type="text" for="fname" id="fname" name="fname" placeholder="First name" required>
