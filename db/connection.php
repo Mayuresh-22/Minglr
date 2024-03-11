@@ -2,7 +2,7 @@
 // database connection for Minglr (Change this credentials)
 $host = "localhost";
 $user = "root";
-$pswd = "";
+$pswd = "mysql";
 $db = "minglr";
 
 // create connect to db
