@@ -421,3 +421,10 @@ transition: color 0.3s; /* Smooth color transition on hover */
   margin-right: 15px;
 }
 }
+.menu-icon{
+  height: 15px;
+  width: 15px;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-left: 5px;
+}
