@@ -98,7 +98,7 @@ if(mysqli_num_rows($result) == 1){
       <label class="logo"><a href="/"><img class="logo" src="logo/Minglr logo1.png"></a></label>
 
         <ul>
-            <img src="img/dark_img/MoonIcon.svg" alt="Theme Icon" height="19" width="19" id="theme-icon" id="theme-toggle" class="theme-button" onclick="changeTheme()">
+            <img src="img/dark_img/MoonIcon.png" alt="Theme Icon" height="19" width="19" id="theme-icon" id="theme-toggle" class="theme-button" onclick="changeTheme()">
         </ul>
       <ul class="menu-items">
         <li class="menu-items-li"><a class="navv-item" href="feed.php">Feed</a></li>

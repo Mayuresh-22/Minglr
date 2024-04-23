@@ -51,7 +51,7 @@ session_start();
       </div>
       <label class="logo"><a href="/"><img class="logo" src="logo/Minglr logo1.png"></a></label>
       <ul>
-      <img src="img/dark_img/MoonIcon.svg" alt="Theme Icon" height="19" width="19" id="theme-icon" id="theme-toggle" class="theme-button" onclick="changeIndexTheme()">
+      <img src="img/dark_img/MoonIcon.png" alt="Theme Icon" height="19" width="19" id="theme-icon" id="theme-toggle" class="theme-button" onclick="changeIndexTheme()">
       </ul>
       <ul class="menu-items">
 

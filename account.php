@@ -63,7 +63,7 @@ if (isset($_GET['search'])) {
         <div class="bar bar3"></div>
       </div>
         <ul>
-            <img src="img/dark_img/MoonIcon.svg" alt="Theme Icon" height="19" width="19" id="theme-icon" id="theme-toggle" class="theme-button" onclick="changeAccountTheme()">
+            <img src="img/dark_img/MoonIcon.png" alt="Theme Icon" height="19" width="19" id="theme-icon" id="theme-toggle" class="theme-button" onclick="changeAccountTheme()">
         </ul>
 
       <ul class="menu-items">
