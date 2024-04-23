@@ -51,12 +51,12 @@ if (isset($_GET['search'])) {
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-ZvHjXoebDRUrTnKh9WKpWV/A0Amd+fjub5TkBXrPxe5F7WfDZL0slJ6a0mvg7VSN3qdpgqq2y1blz06Q8W2Y8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- favicon -->
-    <link rel="shortcut icon" href="logo/minglr logo4.png" type="image/png">
+    <link rel="shortcut icon" href="logo/Minglr logo4.png" type="image/png">
     <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
 
 <body>
     <nav>
-      <label class="logo"><a href="/"><img class="logo" src="logo/minglr logo1.png"></a></label>
+      <label class="logo"><a href="/"><img class="logo" src="logo/Minglr logo1.png"></a></label>
       <div class="menu-btn">
         <div class="bar bar1"></div>
         <div class="bar bar2"></div>

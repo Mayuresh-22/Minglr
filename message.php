@@ -81,7 +81,7 @@ if(mysqli_num_rows($result) == 1){
     <link rel="stylesheet" href="style/lighttheme_css/light_message.css?t=<?php echo time();?>" id="theme">  
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="logo/minglr logo4.png" type="image/png">
+    <link rel="shortcut icon" href="logo/Minglr logo4.png" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-ZvHjXoebDRUrTnKh9WKpWV/A0Amd+fjub5TkBXrPxe5F7WfDZL0slJ6a0mvg7VSN3qdpgqq2y1blz06Q8W2Y8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>

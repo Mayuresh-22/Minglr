@@ -22,7 +22,7 @@
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <!-- favicon -->
-    <link rel="shortcut icon" href="logo/minglr logo4.png" type="image/png">
+    <link rel="shortcut icon" href="logo/Minglr logo4.png" type="image/png">
     <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
 </head>
 
@@ -33,7 +33,7 @@
                 <div class="bar bar2"></div>
                 <div class="bar bar3"></div>
             </div>
-            <label class="logo"><a href="/"><img class="logo" src="logo/minglr logo1.png"></a></label>
+            <label class="logo"><a href="/"><img class="logo" src="logo/Minglr logo1.png"></a></label>
             <ul>
             <img src="img/dark_img/MoonIcon.svg" alt="Theme Icon" height="19" width="19" id="theme-icon" id="theme-toggle" class="theme-button" onclick="changeTheme()">
             </ul>
