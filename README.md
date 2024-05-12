@@ -1,6 +1,5 @@
-# Welcome SWOC S4 contributors.
-![scriptwinterofcode_cover](https://github.com/Mayuresh-22/Minglr/assets/111348926/e48a3c3e-ea4e-4bee-8ef8-03804d50bde5)
-<p align="center"><b> LEARN . CONTRIBUTE . ACE </b></p>
+https://github.com/Mayuresh-22/Minglr/assets/111348926/332b573b-9811-4878-869c-43029c318a50
+
 
 # Minglr - Social Networking Site
 
