@@ -58,4 +58,10 @@
     margin-top: 22px;
   }
   
-  
+  .menu-icon{
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 5px;
+}

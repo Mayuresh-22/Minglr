@@ -306,3 +306,10 @@ input.postimage{
         border: none;
     }
 }*/
+.menu-icon{
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 5px;
+}
