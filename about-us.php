@@ -14,7 +14,7 @@ session_start();
        <link rel="stylesheet" href="style/lighttheme_css/light_about.css?t=<?php echo time();?>" id="theme">     
     
     <!-- favicon -->
-    <link rel="shortcut icon" href="logo/minglr logo4.png" type="image/png">
+    <link rel="shortcut icon" href="logo/Minglr logo4.png" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-ZvHjXoebDRUrTnKh9WKpWV/A0Amd+fjub5TkBXrPxe5F7WfDZL0slJ6a0mvg7VSN3qdpgqq2y1blz06Q8W2Y8A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
@@ -29,9 +29,9 @@ session_start();
       </div>
 
       <ul>
-        <img src="img/dark_img/MoonIcon.svg" alt="Theme Icon" height="19" width="19" id="theme-icon" id="theme-toggle" class="theme-button" onclick="changeTheme()">
+        <img src="img/dark_img/MoonIcon.png" alt="Theme Icon" height="19" width="19" id="theme-icon" id="theme-toggle" class="theme-button" onclick="changeTheme()">
       </ul>
-      <label class="logo"><a href="/"><img class="logo" src="logo/minglr logo1.png"></a></label>
+      <label class="logo"><a href="/"><img class="logo" src="logo/Minglr logo1.png"></a></label>
       <ul class="menu-items">
         <li class="menu-items-li"><a class="navv-item" href="feed.php"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="menu-icon">
                         <path fill-rule="evenodd" d="M3.75 4.5a.75.75 0 0 1 .75-.75h.75c8.284 0 15 6.716 15 15v.75a.75.75 0 0 1-.75.75h-.75a.75.75 0 0 1-.75-.75v-.75C18 11.708 12.292 6 5.25 6H4.5a.75.75 0 0 1-.75-.75V4.5Zm0 6.75a.75.75 0 0 1 .75-.75h.75a8.25 8.25 0 0 1 8.25 8.25v.75a.75.75 0 0 1-.75.75H12a.75.75 0 0 1-.75-.75v-.75a6 6 0 0 0-6-6H4.5a.75.75 0 0 1-.75-.75v-.75Zm0 7.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0Z" clip-rule="evenodd" />

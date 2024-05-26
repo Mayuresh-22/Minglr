@@ -23,7 +23,7 @@ include("db/connection.php");
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <!-- favicon -->
-    <link rel="shortcut icon" href="logo/minglr logo4.png" type="image/png">
+    <link rel="shortcut icon" href="logo/Minglr logo4.png" type="image/png">
     <script src="https://kit.fontawesome.com/17a4e5185f.js" crossorigin="anonymous"></script>
 </head>
 

@@ -42,10 +42,10 @@ function changeTheme() {
     //console.log('theme:',theme.getAttribute("href").includes("darktheme_css"));
     if (theme.getAttribute("href").includes("darktheme_css")) {
         theme.setAttribute("href", "style/lighttheme_css/light_feed.css");
-        themeIcon.setAttribute("src", "img/dark_img/Moonicon.svg");
+        themeIcon.setAttribute("src", "img/dark_img/MoonIcon.png");
     } else {
         theme.setAttribute("href", "style/darktheme_css/dark_feed.css");
-        themeIcon.setAttribute("src", "img/dark_img/Sunicon.svg");
+        themeIcon.setAttribute("src", "img/dark_img/SunIcon.png");
     }
 }
 
@@ -55,10 +55,10 @@ function changeAccountTheme() {
     //console.log('theme:',theme.getAttribute("href").includes("darktheme_css"));
     if (theme.getAttribute("href").includes("darktheme_css")) {
         theme.setAttribute("href", "style/lighttheme_css/light_account.css");
-        themeIcon.setAttribute("src", "img/dark_img/Moonicon.svg");
+        themeIcon.setAttribute("src", "img/dark_img/MoonIcon.png");
     } else {
         theme.setAttribute("href", "style/darktheme_css/dark_account.css");
-        themeIcon.setAttribute("src", "img/dark_img/Sunicon.svg");
+        themeIcon.setAttribute("src", "img/dark_img/SunIcon.png");
     }
 }
 
@@ -68,10 +68,10 @@ function changeIndexTheme() {
     //console.log('theme:',theme.getAttribute("href").includes("darktheme_css"));
     if (theme.getAttribute("href").includes("darktheme_css")) {
         theme.setAttribute("href", "style/lighttheme_css/light_style.css");
-        themeIcon.setAttribute("src", "img/dark_img/Moonicon.svg");
+        themeIcon.setAttribute("src", "img/dark_img/MoonIcon.png");
     } else {
         theme.setAttribute("href", "style/darktheme_css/dark_style.css");
-        themeIcon.setAttribute("src", "img/dark_img/Sunicon.svg");
+        themeIcon.setAttribute("src", "img/dark_img/SunIcon.png");
     }
 }
 
@@ -82,10 +82,10 @@ function changeMessageTheme() {
     //console.log('theme:',theme.getAttribute("href").includes("darktheme_css"));
     if (theme.getAttribute("href").includes("darktheme_css")) {
         theme.setAttribute("href", "style/lighttheme_css/light_message.css");
-        themeIcon.setAttribute("src", "img/dark_img/Moonicon.svg");
+        themeIcon.setAttribute("src", "img/dark_img/MoonIcon.png");
     } else {
         theme.setAttribute("href", "style/darktheme_css/dark_message.css");
-        themeIcon.setAttribute("src", "img/dark_img/Sunicon.svg");
+        themeIcon.setAttribute("src", "img/dark_img/SunIcon.png");
     }
 }
 
