@@ -23,7 +23,7 @@ Minglr is a secure and feature-rich social networking site that enables users to
 
 ## Demo
 
-Experience Minglr firsthand with a live website available at [Webiste Link](https://minglr.cu.ma/).
+Experience Minglr firsthand with a live website at [https://minglr.cu.ma/](https://links.mayuresh.me/minglr).
 
 ## Screenshots
 
