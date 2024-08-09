@@ -228,18 +228,18 @@ if(mysqli_num_rows($result) == 1){
     <div class="footer" style="height:16rem">
         <p style="  font-size: x-large;margin-top:0;">Minglr</p>
     <ul class="footer-icons">
-        <li class="foot-item">
-            <a href="#" class="foot-link"><i class="fab fa-facebook"></i></a>
+    <li class="foot-item">
+            <a href="https://github.com/Mayuresh-22/Minglr" class="foot-link"><i class="fa-brands fa-github"></i></a>
         </li>
         <li class="foot-item">
-            <a href="#" class="foot-link"><i class="fab fa-twitter"></i></a>
+            <a href="https://x.com/mayuresh_empire" class="foot-link"><i class="fab fa-twitter"></i></a>
         </li>
         <li class="foot-item">
-            <a href="#" class="foot-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/mayureshchoudhary/" class="foot-link"><i class="fa-brands fa-linkedin"></i></a>
         </li>
-        <li class="foot-item">
+        <!-- <li class="foot-item">
             <a href="#" class="foot-link"><i class="fab fa-youtube"></i></a>
-        </li>
+        </li> -->
     </ul>
     <ul class="footer-links">
         <li class="foot-item" style="margin-right:3rem;">
